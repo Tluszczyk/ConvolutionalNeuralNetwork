@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/Tensor.cpp
+Tensor.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/Tensor.h
+functional
+-
+cfloat
+-
+string
+-
+map
+-
+random
+-
+numeric
+-
+
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/Tensor.h
+vector
+-
+ostream
+-
+

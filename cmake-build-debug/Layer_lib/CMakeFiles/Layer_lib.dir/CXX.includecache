@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Tensor_lib/Tensor.h
+vector
+-
+ostream
+-
+
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.cpp
+DenseLayer.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.h
+Tensor.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/Tensor.h
+
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.h
+Layer.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/Layer.h
+
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/Layer.h
+Tensor.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/Tensor.h
+
