@@ -8,36 +8,38 @@
 #include <vector>
 #include <ostream>
 
+using namespace std;
+
 class Tensor {
 private:
-    std::vector<int> shape;
-    std::vector<double> data;
+    vector<int> shape;
+    vector<double> data;
 
-    friend std::ostream& operator<<(std::ostream &strm, const Tensor &t) { return strm << t.to_string(); }
+    friend ostream& operator<<(ostream &strm, const Tensor &t) { return strm << t.to_string(); }
 
 public:
     Tensor();
-    explicit Tensor(const std::vector<int>& shape, const std::vector<double>& data = {});
+    explicit Tensor(const vector<int>& shape, const vector<double>& data = {});
 
     Tensor operator+(const Tensor& that) const;
     Tensor operator-(const Tensor& that) const;
     Tensor operator*(const Tensor& that) const;
     Tensor operator^(const Tensor& that) const;
 
-    double &operator[](std::vector<int> coords) const;
+    double &operator[](vector<int> coords) const;
 
     bool operator==(const Tensor& that) const;
 
-    static Tensor createRandom(const std::vector<int>& shape);
+    static Tensor createRandom(const vector<int>& shape);
     static Tensor ZERO() { return Tensor{{1},{0}}; };
 
-    [[nodiscard]] Tensor transpose(const std::vector<int>& transposition) const;
-    [[nodiscard]] Tensor reshape(const std::vector<int>& newShape) const;
+    [[nodiscard]] Tensor transpose(const vector<int>& transposition) const;
+    [[nodiscard]] Tensor reshape(const vector<int>& newShape) const;
 
-    [[nodiscard]] std::vector<int> getShape() const { return shape; };
-    [[nodiscard]] const std::vector<double> &getData() const { return data; };
+    [[nodiscard]] vector<int> getShape() const { return shape; };
+    [[nodiscard]] const vector<double> &getData() const { return data; };
 
-    [[nodiscard]] std::string to_string() const;
+    [[nodiscard]] string to_string() const;
 };
 
 
