@@ -7,6 +7,7 @@
 
 #include <map>
 #include <string>
+#include <functional>
 
 using namespace std;
 
@@ -26,7 +27,7 @@ public:
     static double reluPrime(double x);
     static double softplusPrime(double x);
 
-    static map<string, double(*)(double)> fromName;
+    static map<string, function<double(double)>> fromName;
 };
 
 #endif //NEURALNET_ACTIVATIONFUNCTIONSPROVIDER_H

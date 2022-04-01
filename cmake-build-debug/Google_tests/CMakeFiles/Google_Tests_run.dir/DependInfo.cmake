@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/DenseLayerTests.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o"
+  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/SequentialTests.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o"
   "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/TensorTests.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o"
   "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/main.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/main.cpp.o"
   )

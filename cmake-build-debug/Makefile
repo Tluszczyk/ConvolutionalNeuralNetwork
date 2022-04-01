@@ -260,6 +260,60 @@ gtest/fast:
 	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+ActivationFunctionsProvider.o: ActivationFunctionsProvider.cpp.o
+
+.PHONY : ActivationFunctionsProvider.o
+
+# target to build an object file
+ActivationFunctionsProvider.cpp.o:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ActivationFunctionsProvider.cpp.o
+.PHONY : ActivationFunctionsProvider.cpp.o
+
+ActivationFunctionsProvider.i: ActivationFunctionsProvider.cpp.i
+
+.PHONY : ActivationFunctionsProvider.i
+
+# target to preprocess a source file
+ActivationFunctionsProvider.cpp.i:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ActivationFunctionsProvider.cpp.i
+.PHONY : ActivationFunctionsProvider.cpp.i
+
+ActivationFunctionsProvider.s: ActivationFunctionsProvider.cpp.s
+
+.PHONY : ActivationFunctionsProvider.s
+
+# target to generate assembly for a file
+ActivationFunctionsProvider.cpp.s:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ActivationFunctionsProvider.cpp.s
+.PHONY : ActivationFunctionsProvider.cpp.s
+
+LossFunctionsProvider.o: LossFunctionsProvider.cpp.o
+
+.PHONY : LossFunctionsProvider.o
+
+# target to build an object file
+LossFunctionsProvider.cpp.o:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.o
+.PHONY : LossFunctionsProvider.cpp.o
+
+LossFunctionsProvider.i: LossFunctionsProvider.cpp.i
+
+.PHONY : LossFunctionsProvider.i
+
+# target to preprocess a source file
+LossFunctionsProvider.cpp.i:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.i
+.PHONY : LossFunctionsProvider.cpp.i
+
+LossFunctionsProvider.s: LossFunctionsProvider.cpp.s
+
+.PHONY : LossFunctionsProvider.s
+
+# target to generate assembly for a file
+LossFunctionsProvider.cpp.s:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.s
+.PHONY : LossFunctionsProvider.cpp.s
+
 Sequential.o: Sequential.cpp.o
 
 .PHONY : Sequential.o
@@ -334,6 +388,12 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... ActivationFunctionsProvider.o"
+	@echo "... ActivationFunctionsProvider.i"
+	@echo "... ActivationFunctionsProvider.s"
+	@echo "... LossFunctionsProvider.o"
+	@echo "... LossFunctionsProvider.i"
+	@echo "... LossFunctionsProvider.s"
 	@echo "... Sequential.o"
 	@echo "... Sequential.i"
 	@echo "... Sequential.s"

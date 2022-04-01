@@ -198,6 +198,33 @@ DenseLayerTests.cpp.s:
 	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.s
 .PHONY : DenseLayerTests.cpp.s
 
+SequentialTests.o: SequentialTests.cpp.o
+
+.PHONY : SequentialTests.o
+
+# target to build an object file
+SequentialTests.cpp.o:
+	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o
+.PHONY : SequentialTests.cpp.o
+
+SequentialTests.i: SequentialTests.cpp.i
+
+.PHONY : SequentialTests.i
+
+# target to preprocess a source file
+SequentialTests.cpp.i:
+	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.i
+.PHONY : SequentialTests.cpp.i
+
+SequentialTests.s: SequentialTests.cpp.s
+
+.PHONY : SequentialTests.s
+
+# target to generate assembly for a file
+SequentialTests.cpp.s:
+	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.s
+.PHONY : SequentialTests.cpp.s
+
 TensorTests.o: TensorTests.cpp.o
 
 .PHONY : TensorTests.o
@@ -268,6 +295,9 @@ help:
 	@echo "... DenseLayerTests.o"
 	@echo "... DenseLayerTests.i"
 	@echo "... DenseLayerTests.s"
+	@echo "... SequentialTests.o"
+	@echo "... SequentialTests.i"
+	@echo "... SequentialTests.s"
 	@echo "... TensorTests.o"
 	@echo "... TensorTests.i"
 	@echo "... TensorTests.s"

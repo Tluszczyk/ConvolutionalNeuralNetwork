@@ -17,9 +17,8 @@ double LossFunctionsProvider::MSEPrime(double netOutput, double trueOutput) {
     return 2*( netOutput - trueOutput);
 }
 
-double (*LossFunctionsProvider::fromName(const string& name))(double, double) {
-    if( name == "MSE" ) return LossFunctionsProvider::MSE;
-    if( name == "MSEPrime" ) return LossFunctionsProvider::MSEPrime;
+map<string, function<double(double, double)>> LossFunctionsProvider::fromName = {
+        {"MSE", LossFunctionsProvider::MSE},
 
-    return nullptr;
-}
+        {"MSEPrime", LossFunctionsProvider::MSEPrime}
+};

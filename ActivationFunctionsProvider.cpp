@@ -3,6 +3,7 @@
 //
 
 #include <cmath>
+#include <functional>
 #include "ActivationFunctionsProvider.h"
 
 double ActivationFunctionsProvider::id(double x) { return x; }
@@ -19,7 +20,7 @@ double ActivationFunctionsProvider::tanhPrime(double x) { return 1 - pow((exp(x)
 double ActivationFunctionsProvider::reluPrime(double x) { return (x < 0 ? 0 : 1); }
 double ActivationFunctionsProvider::softplusPrime(double x) { return 1. / (1. + exp(-x)); }
 
-map<string, double(*)(double)> ActivationFunctionsProvider::fromName = {
+map<string, function<double(double)>> ActivationFunctionsProvider::fromName = {
         {"id", ActivationFunctionsProvider::id},
         {"bin", ActivationFunctionsProvider::bin},
         {"sig", ActivationFunctionsProvider::sig},

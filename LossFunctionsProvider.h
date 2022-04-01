@@ -5,7 +5,9 @@
 #ifndef NEURALNET_LOSSFUNCTIONSPROVIDER_H
 #define NEURALNET_LOSSFUNCTIONSPROVIDER_H
 
-#include "Tensor.h"
+#include <map>
+#include <string>
+#include <functional>
 
 using namespace std;
 
@@ -15,7 +17,7 @@ public:
 
     static double MSEPrime(double, double);
 
-    static double (*fromName(const string& name))(double, double);
+    static map<string, function<double(double, double)>> fromName;
 };
 
 
