@@ -6,12 +6,13 @@
 #define NEURALNET_DENSELAYER_H
 
 #include "Layer.h"
+#include "BackpropagationResult.h"
 
 class DenseLayer : Layer {
 private:
     int size, nextLayerSize{};
     double learningRate{};
-    Tensor weightsTensor, biasTensor;
+    Tensor weightsTensor, biasTensor, activations;
 
 public:
     explicit DenseLayer(int size) : size(size) {};
@@ -19,7 +20,7 @@ public:
     void compile(double learningRate, int nextLayerSize);
 
     Tensor feed(Tensor inputTensor) override;
-    Tensor backpropagate(Tensor gradient);
+    BackpropagationResult backpropagate(Tensor gradient);
 };
 
 

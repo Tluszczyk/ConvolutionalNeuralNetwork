@@ -175,6 +175,10 @@ Tensor Tensor::reshape(const vector<int>& newShape) const {
     return Tensor(newShape, data);
 }
 
+Tensor Tensor::copy() const {
+    return Tensor(shape, data);
+}
+
 string iterateAndStringifyThroughTensor( const Tensor& t, int dimIt, vector<int> *coord=nullptr ){
     string result;
 

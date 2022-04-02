@@ -35,6 +35,7 @@ public:
 
     [[nodiscard]] Tensor transpose(const vector<int>& transposition) const;
     [[nodiscard]] Tensor reshape(const vector<int>& newShape) const;
+    [[nodiscard]] Tensor copy() const;
 
     [[nodiscard]] vector<int> getShape() const { return shape; };
     [[nodiscard]] const vector<double> &getData() const { return data; };

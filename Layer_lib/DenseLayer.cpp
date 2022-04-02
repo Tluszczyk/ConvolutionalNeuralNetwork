@@ -5,12 +5,17 @@
 #include "DenseLayer.h"
 #include "Tensor.h"
 
+
 Tensor DenseLayer::feed(Tensor inputTensor) {
-    return (this->weightsTensor ^ inputTensor.transpose({1,0})).reshape({nextLayerSize}) + this->biasTensor;
+    this->activations = ((this->weightsTensor ^ inputTensor.transpose({1,0})).reshape({nextLayerSize}) + this->biasTensor);
+    return this->activations;
 }
 
-Tensor DenseLayer::backpropagate(Tensor gradient) {
-    return Tensor{{},{}};
+BackpropagationResult DenseLayer::backpropagate(Tensor nextActivationChanges) {
+    Tensor weightChanges = this->activations.transpose({1,0}) ^ nextActivationChanges;
+    const Tensor& biasChanges = nextActivationChanges;
+    Tensor activationChanges = (this->weightsTensor ^ nextActivationChanges.transpose({1,0})).reshape({nextLayerSize});
+    return BackpropagationResult(activationChanges, weightChanges, biasChanges);
 }
 
 void DenseLayer::compile(double learningRate, int nextLayerSize) {
