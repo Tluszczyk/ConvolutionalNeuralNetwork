@@ -260,33 +260,6 @@ gtest/fast:
 	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-ActivationFunctionsProvider.o: ActivationFunctionsProvider.cpp.o
-
-.PHONY : ActivationFunctionsProvider.o
-
-# target to build an object file
-ActivationFunctionsProvider.cpp.o:
-	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ActivationFunctionsProvider.cpp.o
-.PHONY : ActivationFunctionsProvider.cpp.o
-
-ActivationFunctionsProvider.i: ActivationFunctionsProvider.cpp.i
-
-.PHONY : ActivationFunctionsProvider.i
-
-# target to preprocess a source file
-ActivationFunctionsProvider.cpp.i:
-	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ActivationFunctionsProvider.cpp.i
-.PHONY : ActivationFunctionsProvider.cpp.i
-
-ActivationFunctionsProvider.s: ActivationFunctionsProvider.cpp.s
-
-.PHONY : ActivationFunctionsProvider.s
-
-# target to generate assembly for a file
-ActivationFunctionsProvider.cpp.s:
-	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ActivationFunctionsProvider.cpp.s
-.PHONY : ActivationFunctionsProvider.cpp.s
-
 LossFunctionsProvider.o: LossFunctionsProvider.cpp.o
 
 .PHONY : LossFunctionsProvider.o
@@ -313,6 +286,33 @@ LossFunctionsProvider.s: LossFunctionsProvider.cpp.s
 LossFunctionsProvider.cpp.s:
 	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.s
 .PHONY : LossFunctionsProvider.cpp.s
+
+ModelLoader.o: ModelLoader.cpp.o
+
+.PHONY : ModelLoader.o
+
+# target to build an object file
+ModelLoader.cpp.o:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o
+.PHONY : ModelLoader.cpp.o
+
+ModelLoader.i: ModelLoader.cpp.i
+
+.PHONY : ModelLoader.i
+
+# target to preprocess a source file
+ModelLoader.cpp.i:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ModelLoader.cpp.i
+.PHONY : ModelLoader.cpp.i
+
+ModelLoader.s: ModelLoader.cpp.s
+
+.PHONY : ModelLoader.s
+
+# target to generate assembly for a file
+ModelLoader.cpp.s:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ModelLoader.cpp.s
+.PHONY : ModelLoader.cpp.s
 
 Sequential.o: Sequential.cpp.o
 
@@ -388,12 +388,12 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... ActivationFunctionsProvider.o"
-	@echo "... ActivationFunctionsProvider.i"
-	@echo "... ActivationFunctionsProvider.s"
 	@echo "... LossFunctionsProvider.o"
 	@echo "... LossFunctionsProvider.i"
 	@echo "... LossFunctionsProvider.s"
+	@echo "... ModelLoader.o"
+	@echo "... ModelLoader.i"
+	@echo "... ModelLoader.s"
 	@echo "... Sequential.o"
 	@echo "... Sequential.i"
 	@echo "... Sequential.s"

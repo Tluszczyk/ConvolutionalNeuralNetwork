@@ -171,6 +171,33 @@ Layer_lib/fast:
 	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/build
 .PHONY : Layer_lib/fast
 
+ActivationFunctionsProvider.o: ActivationFunctionsProvider.cpp.o
+
+.PHONY : ActivationFunctionsProvider.o
+
+# target to build an object file
+ActivationFunctionsProvider.cpp.o:
+	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o
+.PHONY : ActivationFunctionsProvider.cpp.o
+
+ActivationFunctionsProvider.i: ActivationFunctionsProvider.cpp.i
+
+.PHONY : ActivationFunctionsProvider.i
+
+# target to preprocess a source file
+ActivationFunctionsProvider.cpp.i:
+	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.i
+.PHONY : ActivationFunctionsProvider.cpp.i
+
+ActivationFunctionsProvider.s: ActivationFunctionsProvider.cpp.s
+
+.PHONY : ActivationFunctionsProvider.s
+
+# target to generate assembly for a file
+ActivationFunctionsProvider.cpp.s:
+	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.s
+.PHONY : ActivationFunctionsProvider.cpp.s
+
 DenseLayer.o: DenseLayer.cpp.o
 
 .PHONY : DenseLayer.o
@@ -198,6 +225,33 @@ DenseLayer.cpp.s:
 	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.s
 .PHONY : DenseLayer.cpp.s
 
+LayerLoader.o: LayerLoader.cpp.o
+
+.PHONY : LayerLoader.o
+
+# target to build an object file
+LayerLoader.cpp.o:
+	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o
+.PHONY : LayerLoader.cpp.o
+
+LayerLoader.i: LayerLoader.cpp.i
+
+.PHONY : LayerLoader.i
+
+# target to preprocess a source file
+LayerLoader.cpp.i:
+	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.i
+.PHONY : LayerLoader.cpp.i
+
+LayerLoader.s: LayerLoader.cpp.s
+
+.PHONY : LayerLoader.s
+
+# target to generate assembly for a file
+LayerLoader.cpp.s:
+	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.s
+.PHONY : LayerLoader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -211,9 +265,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Layer_lib"
+	@echo "... ActivationFunctionsProvider.o"
+	@echo "... ActivationFunctionsProvider.i"
+	@echo "... ActivationFunctionsProvider.s"
 	@echo "... DenseLayer.o"
 	@echo "... DenseLayer.i"
 	@echo "... DenseLayer.s"
+	@echo "... LayerLoader.o"
+	@echo "... LayerLoader.i"
+	@echo "... LayerLoader.s"
 .PHONY : help
 
 

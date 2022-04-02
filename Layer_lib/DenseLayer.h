@@ -6,20 +6,34 @@
 #define NEURALNET_DENSELAYER_H
 
 #include "Layer.h"
+#include "LayerLoader.h"
+#include "ActivationFunctionsProvider.h"
 
-class DenseLayer : Layer {
+#include <string>
+
+using namespace std;
+
+class DenseLayer : public Layer {
+    friend class LayerLoader;
+
 private:
-    int size, nextLayerSize{};
     double learningRate{};
     Tensor weightsTensor, biasTensor;
 
 public:
-    explicit DenseLayer(int size) : size(size) {};
+    explicit DenseLayer(int size, const string& activationFunctionName="id", const string& layerName="Dense Layer 69")
+        : Layer({size}, activationFunctionName, layerName) {
 
-    void compile(double learningRate, int nextLayerSize);
+        this->activationFunction = ActivationFunctionsProvider::fromName[activationFunctionName];
+        this->activationFunctionPrime = ActivationFunctionsProvider::fromName[activationFunctionName + "Prime"];
+    };
+
+    virtual void compile(double learningRate, vector<int> nextLayerShape) override;
 
     Tensor feed(Tensor inputTensor) override;
     Tensor backpropagate(Tensor gradient);
+
+    [[nodiscard]] LayerType GET_LAYER_TYPE() const override { return LayerType::Dense; };
 };
 
 

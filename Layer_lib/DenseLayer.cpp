@@ -6,17 +6,22 @@
 #include "Tensor.h"
 
 Tensor DenseLayer::feed(Tensor inputTensor) {
-    return (this->weightsTensor ^ inputTensor.transpose({1,0})).reshape({nextLayerSize}) + this->biasTensor;
+    return ((this->weightsTensor ^ inputTensor.transpose({1,0})).reshape(nextLayerShape) + this->biasTensor).map(this->activationFunction);
 }
 
 Tensor DenseLayer::backpropagate(Tensor gradient) {
     return Tensor{{},{}};
 }
 
-void DenseLayer::compile(double learningRate, int nextLayerSize) {
+void DenseLayer::compile(double learningRate, vector<int> nextLayerShape) {
     this->learningRate = learningRate;
-    this->nextLayerSize = nextLayerSize;
+    this->nextLayerShape = nextLayerShape;
 
-    this->weightsTensor = Tensor::createRandom({this->size, nextLayerSize});
-    this->biasTensor = Tensor::createRandom({nextLayerSize});
+    vector<int> weightShape;
+
+    copy(this->shape.begin(), this->shape.end(), back_inserter(weightShape));
+    copy(this->nextLayerShape.begin(), this->nextLayerShape.end(), back_inserter(weightShape));
+
+    this->weightsTensor = Tensor::createRandom(weightShape);
+    this->biasTensor = Tensor::createRandom(nextLayerShape);
 }

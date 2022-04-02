@@ -2,17 +2,26 @@
 
 #include "Tensor.h"
 #include "DenseLayer.h"
+#include "Sequential.h"
+#include "ModelLoader.h"
+
+using namespace std;
 
 int main() {
+    auto *model = new Sequential({
+        new DenseLayer(2, "sig", "Dense input"),
+        new DenseLayer(4, "sig", "Dense hidden 1"),
+        new DenseLayer(4, "sig", "Dense hidden 2"),
+        new DenseLayer(2, "sig", "Dense output"),
+    });
 
-    Tensor input({2}, {.5, .9});
+    model->compile(.7, "MSE");
 
-    DenseLayer denseLayer(2);
-    denseLayer.compile(0.9, 3);
+    Tensor t({2}, {.5, .6});
 
-    Tensor output = denseLayer.feed(input);
+    cout << model->feed(t) << endl;
 
-    std::cout << output;
+    delete model;
 
     return 0;
 }

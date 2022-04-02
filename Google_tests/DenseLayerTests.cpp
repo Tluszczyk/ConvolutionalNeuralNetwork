@@ -10,7 +10,7 @@ TEST(FlowOperationSuite, FeedForward) {
     Tensor input({2}, {.5, .9});
 
     DenseLayer denseLayer(2);
-    denseLayer.compile(0.9, 3);
+    denseLayer.compile(0.9, {3});
 
     Tensor output = denseLayer.feed(input);
 

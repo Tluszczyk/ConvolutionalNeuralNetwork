@@ -64,6 +64,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/ActivationFunctionsProvider.cpp">
+			<Option target="Layer_lib"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/ActivationFunctionsProvider.h">
+			<Option target="Layer_lib"/>
+		</Unit>
 		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.cpp">
 			<Option target="Layer_lib"/>
 		</Unit>
@@ -71,6 +77,15 @@
 			<Option target="Layer_lib"/>
 		</Unit>
 		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/Layer.h">
+			<Option target="Layer_lib"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/LayerLoader.cpp">
+			<Option target="Layer_lib"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/LayerLoader.h">
+			<Option target="Layer_lib"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/LayerType.h">
 			<Option target="Layer_lib"/>
 		</Unit>
 		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/CMakeLists.txt">

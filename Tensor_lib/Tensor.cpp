@@ -28,8 +28,14 @@ Tensor::Tensor(const vector<int>& shape, const vector<double>& data) {
     }
 }
 
+string vecToString(const vector<int>& vec) {
+    string res = "{ ";
+    for(int i=0; i<vec.size(); i++) res += to_string(i) + (i<vec.size()-1 ? ", " : "");
+    return res + " }";
+}
+
 Tensor applySameSizeTensorOperator(const Tensor& a, const Tensor& b, const function<double(double, double)>& op) {
-    if( a.getShape() != b.getShape() ) throw range_error("Tensors' sizes don't match");
+    if( a.getShape() != b.getShape() ) throw range_error("Tensors' shapes " + vecToString(a.getShape()) + ", " + vecToString(b.getShape()) + " don't match");
 
     vector<double> resultData;
     resultData.reserve(a.getData().size());
@@ -219,4 +225,10 @@ Tensor Tensor::createRandom(const vector<int> &shape) {
     generate_n(back_inserter(data), dataSize, [&](){return uniformRealDistribution(defaultRandomEngine);});
 
     return Tensor(shape, data);
+}
+
+Tensor Tensor::map(const function<double(double)> &op) {
+    vector<double> resultData;
+    transform(this->data.begin(), this->data.end(), back_inserter(resultData), op);
+    return Tensor(this->shape, resultData);
 }
