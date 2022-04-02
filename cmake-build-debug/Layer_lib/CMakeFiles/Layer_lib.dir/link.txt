@@ -1,2 +1,2 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libLayer_lib.a  CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libLayer_lib.a  CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libLayer_lib.a

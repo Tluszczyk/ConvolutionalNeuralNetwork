@@ -5,6 +5,8 @@
 #include "gtest/gtest.h"
 #include "Tensor.h"
 
+#include <functional>
+
 TEST(LinearOperationsSuite, AddSub) {
     Tensor a({2,3}, {1,2,3,4,5,6});
     Tensor b({2,3}, {6,5,4,3,2,1});
@@ -87,6 +89,13 @@ TEST(LogicalOperationsSuite, Reshaping) {
 TEST(LogicalOperationsSuite, Random) {
     Tensor a = Tensor::createRandom({3, 3, 3});
 //    std::cout << a << std::endl;
+}
+
+TEST(LogicalOperationsSuite, Map) {
+    Tensor c({3,3}, {1,2,3,4,5,6,7,8,9});
+    function<double(double)> op = [](double d)  -> double { return 2*d; };
+
+    ASSERT_EQ(c.map(op), Tensor({3,3}, {2,4,6,8,10,12,14,16,18}));
 }
 
 TEST(PresentationSuite, Stringifying) {

@@ -11,30 +11,37 @@
 
 #include "Tensor.h"
 #include "Layer.h"
+#include "ModelLoader.h"
 
 using namespace std;
 
 class Sequential {
-private:
-    double learningRate;
+    friend class ModelLoader;
 
-    function<double(double)> activationFunction;
-    function<double(double)> activationFunctionPrime;
+private:
+    const string MODEL_NAME;
+
+    double learningRate{};
 
     function<double(double, double)> lossFunction;
     function<double(double, double)> lossFunctionPrime;
 
     // TODO loss
 
-    std::vector<Layer> layers;
+    std::vector<Layer*> layers;
 
 public:
-    explicit Sequential(vector<Layer> layers) : layers(std::move(layers)) {};
+    explicit Sequential(vector<Layer*> layers, string MODEL_NAME="Simple model") : layers(std::move(layers)), MODEL_NAME(std::move(MODEL_NAME)) {};
 
     Tensor feed(Tensor inputTensor);
     void backpropagate(Tensor gradient);
 
-    void compile(double learningRate, const string& activationFunctionName, const string& lossFunctionName);
+    void compile(double learningRate=.7, const string& lossFunctionName="MSE");
+
+    ~Sequential() {
+        for (auto &layer : layers) delete layer;
+        layers.clear();
+    }
 };
 
 

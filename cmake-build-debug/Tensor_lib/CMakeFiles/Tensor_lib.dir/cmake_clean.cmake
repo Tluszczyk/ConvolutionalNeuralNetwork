@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Tensor_lib.dir/Tensor.cpp.o"
+  "CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.o"
   "libTensor_lib.a"
   "libTensor_lib.pdb"
 )

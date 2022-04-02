@@ -68,6 +68,12 @@
 		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/Tensor.h">
 			<Option target="Tensor_lib"/>
 		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/TensorLoader.cpp">
+			<Option target="Tensor_lib"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/TensorLoader.h">
+			<Option target="Tensor_lib"/>
+		</Unit>
 		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

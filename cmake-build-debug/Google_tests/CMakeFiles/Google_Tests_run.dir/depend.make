@@ -21,10 +21,38 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Google_te
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-port.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-string.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-type-util.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Layer_lib/ActivationFunctionsProvider.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Layer_lib/DenseLayer.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Layer_lib/Layer.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Layer_lib/LayerLoader.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Layer_lib/LayerType.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Tensor_lib/Tensor.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Tensor_lib/TensorLoader.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Google_tests/DenseLayerTests.cpp
+
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/gtest-death-test.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/gtest-matchers.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/gtest-message.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/gtest-param-test.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/gtest-printers.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/gtest-test-part.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/gtest-typed-test.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/gtest.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/gtest_pred_impl.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/gtest_prod.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/custom/gtest-port.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/custom/gtest-printers.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-death-test-internal.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-filepath.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-internal.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-param-util.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-port-arch.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-port.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-string.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-type-util.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Tensor_lib/Tensor.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Tensor_lib/TensorLoader.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o: ../Google_tests/SequentialTests.cpp
 
 Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/gtest-death-test.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/gtest-matchers.h
@@ -47,6 +75,7 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Google_tests/
 Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-string.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-type-util.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Tensor_lib/Tensor.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Tensor_lib/TensorLoader.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Google_tests/TensorTests.cpp
 
 Google_tests/CMakeFiles/Google_Tests_run.dir/main.cpp.o: ../Google_tests/lib/googletest/include/gtest/gtest-death-test.h

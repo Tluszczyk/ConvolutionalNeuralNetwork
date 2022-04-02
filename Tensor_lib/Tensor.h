@@ -5,12 +5,17 @@
 #ifndef NEURALNET_TENSOR_H
 #define NEURALNET_TENSOR_H
 
+#include "TensorLoader.h"
+
 #include <vector>
 #include <ostream>
+#include <functional>
 
 using namespace std;
 
 class Tensor {
+    friend class TensorLoader;
+
 private:
     vector<int> shape;
     vector<double> data;
@@ -32,6 +37,8 @@ public:
 
     static Tensor createRandom(const vector<int>& shape);
     static Tensor ZERO() { return Tensor{{1},{0}}; };
+
+    Tensor map(const function<double(double)> &op);
 
     [[nodiscard]] Tensor transpose(const vector<int>& transposition) const;
     [[nodiscard]] Tensor reshape(const vector<int>& newShape) const;
