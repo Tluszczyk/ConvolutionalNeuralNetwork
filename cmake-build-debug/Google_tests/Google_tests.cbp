@@ -279,6 +279,9 @@
 		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/DenseLayerTests.cpp">
 			<Option target="Google_Tests_run"/>
 		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/SequentialTests.cpp">
+			<Option target="Google_Tests_run"/>
+		</Unit>
 		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/TensorTests.cpp">
 			<Option target="Google_Tests_run"/>
 		</Unit>

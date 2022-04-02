@@ -6,7 +6,12 @@ add_subdirectory(lib)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 # 'Google_Tests_run' is the target name
-add_executable(Google_Tests_run TensorTests.cpp main.cpp DenseLayerTests.cpp)
+add_executable(Google_Tests_run
+        TensorTests.cpp
+        DenseLayerTests.cpp
+        SequentialTests.cpp
+        main.cpp
+        )
 
 target_link_libraries(Google_Tests_run Tensor_lib Layer_lib)
 

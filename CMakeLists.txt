@@ -7,7 +7,7 @@ set(SOURCE_FILES
         main.cpp
         Sequential.cpp
         Sequential.h
-        )
+        LossFunctionsProvider.cpp LossFunctionsProvider.h ActivationFunctionsProvider.cpp ActivationFunctionsProvider.h)
 add_executable(NeuralNet ${SOURCE_FILES})
 
 include_directories(Tensor_lib)

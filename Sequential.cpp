@@ -3,6 +3,8 @@
 //
 
 #include "Sequential.h"
+#include "ActivationFunctionsProvider.h"
+#include "LossFunctionsProvider.h"
 
 Tensor Sequential::feed(Tensor inputTensor) {
     /* feed a single tensor to a model,
@@ -15,4 +17,13 @@ void Sequential::backpropagate(Tensor gradient) {
     /* adjust all the adjustable parameters
      * */
 
+}
+
+void Sequential::compile(double learningRate, const string &activationFunctionName, const string &lossFunctionName) {
+    this->learningRate = learningRate;
+
+    this->activationFunction = ActivationFunctionsProvider::fromName[activationFunctionName];
+    this->activationFunctionPrime = ActivationFunctionsProvider::fromName[activationFunctionName + "Prime"];
+
+    this->lossFunction = LossFunctionsProvider::fromName[lossFunctionName];
 }
