@@ -11,8 +11,7 @@
 
 class DenseLayer : public Layer {
 private:
-    double learningRate{};
-    Tensor weightsTensor, biasTensor, activations;
+    Tensor activations;
     Tensor weightChanges, biasChanges;
     int backPropagationsCarriedOut;
 
@@ -26,6 +25,10 @@ public:
 
     Tensor feed(Tensor inputTensor) override;
     Tensor backpropagate(Tensor gradient);
+
+    double learningRate{};
+    Tensor weightsTensor;
+    Tensor biasTensor;
 };
 
 
