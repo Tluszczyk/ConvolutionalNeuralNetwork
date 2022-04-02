@@ -7,7 +7,7 @@
 
 
 Tensor DenseLayer::feed(Tensor inputTensor) {
-    this->activations = (((this->weightsTensor ^ inputTensor.transpose({1,0})).reshape({nextLayerSize}) + this->biasTensor));
+    this->activations = ((this->weightsTensor ^ inputTensor.transpose({1,0})).reshape(nextLayerShape) + this->biasTensor).map(this->activationFunction);
     return this->activations;
 }
 
@@ -15,16 +15,21 @@ Tensor DenseLayer::backpropagate(Tensor nextActivationChanges) {
     weightChanges = weightChanges + this->activations.transpose({1,0}) ^ nextActivationChanges;
     biasChanges = biasChanges + nextActivationChanges;
     backPropagationsCarriedOut ++;
-    Tensor activationChanges = (this->weightsTensor ^ nextActivationChanges.transpose({1,0})).reshape({nextLayerSize});
+    Tensor activationChanges = (this->weightsTensor ^ nextActivationChanges.transpose({1,0})).reshape(nextLayerShape);
     return activationChanges;
 }
 
-void DenseLayer::compile(double learningRate1, int nextLayerSize) {
+void DenseLayer::compile(double learningRate1, const vector<int>& nextLayerShape) {
     this->learningRate = learningRate1;
-    this->nextLayerSize = nextLayerSize;
+    this->nextLayerShape = nextLayerShape;
 
-    this->weightsTensor = Tensor::createRandom({this->size, nextLayerSize});
-    this->biasTensor = Tensor::createRandom({nextLayerSize});
+    vector<int> weightShape;
+
+    copy(this->shape.begin(), this->shape.end(), back_inserter(weightShape));
+    copy(this->nextLayerShape.begin(), this->nextLayerShape.end(), back_inserter(weightShape));
+
+    this->weightsTensor = Tensor::createRandom(weightShape);
+    this->biasTensor = Tensor::createRandom(nextLayerShape);
 }
 
 LayerType DenseLayer::GET_LAYER_TYPE() const {

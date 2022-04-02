@@ -19,7 +19,7 @@ class Layer {
     friend class LayerLoader;
 
 protected:
-    int size, nextLayerSize{};
+    vector<int> shape, nextLayerShape{};
 
     function<double(double)> activationFunction;
     function<double(double)> activationFunctionPrime;
@@ -27,11 +27,11 @@ protected:
     [[nodiscard]] virtual LayerType GET_LAYER_TYPE() const = 0;
     string layerName;
 
-    explicit Layer(int size, const string& activationFunctionName="id", string layerName="Layer")
-        : size(size), layerName(std::move(layerName)) {};
+    explicit Layer(vector<int> shape, const string& activationFunctionName="id", string layerName="Layer")
+        : shape(std::move(shape)), layerName(std::move(layerName)) {};
 
 public:
-    [[nodiscard]] int getShape() const { return this->size; }
+    [[nodiscard]] vector<int> getShape() const { return this->shape; }
 
     virtual Tensor feed(Tensor inputTensor) = 0;
 
