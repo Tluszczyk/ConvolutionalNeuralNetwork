@@ -44,10 +44,13 @@ public:
     [[nodiscard]] Tensor reshape(const vector<int>& newShape) const;
     [[nodiscard]] Tensor copy() const;
 
+
     [[nodiscard]] vector<int> getShape() const { return shape; };
     [[nodiscard]] const vector<double> &getData() const { return data; };
 
     [[nodiscard]] string to_string() const;
+
+
 };
 
 

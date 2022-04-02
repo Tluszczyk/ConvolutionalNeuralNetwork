@@ -9,10 +9,10 @@ using namespace std;
 
 int main() {
     auto *model = new Sequential({
-        new DenseLayer(2, "sig", "Dense input"),
-        new DenseLayer(4, "sig", "Dense hidden 1"),
-        new DenseLayer(4, "sig", "Dense hidden 2"),
-        new DenseLayer(2, "sig", "Dense output"),
+                                         new DenseLayer(0, <#initializer#>, std::string()),
+        new DenseLayer(0, <#initializer#>, std::string()),
+        new DenseLayer(0, <#initializer#>, std::string()),
+        new DenseLayer(0, <#initializer#>, std::string()),
     });
 
     model->compile(.7, "MSE");

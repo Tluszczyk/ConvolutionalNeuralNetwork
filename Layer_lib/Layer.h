@@ -13,12 +13,13 @@
 
 using namespace std;
 
+
 class Layer {
     friend class ModelLoader;
     friend class LayerLoader;
 
 protected:
-    vector<int> shape, nextLayerShape{};
+    int size, nextLayerSize{};
 
     function<double(double)> activationFunction;
     function<double(double)> activationFunctionPrime;
@@ -26,15 +27,15 @@ protected:
     [[nodiscard]] virtual LayerType GET_LAYER_TYPE() const = 0;
     string layerName;
 
-    explicit Layer(vector<int> shape, const string& activationFunctionName="id", string layerName="Layer")
-        : shape(std::move(shape)), layerName(std::move(layerName)) {};
+    explicit Layer(int size, const string& activationFunctionName="id", string layerName="Layer")
+        : size(size), layerName(std::move(layerName)) {};
 
 public:
-    vector<int> getShape() { return this->shape; }
+    [[nodiscard]] int getShape() const { return this->size; }
 
     virtual Tensor feed(Tensor inputTensor) = 0;
 
-    virtual void compile(double learningRate, vector<int> nextLayerShape) {}
+    virtual void compile(double learningRate, int nextLayerSize) {}
 };
 
 #endif //NEURALNET_LAYER_H

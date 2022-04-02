@@ -6,21 +6,26 @@
 #define NEURALNET_DENSELAYER_H
 
 #include "Layer.h"
-#include "BackpropagationResult.h"
+
+#include <utility>
 
 class DenseLayer : Layer {
 private:
-    int size, nextLayerSize{};
     double learningRate{};
     Tensor weightsTensor, biasTensor, activations;
+    Tensor weightChanges, biasChanges;
+    int backPropagationsCarriedOut;
 
 public:
-    explicit DenseLayer(int size) : size(size) {};
+    explicit DenseLayer(int size, const string &activationFunctionName, string layerName) : Layer(size, activationFunctionName, std::move(layerName)) {
+        backPropagationsCarriedOut = 0;
+    };
 
-    void compile(double learningRate, int nextLayerSize);
+    void compile(double learningRate1, int nextLayerSize);
+    LayerType GET_LAYER_TYPE() const;
 
     Tensor feed(Tensor inputTensor) override;
-    BackpropagationResult backpropagate(Tensor gradient);
+    Tensor backpropagate(Tensor gradient);
 };
 
 

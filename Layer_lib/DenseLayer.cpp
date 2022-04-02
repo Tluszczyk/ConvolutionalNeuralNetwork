@@ -7,21 +7,26 @@
 
 
 Tensor DenseLayer::feed(Tensor inputTensor) {
-    this->activations = ((this->weightsTensor ^ inputTensor.transpose({1,0})).reshape({nextLayerSize}) + this->biasTensor);
+    this->activations = (((this->weightsTensor ^ inputTensor.transpose({1,0})).reshape({nextLayerSize}) + this->biasTensor));
     return this->activations;
 }
 
-BackpropagationResult DenseLayer::backpropagate(Tensor nextActivationChanges) {
-    Tensor weightChanges = this->activations.transpose({1,0}) ^ nextActivationChanges;
-    const Tensor& biasChanges = nextActivationChanges;
+Tensor DenseLayer::backpropagate(Tensor nextActivationChanges) {
+    weightChanges = weightChanges + this->activations.transpose({1,0}) ^ nextActivationChanges;
+    biasChanges = biasChanges + nextActivationChanges;
+    backPropagationsCarriedOut ++;
     Tensor activationChanges = (this->weightsTensor ^ nextActivationChanges.transpose({1,0})).reshape({nextLayerSize});
-    return BackpropagationResult(activationChanges, weightChanges, biasChanges);
+    return activationChanges;
 }
 
-void DenseLayer::compile(double learningRate, int nextLayerSize) {
-    this->learningRate = learningRate;
+void DenseLayer::compile(double learningRate1, int nextLayerSize) {
+    this->learningRate = learningRate1;
     this->nextLayerSize = nextLayerSize;
 
     this->weightsTensor = Tensor::createRandom({this->size, nextLayerSize});
     this->biasTensor = Tensor::createRandom({nextLayerSize});
+}
+
+LayerType DenseLayer::GET_LAYER_TYPE() const {
+    return Dense;
 }

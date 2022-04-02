@@ -4,6 +4,7 @@
 
 #include "gtest/gtest.h"
 #include "Tensor.h"
+#include "ActivationFunctionsProvider.h"
 
 #include <functional>
 
@@ -37,6 +38,15 @@ TEST(LinearOperationsSuite, MatMulVec) {
     Tensor matMulVecCorrect = Tensor({3}, {.35, .52, .79});
 
     ASSERT_EQ((mat^vec).reshape({3}), matMulVecCorrect);
+}
+
+TEST(LogicalOperationsSuite, ApplyFunction) {
+    Tensor a({7}, {-2, -1, 0, 1, 2, 3, 4});
+
+    Tensor b = a.map((ActivationFunctionsProvider::relu));
+    Tensor correct({7}, {0, 0, 0, 1, 2, 3, 4});
+
+    ASSERT_EQ(b, correct);
 }
 
 TEST(LogicalOperationsSuite, Subscript) {
