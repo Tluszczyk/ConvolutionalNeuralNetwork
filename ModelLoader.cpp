@@ -13,7 +13,7 @@
 using namespace std;
 
 void ModelLoader::saveToFile(const Sequential& model, const string& filename) {
-    ofstream modelFile(filename);
+    ofstream modelFile("../" + filename);
 
     modelFile << model.MODEL_NAME << endl;
 

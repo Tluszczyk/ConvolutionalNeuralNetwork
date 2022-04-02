@@ -21,6 +21,8 @@ int main() {
 
     cout << model->feed(t) << endl;
 
+    ModelLoader::saveToFile(*model, "model1.mdl");
+
     delete model;
 
     return 0;
