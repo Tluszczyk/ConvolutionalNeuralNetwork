@@ -16,6 +16,7 @@ CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o: ../ModelLoader.h
 CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o: ../Sequential.h
 
 CMakeFiles/NeuralNet.dir/Sequential.cpp.o: ../Layer_lib/ActivationFunctionsProvider.h
+CMakeFiles/NeuralNet.dir/Sequential.cpp.o: ../Layer_lib/DenseLayer.h
 CMakeFiles/NeuralNet.dir/Sequential.cpp.o: ../Layer_lib/Layer.h
 CMakeFiles/NeuralNet.dir/Sequential.cpp.o: ../Layer_lib/LayerType.h
 CMakeFiles/NeuralNet.dir/Sequential.cpp.o: ../Tensor_lib/Tensor.h
