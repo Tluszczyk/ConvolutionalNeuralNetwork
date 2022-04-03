@@ -3,8 +3,10 @@
 //
 
 #include "Sequential.h"
-#include "ActivationFunctionsProvider.h"
 #include "LossFunctionsProvider.h"
+#include "DenseLayer.h"
+
+using namespace std;
 
 Tensor Sequential::feed(Tensor inputTensor) {
     /* feed a single tensor to a model,
@@ -30,4 +32,13 @@ void Sequential::compile(double learningRate, const string &lossFunctionName) {
 
     for(int i=0; i<layers.size(); i++)
         layers[i]->compile(learningRate, i<layers.size()-1 ? layers[i+1]->getShape() : vector<int>{0});
+}
+
+Tensor Sequential::calculateLoss(const Tensor& expected) {
+
+    Tensor lastLayerActivations = ((DenseLayer*)layers.back())->getActivations();
+
+    if( expected.getShape() != lastLayerActivations.getShape() ) throw range_error("Model's output and expected output's shapes don't match");
+
+
 }

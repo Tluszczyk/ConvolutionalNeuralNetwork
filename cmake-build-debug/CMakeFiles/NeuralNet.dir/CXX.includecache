@@ -32,12 +32,6 @@ string
 utility
 -
 
-../Layer_lib/LayerLoader.h
-fstream
--
-DenseLayer.h
-../Layer_lib/DenseLayer.h
-
 ../Layer_lib/LayerType.h
 string
 -
@@ -55,20 +49,6 @@ functional
 ../Tensor_lib/TensorLoader.h
 Tensor.h
 ../Tensor_lib/Tensor.h
-fstream
--
-
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/ModelLoader.cpp
-ModelLoader.h
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/ModelLoader.h
-LayerLoader.h
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/LayerLoader.h
-LayerType.h
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/LayerType.h
-DenseLayer.h
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/DenseLayer.h
-string
--
 fstream
 -
 

@@ -30,6 +30,8 @@ public:
     Tensor feed(Tensor inputTensor) override;
     Tensor backpropagate(const Tensor& nextActivationChanges);
 
+    [[nodiscard]] const Tensor &getActivations() const { return activations; };
+
     double learningRate{};
     Tensor weightsTensor;
     Tensor biasTensor;

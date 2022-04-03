@@ -18,7 +18,7 @@ double LossFunctionsProvider::MSEPrime(double netOutput, double trueOutput) {
 }
 
 map<string, function<double(double, double)>> LossFunctionsProvider::fromName = {
-        {"MSE", LossFunctionsProvider::MSE},
+        {"MSE",      LossFunctionsProvider::MSE},
 
         {"MSEPrime", LossFunctionsProvider::MSEPrime}
 };
