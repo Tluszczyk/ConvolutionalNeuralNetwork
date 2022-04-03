@@ -59,18 +59,22 @@ Tensor Tensor::operator*(const Tensor& that) const {
     return applySameSizeTensorOperator(*this, that, multiplies<>());
 }
 
-void multiplyMatrices(const Tensor& a, const Tensor& b, int startInd, vector<double> &result) {
+void multiplyMatrices(const Tensor& a, const Tensor& b, int level, vector<double> &result) {
     if( a.getShape().size() != 2 || b.getShape().size() != 2 ) throw domain_error("Matrices must be 2D");
 
     int resultMatrixWidth = b.getShape()[0];
     int resultMatrixHeight = a.getShape()[1];
 
+    int leftStartIndex = level * a.getShape()[0] * a.getShape()[1];
+    int upperStartIndex = level * b.getShape()[0] * b.getShape()[1];
+    int resultStartIndex = level * resultMatrixWidth * resultMatrixHeight;
+
     for(int j=0; j < resultMatrixWidth; j++) {
         for(int p=0; p < a.getShape()[0]; p++) {
             for(int i=0; i < resultMatrixHeight; i++) {
-                double left = a.getData()[startInd + a.getShape()[0] * i + p];
-                double upper = b.getData()[startInd + j + p * b.getShape()[0]];
-                result[startInd + j + i * resultMatrixWidth] += left * upper;
+                double left = a.getData()[leftStartIndex + a.getShape()[0] * i + p];
+                double upper = b.getData()[upperStartIndex + j + p * b.getShape()[0]];
+                result[resultStartIndex + j + i * resultMatrixWidth] += left * upper;
             }
         }
     }
@@ -92,11 +96,8 @@ Tensor Tensor::operator^(const Tensor& that) const {
 
     vector<double> resultData(dataSize, 0);
 
-    int matrixSize = this->shape[1] * that.getShape()[0];
-
-    for(int i=0; i<this->data.size(); i += matrixSize)
+    for(int i=0; i<dataSize/(shape[1] * that.getShape()[0]); i++)
         multiplyMatrices(*this, that, i, resultData);
-
 
     vector<int> resultShape(this->shape);
     resultShape[0] = that.getShape()[0];

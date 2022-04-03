@@ -35,7 +35,7 @@ public:
 
     virtual Tensor feed(Tensor inputTensor) = 0;
 
-    virtual void compile(double learningRate, int nextLayerSize) {}
+    virtual void compile(double learningRate, const vector<int>& nextLayerShape) {}
 };
 
 #endif //NEURALNET_LAYER_H

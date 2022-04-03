@@ -11,7 +11,7 @@ Tensor DenseLayer::feed(Tensor inputTensor) {
     return this->activations;
 }
 
-Tensor DenseLayer::backpropagate(Tensor nextActivationChanges) {
+Tensor DenseLayer::backpropagate(const Tensor& nextActivationChanges) {
     weightChanges = weightChanges + this->activations.transpose({1,0}) ^ nextActivationChanges;
     biasChanges = biasChanges + nextActivationChanges;
     backPropagationsCarriedOut ++;
@@ -19,8 +19,8 @@ Tensor DenseLayer::backpropagate(Tensor nextActivationChanges) {
     return activationChanges;
 }
 
-void DenseLayer::compile(double learningRate1, const vector<int>& nextLayerShape) {
-    this->learningRate = learningRate1;
+void DenseLayer::compile(double learningRate, const vector<int>& nextLayerShape) {
+    this->learningRate = learningRate;
     this->nextLayerShape = nextLayerShape;
 
     vector<int> weightShape;

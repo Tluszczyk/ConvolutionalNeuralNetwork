@@ -21,10 +21,8 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Google_te
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-port.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-string.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-type-util.h
-Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Layer_lib/ActivationFunctionsProvider.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Layer_lib/DenseLayer.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Layer_lib/Layer.h
-Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Layer_lib/LayerLoader.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Layer_lib/LayerType.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Tensor_lib/Tensor.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o: ../Tensor_lib/TensorLoader.h
@@ -74,6 +72,7 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Google_tests/
 Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-port.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-string.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Google_tests/lib/googletest/include/gtest/internal/gtest-type-util.h
+Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Layer_lib/ActivationFunctionsProvider.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Tensor_lib/Tensor.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Tensor_lib/TensorLoader.h
 Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o: ../Google_tests/TensorTests.cpp

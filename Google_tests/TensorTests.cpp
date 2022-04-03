@@ -31,7 +31,7 @@ TEST(LinearOperationsSuite, MatMulTimes) {
     ASSERT_EQ(a^c, aMulCCorrect);
 }
 
-TEST(LinearOperationsSuite, MatMulVec) {
+TEST(LinearOperationsSuite, MatMulVecManual) {
     Tensor vec = Tensor({2}, {.5, .6}).transpose({1,0});
     Tensor mat({2,3}, {.1, .5, .8, .2, .5, .9});
 

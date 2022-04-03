@@ -21,6 +21,8 @@ random
 -
 numeric
 -
+utility
+-
 
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/Tensor.h
 TensorLoader.h
@@ -31,10 +33,6 @@ ostream
 -
 functional
 -
-
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/TensorLoader.cpp
-TensorLoader.h
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/TensorLoader.h
 
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/TensorLoader.h
 Tensor.h

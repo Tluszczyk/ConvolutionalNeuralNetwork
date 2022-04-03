@@ -6,6 +6,7 @@
 #define NEURALNET_DENSELAYER_H
 
 #include "Layer.h"
+#include "ActivationFunctionsProvider.h"
 
 #include <utility>
 
@@ -18,13 +19,16 @@ private:
 public:
     explicit DenseLayer(vector<int> shape, const string &activationFunctionName, string layerName) : Layer(std::move(shape), activationFunctionName, std::move(layerName)) {
         backPropagationsCarriedOut = 0;
+
+        this->activationFunction = ActivationFunctionsProvider::fromName[activationFunctionName];
+        this->activationFunctionPrime = ActivationFunctionsProvider::fromName[activationFunctionName + "Prime"];
     };
 
-    void compile(double learningRate1, const vector<int>& nextLayerShape);
+    void compile(double learningRate, const vector<int>& nextLayerShape);
     [[nodiscard]] LayerType GET_LAYER_TYPE() const override;
 
     Tensor feed(Tensor inputTensor) override;
-    Tensor backpropagate(Tensor gradient);
+    Tensor backpropagate(const Tensor& nextActivationChanges);
 
     double learningRate{};
     Tensor weightsTensor;
