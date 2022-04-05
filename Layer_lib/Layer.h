@@ -7,9 +7,11 @@
 
 #include "Tensor.h"
 #include "LayerType.h"
+#include "ActivationFunctionsProvider.h"
 
 #include <string>
 #include <utility>
+
 
 using namespace std;
 
@@ -28,7 +30,7 @@ protected:
     string layerName;
 
     explicit Layer(vector<int> shape, const string& activationFunctionName="id", string layerName="Layer")
-        : shape(std::move(shape)), layerName(std::move(layerName)) {};
+        : shape(std::move(shape)), layerName(std::move(layerName)), activationFunction(ActivationFunctionsProvider::fromName[activationFunctionName]) {};
 
 public:
     [[nodiscard]] vector<int> getShape() const { return this->shape; }

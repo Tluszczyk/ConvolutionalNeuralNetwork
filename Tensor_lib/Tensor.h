@@ -41,7 +41,7 @@ public:
     Tensor map(const function<double(double)> &op);
 
     [[nodiscard]] Tensor transpose(const vector<int>& transposition) const;
-    [[nodiscard]] Tensor reshape(const vector<int>& newShape) const;
+    [[nodiscard]] Tensor reshape(vector<int> newShape) const;
     [[nodiscard]] Tensor copy() const;
 
 

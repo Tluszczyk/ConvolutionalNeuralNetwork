@@ -24,11 +24,19 @@ public:
     [[nodiscard]] LayerType GET_LAYER_TYPE() const override;
 
     Tensor feed(Tensor inputTensor) override;
-    Tensor backpropagate(Tensor gradient);
+    Tensor backpropagate(const Tensor& gradient);
 
     double learningRate{};
     Tensor weightsTensor;
     Tensor biasTensor;
+
+    void changeWeightsTensor(Tensor newWeights){
+        this->weightsTensor = std::move(newWeights);
+    }
+
+    void changeBiasTensor(Tensor newBiases){
+        this->biasTensor = std::move(newBiases);
+    }
 };
 
 
