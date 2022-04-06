@@ -31,6 +31,10 @@ public:
     Tensor operator*(const Tensor& that) const;
     Tensor operator^(const Tensor& that) const;
 
+    Tensor operator+(double that) const;
+    Tensor operator-(double that) const;
+    Tensor operator*(double that) const;
+
     double &operator[](vector<int> coords) const;
 
     bool operator==(const Tensor& that) const;

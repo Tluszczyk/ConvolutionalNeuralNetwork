@@ -30,14 +30,14 @@ protected:
     string layerName;
 
     explicit Layer(vector<int> shape, const string& activationFunctionName="id", string layerName="Layer")
-        : shape(std::move(shape)), layerName(std::move(layerName)), activationFunction(ActivationFunctionsProvider::fromName[activationFunctionName]) {};
+        : shape(std::move(shape)), layerName(std::move(layerName)), activationFunction(ActivationFunctionsProvider::fromName[activationFunctionName]), activationFunctionPrime(ActivationFunctionsProvider::derivativeFromName[activationFunctionName]) {};
 
 public:
     [[nodiscard]] vector<int> getShape() const { return this->shape; }
 
     virtual Tensor feed(Tensor inputTensor) = 0;
 
-    virtual void compile(double learningRate, int nextLayerSize) {}
+    virtual void compile(double learningRate, const vector<int>& nextLayerSize) {}
 };
 
 #endif //NEURALNET_LAYER_H

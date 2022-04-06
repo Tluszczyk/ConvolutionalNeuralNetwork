@@ -65,6 +65,28 @@ Tensor Tensor::operator*(const Tensor& that) const {
     return applySameSizeTensorOperator(*this, that, multiplies<>());
 }
 
+Tensor applyTensorNumberOperator(const Tensor& a, double k, const function<double(double, double)>& op) {
+    vector<double> resultData;
+    resultData.reserve(a.getData().size());
+
+    for(double i : a.getData())
+        resultData.push_back(op(i, k));
+
+    return Tensor(a.getShape(), resultData);
+}
+
+Tensor Tensor::operator+(double that) const {
+    return applyTensorNumberOperator(*this, that, plus<>());
+}
+
+Tensor Tensor::operator-(double that) const {
+    return applyTensorNumberOperator(*this, that, minus<>());
+}
+
+Tensor Tensor::operator*(double that) const {
+    return applyTensorNumberOperator(*this, that, multiplies<>());
+}
+
 void multiplyMatrices(const Tensor& a, const Tensor& b, int level, vector<double> &result) {
     if( a.getShape().size() != 2 || b.getShape().size() != 2 ) throw domain_error("Matrices must be 2D");
 

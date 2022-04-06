@@ -38,6 +38,8 @@ public:
 
     void compile(double learningRate=.7, const string& lossFunctionName="MSE");
 
+    Tensor calculateLoss(const Tensor& expected);
+
     ~Sequential() {
         for (auto &layer : layers) delete layer;
         layers.clear();

@@ -11,7 +11,7 @@
 
 class DenseLayer : public Layer {
 private:
-    Tensor activations;
+    Tensor activations, futureActivationsBeforeFunction;
     Tensor weightChanges, biasChanges;
     int backPropagationsCarriedOut;
 
@@ -20,8 +20,9 @@ public:
         backPropagationsCarriedOut = 0;
     };
 
-    void compile(double learningRate1, const vector<int>& nextLayerShape);
+    void compile(double learningRate1, const vector<int>& nextLayerShape) override;
     [[nodiscard]] LayerType GET_LAYER_TYPE() const override;
+    [[nodiscard]] const Tensor &getActivations() const { return activations; };
 
     Tensor feed(Tensor inputTensor) override;
     Tensor backpropagate(const Tensor& gradient);
