@@ -83,21 +83,51 @@ CMakeFiles/NeuralNet.dir/Sequential.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNet.dir/Sequential.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Sequential.cpp -o CMakeFiles/NeuralNet.dir/Sequential.cpp.s
 
+CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.o: CMakeFiles/NeuralNet.dir/flags.make
+CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.o: ../LossFunctionsProvider.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.o -c /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/LossFunctionsProvider.cpp
+
+CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/LossFunctionsProvider.cpp > CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.i
+
+CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/LossFunctionsProvider.cpp -o CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.s
+
+CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o: CMakeFiles/NeuralNet.dir/flags.make
+CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o: ../ModelLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o -c /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/ModelLoader.cpp
+
+CMakeFiles/NeuralNet.dir/ModelLoader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeuralNet.dir/ModelLoader.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/ModelLoader.cpp > CMakeFiles/NeuralNet.dir/ModelLoader.cpp.i
+
+CMakeFiles/NeuralNet.dir/ModelLoader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNet.dir/ModelLoader.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/ModelLoader.cpp -o CMakeFiles/NeuralNet.dir/ModelLoader.cpp.s
+
 # Object files for target NeuralNet
 NeuralNet_OBJECTS = \
 "CMakeFiles/NeuralNet.dir/main.cpp.o" \
-"CMakeFiles/NeuralNet.dir/Sequential.cpp.o"
+"CMakeFiles/NeuralNet.dir/Sequential.cpp.o" \
+"CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.o" \
+"CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o"
 
 # External object files for target NeuralNet
 NeuralNet_EXTERNAL_OBJECTS =
 
 NeuralNet: CMakeFiles/NeuralNet.dir/main.cpp.o
 NeuralNet: CMakeFiles/NeuralNet.dir/Sequential.cpp.o
+NeuralNet: CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.o
+NeuralNet: CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o
 NeuralNet: CMakeFiles/NeuralNet.dir/build.make
 NeuralNet: Tensor_lib/libTensor_lib.a
 NeuralNet: Layer_lib/libLayer_lib.a
 NeuralNet: CMakeFiles/NeuralNet.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable NeuralNet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable NeuralNet"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NeuralNet.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

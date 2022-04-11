@@ -260,6 +260,60 @@ gtest/fast:
 	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+LossFunctionsProvider.o: LossFunctionsProvider.cpp.o
+
+.PHONY : LossFunctionsProvider.o
+
+# target to build an object file
+LossFunctionsProvider.cpp.o:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.o
+.PHONY : LossFunctionsProvider.cpp.o
+
+LossFunctionsProvider.i: LossFunctionsProvider.cpp.i
+
+.PHONY : LossFunctionsProvider.i
+
+# target to preprocess a source file
+LossFunctionsProvider.cpp.i:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.i
+.PHONY : LossFunctionsProvider.cpp.i
+
+LossFunctionsProvider.s: LossFunctionsProvider.cpp.s
+
+.PHONY : LossFunctionsProvider.s
+
+# target to generate assembly for a file
+LossFunctionsProvider.cpp.s:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.s
+.PHONY : LossFunctionsProvider.cpp.s
+
+ModelLoader.o: ModelLoader.cpp.o
+
+.PHONY : ModelLoader.o
+
+# target to build an object file
+ModelLoader.cpp.o:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o
+.PHONY : ModelLoader.cpp.o
+
+ModelLoader.i: ModelLoader.cpp.i
+
+.PHONY : ModelLoader.i
+
+# target to preprocess a source file
+ModelLoader.cpp.i:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ModelLoader.cpp.i
+.PHONY : ModelLoader.cpp.i
+
+ModelLoader.s: ModelLoader.cpp.s
+
+.PHONY : ModelLoader.s
+
+# target to generate assembly for a file
+ModelLoader.cpp.s:
+	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ModelLoader.cpp.s
+.PHONY : ModelLoader.cpp.s
+
 Sequential.o: Sequential.cpp.o
 
 .PHONY : Sequential.o
@@ -334,6 +388,12 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... LossFunctionsProvider.o"
+	@echo "... LossFunctionsProvider.i"
+	@echo "... LossFunctionsProvider.s"
+	@echo "... ModelLoader.o"
+	@echo "... ModelLoader.i"
+	@echo "... ModelLoader.s"
 	@echo "... Sequential.o"
 	@echo "... Sequential.i"
 	@echo "... Sequential.s"

@@ -198,6 +198,33 @@ Tensor.cpp.s:
 	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.s
 .PHONY : Tensor.cpp.s
 
+TensorLoader.o: TensorLoader.cpp.o
+
+.PHONY : TensorLoader.o
+
+# target to build an object file
+TensorLoader.cpp.o:
+	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.o
+.PHONY : TensorLoader.cpp.o
+
+TensorLoader.i: TensorLoader.cpp.i
+
+.PHONY : TensorLoader.i
+
+# target to preprocess a source file
+TensorLoader.cpp.i:
+	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.i
+.PHONY : TensorLoader.cpp.i
+
+TensorLoader.s: TensorLoader.cpp.s
+
+.PHONY : TensorLoader.s
+
+# target to generate assembly for a file
+TensorLoader.cpp.s:
+	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.s
+.PHONY : TensorLoader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -214,6 +241,9 @@ help:
 	@echo "... Tensor.o"
 	@echo "... Tensor.i"
 	@echo "... Tensor.s"
+	@echo "... TensorLoader.o"
+	@echo "... TensorLoader.i"
+	@echo "... TensorLoader.s"
 .PHONY : help
 
 

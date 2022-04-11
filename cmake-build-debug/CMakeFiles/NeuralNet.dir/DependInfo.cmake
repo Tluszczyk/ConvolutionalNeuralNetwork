@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/LossFunctionsProvider.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.o"
+  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/ModelLoader.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o"
   "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Sequential.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/NeuralNet.dir/Sequential.cpp.o"
   "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/main.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/NeuralNet.dir/main.cpp.o"
   )

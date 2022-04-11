@@ -4,6 +4,9 @@
 
 #include "gtest/gtest.h"
 #include "Tensor.h"
+#include "ActivationFunctionsProvider.h"
+
+#include <functional>
 
 TEST(LinearOperationsSuite, AddSub) {
     Tensor a({2,3}, {1,2,3,4,5,6});
@@ -37,6 +40,15 @@ TEST(LinearOperationsSuite, MatMulVec) {
     ASSERT_EQ((mat^vec).reshape({3}), matMulVecCorrect);
 }
 
+TEST(LogicalOperationsSuite, ApplyFunction) {
+    Tensor a({7}, {-2, -1, 0, 1, 2, 3, 4});
+
+    Tensor b = a.map((ActivationFunctionsProvider::relu));
+    Tensor correct({7}, {0, 0, 0, 1, 2, 3, 4});
+
+    ASSERT_EQ(b, correct);
+}
+
 TEST(LogicalOperationsSuite, Subscript) {
     Tensor a({3,3,3}, {
         1,2,3,
@@ -63,9 +75,21 @@ TEST(LogicalOperationsSuite, Transposition) {
     Tensor b({2,3}, {1,2,3,4,5,6});
     Tensor c({3,3}, {1,2,3,4,5,6,7,8,9});
 
+    Tensor d = a.copy();
+
     ASSERT_EQ(a.transpose({1, 0}), Tensor({1, 4}, {1,2,3,4}));
+    ASSERT_EQ(a, d);
     ASSERT_EQ(b.transpose({1, 0}), Tensor({3, 2}, {1,3,5,2,4,6}));
     ASSERT_EQ(c.transpose({1, 0}), Tensor({3, 3}, {1,4,7,2,5,8,3,6,9}));
+}
+
+TEST(LogicalOperationsSuite, Copying) {
+    Tensor a({4}, {1,2,3,4});
+    Tensor b = a.copy();
+    Tensor c({4}, {1,2,3,4});
+    ASSERT_EQ(a, b);
+    a[{3}] = 0;
+    ASSERT_EQ(b, c);
 }
 
 TEST(LogicalOperationsSuite, Reshaping) {
@@ -75,6 +99,13 @@ TEST(LogicalOperationsSuite, Reshaping) {
 TEST(LogicalOperationsSuite, Random) {
     Tensor a = Tensor::createRandom({3, 3, 3});
 //    std::cout << a << std::endl;
+}
+
+TEST(LogicalOperationsSuite, Map) {
+    Tensor c({3,3}, {1,2,3,4,5,6,7,8,9});
+    function<double(double)> op = [](double d)  -> double { return 2*d; };
+
+    ASSERT_EQ(c.map(op), Tensor({3,3}, {2,4,6,8,10,12,14,16,18}));
 }
 
 TEST(PresentationSuite, Stringifying) {

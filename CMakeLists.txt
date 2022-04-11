@@ -7,6 +7,10 @@ set(SOURCE_FILES
         main.cpp
         Sequential.cpp
         Sequential.h
+        LossFunctionsProvider.cpp
+        LossFunctionsProvider.h
+        ModelLoader.cpp
+        ModelLoader.h
         )
 add_executable(NeuralNet ${SOURCE_FILES})
 

@@ -4,4 +4,8 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/Layer_lib/LayerType.cpp" />
+    <file url="file://$PROJECT_DIR$/Layer_lib/LayerType.h" />
+  </component>
 </project>

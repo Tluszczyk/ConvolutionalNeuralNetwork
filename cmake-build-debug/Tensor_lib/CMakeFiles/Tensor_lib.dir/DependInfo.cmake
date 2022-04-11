@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/Tensor.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.o"
+  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/TensorLoader.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
