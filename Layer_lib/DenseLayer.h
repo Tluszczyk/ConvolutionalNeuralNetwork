@@ -39,6 +39,8 @@ public:
     void changeBiasTensor(Tensor newBiases){
         this->biasTensor = std::move(newBiases);
     }
+
+    ~DenseLayer() override = default;
 };
 
 

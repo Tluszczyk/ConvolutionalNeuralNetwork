@@ -48,7 +48,8 @@ Tensor Sequential::calculateLoss(const Tensor& expected) {
 
     if( expected.getShape() != lastLayerActivations.getShape() ) throw range_error("Model's output and expected output's shapes don't match");
 
-
+    // TODO
+    return Tensor({}, {});
 }
 
 double getCost(const Tensor& expected, const Tensor& actual){

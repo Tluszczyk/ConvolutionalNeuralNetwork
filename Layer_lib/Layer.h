@@ -38,6 +38,8 @@ public:
     virtual Tensor feed(Tensor inputTensor) = 0;
 
     virtual void compile(double learningRate, const vector<int>& nextLayerSize) {}
+
+    virtual ~Layer() = default;
 };
 
 #endif //NEURALNET_LAYER_H
