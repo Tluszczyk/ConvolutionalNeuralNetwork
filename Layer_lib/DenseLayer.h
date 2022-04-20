@@ -26,6 +26,7 @@ public:
 
     Tensor feed(Tensor inputTensor) override;
     Tensor backpropagate(const Tensor& gradient);
+    virtual void applyChanges();
 
     double learningRate{};
     Tensor weightsTensor;

@@ -39,6 +39,17 @@ void DenseLayer::compile(double learningRate1, const vector<int>& nextLayerShape
     this->biasChanges = Tensor(nextLayerShape);
 }
 
+void DenseLayer::applyChanges() {
+    if (backPropagationsCarriedOut == 0){
+        return;
+    }
+    weightsTensor = weightsTensor - (weightChanges * (learningRate / backPropagationsCarriedOut));
+    biasTensor = biasTensor - (biasChanges * (learningRate / backPropagationsCarriedOut));
+    backPropagationsCarriedOut = 0;
+    weightChanges = Tensor(weightChanges.getShape());
+    biasChanges = Tensor(biasChanges.getShape());
+}
+
 LayerType DenseLayer::GET_LAYER_TYPE() const {
     return Dense;
 }
