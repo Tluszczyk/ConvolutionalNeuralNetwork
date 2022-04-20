@@ -31,5 +31,5 @@ void ModelLoader::saveToFile(const Sequential& model, const string& filename) {
 }
 
 Sequential ModelLoader::loadFromFile(const string& filename) {
-
+    return Sequential({}, "model");
 }

@@ -26,8 +26,6 @@ private:
     function<double(double, double)> lossFunction;
     function<double(double, double)> lossFunctionPrime;
 
-    // TODO loss
-
     std::vector<Layer*> layers;
 
 public:

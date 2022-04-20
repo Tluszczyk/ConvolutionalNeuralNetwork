@@ -11,7 +11,6 @@ Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o
  /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.cpp
  /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.h
  /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/Layer.h
- /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/LayerLoader.h
  /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/LayerType.h
 Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o
  ../Tensor_lib/Tensor.h

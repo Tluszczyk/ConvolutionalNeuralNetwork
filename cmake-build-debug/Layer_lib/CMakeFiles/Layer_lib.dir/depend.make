@@ -10,7 +10,6 @@ Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o: ../Layer_lib/ActivationFunc
 Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o: ../Layer_lib/DenseLayer.cpp
 Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o: ../Layer_lib/DenseLayer.h
 Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o: ../Layer_lib/Layer.h
-Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o: ../Layer_lib/LayerLoader.h
 Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o: ../Layer_lib/LayerType.h
 
 Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o: ../Tensor_lib/Tensor.h

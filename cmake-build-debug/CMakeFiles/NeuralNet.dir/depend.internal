@@ -17,6 +17,7 @@ CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o
  /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Sequential.h
 CMakeFiles/NeuralNet.dir/Sequential.cpp.o
  ../Layer_lib/ActivationFunctionsProvider.h
+ ../Layer_lib/DenseLayer.h
  ../Layer_lib/Layer.h
  ../Layer_lib/LayerType.h
  ../Tensor_lib/Tensor.h
@@ -29,7 +30,6 @@ CMakeFiles/NeuralNet.dir/main.cpp.o
  ../Layer_lib/ActivationFunctionsProvider.h
  ../Layer_lib/DenseLayer.h
  ../Layer_lib/Layer.h
- ../Layer_lib/LayerLoader.h
  ../Layer_lib/LayerType.h
  ../Tensor_lib/Tensor.h
  ../Tensor_lib/TensorLoader.h

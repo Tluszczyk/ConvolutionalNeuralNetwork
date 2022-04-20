@@ -17,11 +17,7 @@ functional
 ../Layer_lib/DenseLayer.h
 Layer.h
 ../Layer_lib/Layer.h
-LayerLoader.h
-../Layer_lib/LayerLoader.h
-ActivationFunctionsProvider.h
-../Layer_lib/ActivationFunctionsProvider.h
-string
+utility
 -
 
 ../Layer_lib/Layer.h
@@ -29,6 +25,8 @@ Tensor.h
 ../Layer_lib/Tensor.h
 LayerType.h
 ../Layer_lib/LayerType.h
+ActivationFunctionsProvider.h
+../Layer_lib/ActivationFunctionsProvider.h
 string
 -
 utility
@@ -60,6 +58,14 @@ Tensor.h
 fstream
 -
 
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/LossFunctionsProvider.h
+map
+-
+string
+-
+functional
+-
+
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/ModelLoader.cpp
 ModelLoader.h
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/ModelLoader.h
@@ -80,6 +86,14 @@ string
 Sequential.h
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Sequential.h
 
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Sequential.cpp
+Sequential.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Sequential.h
+LossFunctionsProvider.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/LossFunctionsProvider.h
+DenseLayer.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/DenseLayer.h
+
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Sequential.h
 utility
 -
@@ -91,6 +105,18 @@ Tensor.h
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor.h
 Layer.h
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer.h
+ModelLoader.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/ModelLoader.h
+
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/main.cpp
+iostream
+-
+Tensor.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor.h
+DenseLayer.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/DenseLayer.h
+Sequential.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Sequential.h
 ModelLoader.h
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/ModelLoader.h
 
