@@ -13,7 +13,7 @@ Tensor Sequential::feed(Tensor inputTensor) {
      * and get the activations of the last layer
      * */
 
-    for(auto layerIt = layers.begin(); layerIt + 1 != layers.end(); layerIt++)
+    for(auto layerIt = layers.begin(); layerIt != layers.end(); layerIt++)
         inputTensor = (*layerIt)->feed(inputTensor);
 
     return inputTensor;

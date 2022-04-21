@@ -9,11 +9,12 @@
 
 using namespace std;
 
-enum LayerType { Dense };
+enum LayerType { Dense, Output };
 
 inline string LayerTypeToString(const LayerType &layerType) {
     switch(layerType) {
         case Dense: return "DENSE_LAYER_TYPE";
+        case Output: return "OUTPUT_LAYER_TYPE";
         default:    return "";
     }
 }

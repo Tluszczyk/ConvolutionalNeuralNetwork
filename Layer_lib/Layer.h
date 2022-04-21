@@ -26,6 +26,8 @@ protected:
     function<double(double)> activationFunction;
     function<double(double)> activationFunctionPrime;
 
+    Tensor activations;
+
     [[nodiscard]] virtual LayerType GET_LAYER_TYPE() const = 0;
     string layerName;
 
@@ -40,6 +42,8 @@ public:
     virtual void compile(double learningRate, const vector<int>& nextLayerSize) {}
 
     virtual ~Layer() = default;
+
+    virtual Tensor backpropagate(const Tensor& gradient) {return gradient;};
 };
 
 #endif //NEURALNET_LAYER_H

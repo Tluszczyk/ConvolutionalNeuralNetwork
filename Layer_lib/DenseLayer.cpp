@@ -7,10 +7,13 @@
 
 #include <iostream>
 
+// TODO zmienic nazwy na te z filmiku
+
 
 Tensor DenseLayer::feed(Tensor inputTensor) {
     this->activations = inputTensor;
-    this->futureActivationsBeforeFunction = (this->weightsTensor ^ inputTensor.transpose({1,0})).reshape(nextLayerShape) + this->biasTensor;
+    this->futureActivationsBeforeFunction = (this->weightsTensor ^ inputTensor.transpose({1,0}))
+            .reshape(nextLayerShape) + this->biasTensor;
     return futureActivationsBeforeFunction.map(this->activationFunction);
 }
 

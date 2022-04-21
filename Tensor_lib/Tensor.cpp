@@ -206,7 +206,8 @@ Tensor Tensor::reshape(vector<int> newShape) const {
     int oldShapeSize = 1;
     for(int oldShapeDim : shape) oldShapeSize *= oldShapeDim;
 
-    if( newShapeSize != oldShapeSize ) throw range_error("invalid shape");
+    if( newShapeSize != oldShapeSize ) throw range_error("Invalid shape, expected shape size " + std::to_string(oldShapeSize)
+    + " got shape size " + std::to_string(newShapeSize));
 
     if (newShape.size() < 2){
         newShape.push_back(1);

@@ -11,7 +11,7 @@
 
 class DenseLayer : public Layer {
 private:
-    Tensor activations, futureActivationsBeforeFunction;
+    Tensor futureActivationsBeforeFunction;
     Tensor weightChanges, biasChanges;
     int backPropagationsCarriedOut;
 
@@ -25,7 +25,7 @@ public:
     [[nodiscard]] const Tensor &getActivations() const { return activations; };
 
     Tensor feed(Tensor inputTensor) override;
-    Tensor backpropagate(const Tensor& gradient);
+    Tensor backpropagate(const Tensor& gradient) override;
     virtual void applyChanges();
 
     double learningRate{};
