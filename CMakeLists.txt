@@ -4,22 +4,16 @@ project(NeuralNet)
 set(CMAKE_CXX_STANDARD 20)
 
 set(SOURCE_FILES
-        main.cpp
-        Sequential.cpp
-        Sequential.h
-        LossFunctionsProvider.cpp
-        LossFunctionsProvider.h
-        ModelLoader.cpp
-        ModelLoader.h
-        )
+        main.cpp)
+
 add_executable(NeuralNet ${SOURCE_FILES})
 
 include_directories(Tensor_lib)
 add_subdirectory(Tensor_lib)
 
-include_directories(Layer_lib)
-add_subdirectory(Layer_lib)
+include_directories(Network_lib)
+add_subdirectory(Network_lib)
 
-target_link_libraries(NeuralNet Tensor_lib Layer_lib)
+target_link_libraries(NeuralNet Tensor_lib Network_lib)
 
 add_subdirectory(Google_tests)

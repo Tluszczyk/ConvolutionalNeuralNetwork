@@ -4,7 +4,7 @@
 
 #include "Sequential.h"
 #include "LossFunctionsProvider.h"
-#include "DenseLayer.h"
+#include "Layers/DenseLayer.h"
 
 using namespace std;
 

@@ -7,6 +7,7 @@
 
 #include "Tensor.h"
 #include "LayerType.h"
+#include "string"
 #include "ActivationFunctionsProvider.h"
 
 #include <string>

@@ -3,9 +3,9 @@
 //
 
 #include "ModelLoader.h"
-#include "LayerLoader.h"
-#include "LayerType.h"
-#include "DenseLayer.h"
+#include "Layers/LayerLoader.h"
+#include "Layers/LayerType.h"
+#include "Layers/DenseLayer.h"
 
 #include <string>
 #include <fstream>

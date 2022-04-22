@@ -4,7 +4,7 @@
 
 #include "gtest/gtest.h"
 #include "Tensor.h"
-#include "DenseLayer.h"
+#include "Layers/DenseLayer.h"
 
 TEST(FlowOperationSuite, FeedForward) {
     Tensor input({2}, {.5, .9});
