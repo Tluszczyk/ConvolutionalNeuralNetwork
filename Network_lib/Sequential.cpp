@@ -52,27 +52,14 @@ Tensor Sequential::calculateLoss(const Tensor& expected) {
     return Tensor({}, {});
 }
 
-double getCost(const Tensor& expected, const Tensor& actual){
-    if (expected.getShape() != actual.getShape()){
-        throw std::range_error("Cost function: Shapes of expected and actual values don't match!");
-    }
-    double cost = 0;
-    for (int i =0; i < expected.getShape()[0]; i++){
-        for (int k =0; k < expected.getShape()[1]; k++){
-            cost += pow(actual[{i, k}] - expected[{i, k}], 2);
-        }
-    }
-    return cost;
-}
-
-Tensor getCostDerivative(const Tensor& expected, const Tensor& actual){
+Tensor getLossDerivative(const Tensor& expected, const Tensor& actual){
     return (actual - expected) * 2;
 }
 
 void Sequential::analyzeBatch(vector<Tensor> batch, vector<Tensor> expectedResults) {
     for (int i = 0; i < batch.size(); i++){
         Tensor result = feed(batch[i]);
-        Tensor costDerivative = getCostDerivative(expectedResults[i], result);
+        Tensor costDerivative = getLossDerivative(expectedResults[i], result);
         backpropagate(costDerivative);
     }
 
