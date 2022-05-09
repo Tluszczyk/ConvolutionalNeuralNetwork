@@ -1,0 +1,98 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Network_lib/ActivationFunctionsProvider.h
+map
+-
+string
+-
+functional
+-
+
+../Network_lib/Layers/DenseLayer.h
+Layer.h
+../Network_lib/Layers/Layer.h
+utility
+-
+
+../Network_lib/Layers/Layer.h
+Tensor.h
+../Network_lib/Layers/Tensor.h
+LayerType.h
+../Network_lib/Layers/LayerType.h
+string
+../Network_lib/Layers/string
+ActivationFunctionsProvider.h
+../Network_lib/Layers/ActivationFunctionsProvider.h
+string
+-
+utility
+-
+
+../Network_lib/Layers/LayerType.h
+string
+-
+
+../Network_lib/Layers/OutputLayer.h
+Layer.h
+../Network_lib/Layers/Layer.h
+
+../Network_lib/ModelLoader.h
+string
+-
+Layers/Layer.h
+-
+Sequential.h
+../Network_lib/Sequential.h
+
+../Network_lib/Sequential.h
+utility
+-
+functional
+-
+vector
+-
+cmath
+-
+Tensor.h
+../Network_lib/Tensor.h
+Layers/Layer.h
+../Network_lib/Layers/Layer.h
+ModelLoader.h
+../Network_lib/ModelLoader.h
+
+../Tensor_lib/Tensor.h
+TensorLoader.h
+../Tensor_lib/TensorLoader.h
+vector
+-
+ostream
+-
+functional
+-
+
+../Tensor_lib/TensorLoader.h
+Tensor.h
+../Tensor_lib/Tensor.h
+fstream
+-
+
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/main.cpp
+iostream
+-
+Tensor.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor.h
+Layers/DenseLayer.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layers/DenseLayer.h
+Sequential.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Sequential.h
+ModelLoader.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/ModelLoader.h
+Layers/OutputLayer.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layers/OutputLayer.h
+

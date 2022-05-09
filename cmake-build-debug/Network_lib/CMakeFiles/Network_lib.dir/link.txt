@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libNetwork_lib.a  CMakeFiles/Network_lib.dir/ActivationFunctionsProvider.cpp.o CMakeFiles/Network_lib.dir/Sequential.cpp.o CMakeFiles/Network_lib.dir/LossFunctionsProvider.cpp.o CMakeFiles/Network_lib.dir/ModelLoader.cpp.o CMakeFiles/Network_lib.dir/Layers/DenseLayer.cpp.o CMakeFiles/Network_lib.dir/Layers/LayerLoader.cpp.o CMakeFiles/Network_lib.dir/Layers/OutputLayer.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libNetwork_lib.a
