@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet
+CMAKE_SOURCE_DIR = "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/progress.marks
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Layer_lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles 0
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/progress.marks"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Layer_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Layer_lib/clean
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Layer_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Layer_lib/preinstall
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Layer_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Layer_lib/preinstall
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Layer_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Layer_lib/CMakeFiles/Layer_lib.dir/rule:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Layer_lib/CMakeFiles/Layer_lib.dir/rule
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Layer_lib/CMakeFiles/Layer_lib.dir/rule
 .PHONY : Layer_lib/CMakeFiles/Layer_lib.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ Layer_lib: Layer_lib/CMakeFiles/Layer_lib.dir/rule
 
 # fast build rule for target.
 Layer_lib/fast:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/build
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/build
 .PHONY : Layer_lib/fast
 
 ActivationFunctionsProvider.o: ActivationFunctionsProvider.cpp.o
@@ -177,7 +177,7 @@ ActivationFunctionsProvider.o: ActivationFunctionsProvider.cpp.o
 
 # target to build an object file
 ActivationFunctionsProvider.cpp.o:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o
 .PHONY : ActivationFunctionsProvider.cpp.o
 
 ActivationFunctionsProvider.i: ActivationFunctionsProvider.cpp.i
@@ -186,7 +186,7 @@ ActivationFunctionsProvider.i: ActivationFunctionsProvider.cpp.i
 
 # target to preprocess a source file
 ActivationFunctionsProvider.cpp.i:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.i
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.i
 .PHONY : ActivationFunctionsProvider.cpp.i
 
 ActivationFunctionsProvider.s: ActivationFunctionsProvider.cpp.s
@@ -195,7 +195,7 @@ ActivationFunctionsProvider.s: ActivationFunctionsProvider.cpp.s
 
 # target to generate assembly for a file
 ActivationFunctionsProvider.cpp.s:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.s
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.s
 .PHONY : ActivationFunctionsProvider.cpp.s
 
 DenseLayer.o: DenseLayer.cpp.o
@@ -204,7 +204,7 @@ DenseLayer.o: DenseLayer.cpp.o
 
 # target to build an object file
 DenseLayer.cpp.o:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o
 .PHONY : DenseLayer.cpp.o
 
 DenseLayer.i: DenseLayer.cpp.i
@@ -213,7 +213,7 @@ DenseLayer.i: DenseLayer.cpp.i
 
 # target to preprocess a source file
 DenseLayer.cpp.i:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.i
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.i
 .PHONY : DenseLayer.cpp.i
 
 DenseLayer.s: DenseLayer.cpp.s
@@ -222,8 +222,35 @@ DenseLayer.s: DenseLayer.cpp.s
 
 # target to generate assembly for a file
 DenseLayer.cpp.s:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.s
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.s
 .PHONY : DenseLayer.cpp.s
+
+InputLayer.o: InputLayer.cpp.o
+
+.PHONY : InputLayer.o
+
+# target to build an object file
+InputLayer.cpp.o:
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.o
+.PHONY : InputLayer.cpp.o
+
+InputLayer.i: InputLayer.cpp.i
+
+.PHONY : InputLayer.i
+
+# target to preprocess a source file
+InputLayer.cpp.i:
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.i
+.PHONY : InputLayer.cpp.i
+
+InputLayer.s: InputLayer.cpp.s
+
+.PHONY : InputLayer.s
+
+# target to generate assembly for a file
+InputLayer.cpp.s:
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.s
+.PHONY : InputLayer.cpp.s
 
 LayerLoader.o: LayerLoader.cpp.o
 
@@ -231,7 +258,7 @@ LayerLoader.o: LayerLoader.cpp.o
 
 # target to build an object file
 LayerLoader.cpp.o:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o
 .PHONY : LayerLoader.cpp.o
 
 LayerLoader.i: LayerLoader.cpp.i
@@ -240,7 +267,7 @@ LayerLoader.i: LayerLoader.cpp.i
 
 # target to preprocess a source file
 LayerLoader.cpp.i:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.i
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.i
 .PHONY : LayerLoader.cpp.i
 
 LayerLoader.s: LayerLoader.cpp.s
@@ -249,8 +276,35 @@ LayerLoader.s: LayerLoader.cpp.s
 
 # target to generate assembly for a file
 LayerLoader.cpp.s:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.s
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.s
 .PHONY : LayerLoader.cpp.s
+
+OutputLayer.o: OutputLayer.cpp.o
+
+.PHONY : OutputLayer.o
+
+# target to build an object file
+OutputLayer.cpp.o:
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o
+.PHONY : OutputLayer.cpp.o
+
+OutputLayer.i: OutputLayer.cpp.i
+
+.PHONY : OutputLayer.i
+
+# target to preprocess a source file
+OutputLayer.cpp.i:
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.i
+.PHONY : OutputLayer.cpp.i
+
+OutputLayer.s: OutputLayer.cpp.s
+
+.PHONY : OutputLayer.s
+
+# target to generate assembly for a file
+OutputLayer.cpp.s:
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.s
+.PHONY : OutputLayer.cpp.s
 
 # Help Target
 help:
@@ -271,9 +325,15 @@ help:
 	@echo "... DenseLayer.o"
 	@echo "... DenseLayer.i"
 	@echo "... DenseLayer.s"
+	@echo "... InputLayer.o"
+	@echo "... InputLayer.i"
+	@echo "... InputLayer.s"
 	@echo "... LayerLoader.o"
 	@echo "... LayerLoader.i"
 	@echo "... LayerLoader.s"
+	@echo "... OutputLayer.o"
+	@echo "... OutputLayer.i"
+	@echo "... OutputLayer.s"
 .PHONY : help
 
 
@@ -285,6 +345,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

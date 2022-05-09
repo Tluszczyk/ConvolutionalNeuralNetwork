@@ -1,50 +1,57 @@
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/install/local.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/NeuralNet.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/install/strip.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/install.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/list_install_components.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/install/local.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/rebuild_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/edit_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/install/strip.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/install.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/list_install_components.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/Tensor_lib.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/install/local.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/install/strip.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/install.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/list_install_components.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/rebuild_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/edit_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/Layer_lib.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/install/local.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/install/strip.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/install.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/list_install_components.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/rebuild_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/edit_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/CMakeFiles/install/local.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/CMakeFiles/install/strip.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/CMakeFiles/install.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/CMakeFiles/list_install_components.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/CMakeFiles/rebuild_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/CMakeFiles/edit_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/install/local.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/install/strip.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/install.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/gmock.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/rebuild_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/edit_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/list_install_components.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/install/local.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/list_install_components.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/rebuild_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/edit_cache.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/install/strip.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/install.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest_main.dir
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/install/local.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/NeuralNet.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/install/strip.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/install.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/list_install_components.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/CMakeFiles/install/local.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/CMakeFiles/install/strip.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/CMakeFiles/install.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/CMakeFiles/list_install_components.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/CMakeFiles/rebuild_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/CMakeFiles/edit_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/CMakeFiles/StringTools_lib.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/install/local.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/rebuild_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/edit_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/install/strip.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/install.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/list_install_components.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/Tensor_lib.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/CMakeFiles/install/local.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/CMakeFiles/rebuild_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/CMakeFiles/edit_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/CMakeFiles/install/strip.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/CMakeFiles/install.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/CMakeFiles/list_install_components.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/CMakeFiles/Network_lib.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/install/local.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/install/strip.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/install.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/list_install_components.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/rebuild_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/edit_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/CMakeFiles/install/local.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/CMakeFiles/install/strip.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/CMakeFiles/install.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/CMakeFiles/list_install_components.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/CMakeFiles/rebuild_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/CMakeFiles/edit_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/install/local.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/install/strip.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/install.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/gmock.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/rebuild_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/edit_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/list_install_components.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/install/local.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/list_install_components.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/rebuild_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/edit_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/install/strip.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/install.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest_main.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest.dir

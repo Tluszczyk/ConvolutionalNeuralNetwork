@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet
+CMAKE_SOURCE_DIR = "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -170,6 +170,19 @@ NeuralNet/fast:
 .PHONY : NeuralNet/fast
 
 #=============================================================================
+# Target rules for targets named StringTools_lib
+
+# Build rule for target.
+StringTools_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 StringTools_lib
+.PHONY : StringTools_lib
+
+# fast build rule for target.
+StringTools_lib/fast:
+	$(MAKE) -f StringTools_lib/CMakeFiles/StringTools_lib.dir/build.make StringTools_lib/CMakeFiles/StringTools_lib.dir/build
+.PHONY : StringTools_lib/fast
+
+#=============================================================================
 # Target rules for targets named Tensor_lib
 
 # Build rule for target.
@@ -183,17 +196,17 @@ Tensor_lib/fast:
 .PHONY : Tensor_lib/fast
 
 #=============================================================================
-# Target rules for targets named Layer_lib
+# Target rules for targets named Network_lib
 
 # Build rule for target.
-Layer_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Layer_lib
-.PHONY : Layer_lib
+Network_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Network_lib
+.PHONY : Network_lib
 
 # fast build rule for target.
-Layer_lib/fast:
-	$(MAKE) -f Layer_lib/CMakeFiles/Layer_lib.dir/build.make Layer_lib/CMakeFiles/Layer_lib.dir/build
-.PHONY : Layer_lib/fast
+Network_lib/fast:
+	$(MAKE) -f Network_lib/CMakeFiles/Network_lib.dir/build.make Network_lib/CMakeFiles/Network_lib.dir/build
+.PHONY : Network_lib/fast
 
 #=============================================================================
 # Target rules for targets named Google_Tests_run
@@ -260,87 +273,6 @@ gtest/fast:
 	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-LossFunctionsProvider.o: LossFunctionsProvider.cpp.o
-
-.PHONY : LossFunctionsProvider.o
-
-# target to build an object file
-LossFunctionsProvider.cpp.o:
-	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.o
-.PHONY : LossFunctionsProvider.cpp.o
-
-LossFunctionsProvider.i: LossFunctionsProvider.cpp.i
-
-.PHONY : LossFunctionsProvider.i
-
-# target to preprocess a source file
-LossFunctionsProvider.cpp.i:
-	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.i
-.PHONY : LossFunctionsProvider.cpp.i
-
-LossFunctionsProvider.s: LossFunctionsProvider.cpp.s
-
-.PHONY : LossFunctionsProvider.s
-
-# target to generate assembly for a file
-LossFunctionsProvider.cpp.s:
-	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.s
-.PHONY : LossFunctionsProvider.cpp.s
-
-ModelLoader.o: ModelLoader.cpp.o
-
-.PHONY : ModelLoader.o
-
-# target to build an object file
-ModelLoader.cpp.o:
-	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o
-.PHONY : ModelLoader.cpp.o
-
-ModelLoader.i: ModelLoader.cpp.i
-
-.PHONY : ModelLoader.i
-
-# target to preprocess a source file
-ModelLoader.cpp.i:
-	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ModelLoader.cpp.i
-.PHONY : ModelLoader.cpp.i
-
-ModelLoader.s: ModelLoader.cpp.s
-
-.PHONY : ModelLoader.s
-
-# target to generate assembly for a file
-ModelLoader.cpp.s:
-	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/ModelLoader.cpp.s
-.PHONY : ModelLoader.cpp.s
-
-Sequential.o: Sequential.cpp.o
-
-.PHONY : Sequential.o
-
-# target to build an object file
-Sequential.cpp.o:
-	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/Sequential.cpp.o
-.PHONY : Sequential.cpp.o
-
-Sequential.i: Sequential.cpp.i
-
-.PHONY : Sequential.i
-
-# target to preprocess a source file
-Sequential.cpp.i:
-	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/Sequential.cpp.i
-.PHONY : Sequential.cpp.i
-
-Sequential.s: Sequential.cpp.s
-
-.PHONY : Sequential.s
-
-# target to generate assembly for a file
-Sequential.cpp.s:
-	$(MAKE) -f CMakeFiles/NeuralNet.dir/build.make CMakeFiles/NeuralNet.dir/Sequential.cpp.s
-.PHONY : Sequential.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -381,22 +313,14 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... StringTools_lib"
 	@echo "... Tensor_lib"
-	@echo "... Layer_lib"
+	@echo "... Network_lib"
 	@echo "... Google_Tests_run"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... LossFunctionsProvider.o"
-	@echo "... LossFunctionsProvider.i"
-	@echo "... LossFunctionsProvider.s"
-	@echo "... ModelLoader.o"
-	@echo "... ModelLoader.i"
-	@echo "... ModelLoader.s"
-	@echo "... Sequential.o"
-	@echo "... Sequential.i"
-	@echo "... Sequential.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

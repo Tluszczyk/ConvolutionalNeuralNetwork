@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib 
+CXX_INCLUDES = -I"/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib" -I"/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib" 
 

@@ -15,7 +15,8 @@ class Tensor;
 
 class TensorLoader {
 public:
-    static void saveDenseLayer(ofstream& modelFile, Tensor* tensor);
+    static void saveTensor(ofstream& modelFile, Tensor* tensor);
+    static Tensor loadTensor(ifstream& modelFile);
 };
 
 

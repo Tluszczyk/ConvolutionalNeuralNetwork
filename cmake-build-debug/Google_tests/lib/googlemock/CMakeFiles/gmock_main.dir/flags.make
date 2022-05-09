@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib -I/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib -isystem /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock/include -isystem /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock -isystem /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/include -isystem /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest 
+CXX_INCLUDES = -I"/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib" -I"/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib" -I"/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib" -isystem "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/include" -isystem "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock" -isystem "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include" -isystem "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest" 
 

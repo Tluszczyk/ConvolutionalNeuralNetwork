@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet
+CMAKE_SOURCE_DIR = "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include Layer_lib/CMakeFiles/Layer_lib.dir/depend.make
@@ -59,48 +59,76 @@ include Layer_lib/CMakeFiles/Layer_lib.dir/flags.make
 
 Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o: Layer_lib/CMakeFiles/Layer_lib.dir/flags.make
 Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o: ../Layer_lib/DenseLayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o -c /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o -c "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/DenseLayer.cpp"
 
 Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Layer_lib.dir/DenseLayer.cpp.i"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.cpp > CMakeFiles/Layer_lib.dir/DenseLayer.cpp.i
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/DenseLayer.cpp" > CMakeFiles/Layer_lib.dir/DenseLayer.cpp.i
 
 Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Layer_lib.dir/DenseLayer.cpp.s"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.cpp -o CMakeFiles/Layer_lib.dir/DenseLayer.cpp.s
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/DenseLayer.cpp" -o CMakeFiles/Layer_lib.dir/DenseLayer.cpp.s
 
 Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o: Layer_lib/CMakeFiles/Layer_lib.dir/flags.make
 Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o: ../Layer_lib/LayerLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o -c /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/LayerLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o -c "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/LayerLoader.cpp"
 
 Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Layer_lib.dir/LayerLoader.cpp.i"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/LayerLoader.cpp > CMakeFiles/Layer_lib.dir/LayerLoader.cpp.i
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/LayerLoader.cpp" > CMakeFiles/Layer_lib.dir/LayerLoader.cpp.i
 
 Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Layer_lib.dir/LayerLoader.cpp.s"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/LayerLoader.cpp -o CMakeFiles/Layer_lib.dir/LayerLoader.cpp.s
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/LayerLoader.cpp" -o CMakeFiles/Layer_lib.dir/LayerLoader.cpp.s
 
 Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o: Layer_lib/CMakeFiles/Layer_lib.dir/flags.make
 Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o: ../Layer_lib/ActivationFunctionsProvider.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o -c /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/ActivationFunctionsProvider.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o -c "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/ActivationFunctionsProvider.cpp"
 
 Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.i"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/ActivationFunctionsProvider.cpp > CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.i
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/ActivationFunctionsProvider.cpp" > CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.i
 
 Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.s"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/ActivationFunctionsProvider.cpp -o CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.s
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/ActivationFunctionsProvider.cpp" -o CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.s
+
+Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.o: Layer_lib/CMakeFiles/Layer_lib.dir/flags.make
+Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.o: ../Layer_lib/InputLayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.o"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Layer_lib.dir/InputLayer.cpp.o -c "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/InputLayer.cpp"
+
+Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Layer_lib.dir/InputLayer.cpp.i"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/InputLayer.cpp" > CMakeFiles/Layer_lib.dir/InputLayer.cpp.i
+
+Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Layer_lib.dir/InputLayer.cpp.s"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/InputLayer.cpp" -o CMakeFiles/Layer_lib.dir/InputLayer.cpp.s
+
+Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o: Layer_lib/CMakeFiles/Layer_lib.dir/flags.make
+Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o: ../Layer_lib/OutputLayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o -c "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/OutputLayer.cpp"
+
+Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Layer_lib.dir/OutputLayer.cpp.i"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/OutputLayer.cpp" > CMakeFiles/Layer_lib.dir/OutputLayer.cpp.i
+
+Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Layer_lib.dir/OutputLayer.cpp.s"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/OutputLayer.cpp" -o CMakeFiles/Layer_lib.dir/OutputLayer.cpp.s
 
 # Object files for target Layer_lib
 Layer_lib_OBJECTS = \
 "CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o" \
 "CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o" \
-"CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o"
+"CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o" \
+"CMakeFiles/Layer_lib.dir/InputLayer.cpp.o" \
+"CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o"
 
 # External object files for target Layer_lib
 Layer_lib_EXTERNAL_OBJECTS =
@@ -108,11 +136,13 @@ Layer_lib_EXTERNAL_OBJECTS =
 Layer_lib/libLayer_lib.a: Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o
 Layer_lib/libLayer_lib.a: Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o
 Layer_lib/libLayer_lib.a: Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o
+Layer_lib/libLayer_lib.a: Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.o
+Layer_lib/libLayer_lib.a: Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o
 Layer_lib/libLayer_lib.a: Layer_lib/CMakeFiles/Layer_lib.dir/build.make
 Layer_lib/libLayer_lib.a: Layer_lib/CMakeFiles/Layer_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libLayer_lib.a"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib && $(CMAKE_COMMAND) -P CMakeFiles/Layer_lib.dir/cmake_clean_target.cmake
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Layer_lib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libLayer_lib.a"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && $(CMAKE_COMMAND) -P CMakeFiles/Layer_lib.dir/cmake_clean_target.cmake
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Layer_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Layer_lib/CMakeFiles/Layer_lib.dir/build: Layer_lib/libLayer_lib.a
@@ -120,10 +150,10 @@ Layer_lib/CMakeFiles/Layer_lib.dir/build: Layer_lib/libLayer_lib.a
 .PHONY : Layer_lib/CMakeFiles/Layer_lib.dir/build
 
 Layer_lib/CMakeFiles/Layer_lib.dir/clean:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib && $(CMAKE_COMMAND) -P CMakeFiles/Layer_lib.dir/cmake_clean.cmake
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" && $(CMAKE_COMMAND) -P CMakeFiles/Layer_lib.dir/cmake_clean.cmake
 .PHONY : Layer_lib/CMakeFiles/Layer_lib.dir/clean
 
 Layer_lib/CMakeFiles/Layer_lib.dir/depend:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/Layer_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/Layer_lib.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Layer_lib/CMakeFiles/Layer_lib.dir/depend
 

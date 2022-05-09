@@ -332,7 +332,7 @@ cxxabi.h
 acxx_demangle.h
 -
 
-../Layer_lib/ActivationFunctionsProvider.h
+../Network_lib/ActivationFunctionsProvider.h
 map
 -
 string
@@ -340,35 +340,57 @@ string
 functional
 -
 
-../Layer_lib/DenseLayer.h
+../Network_lib/Layers/DenseLayer.h
 Layer.h
-../Layer_lib/Layer.h
-LayerLoader.h
-../Layer_lib/LayerLoader.h
-ActivationFunctionsProvider.h
-../Layer_lib/ActivationFunctionsProvider.h
-string
+../Network_lib/Layers/Layer.h
+utility
 -
 
-../Layer_lib/Layer.h
+../Network_lib/Layers/Layer.h
 Tensor.h
-../Layer_lib/Tensor.h
+../Network_lib/Layers/Tensor.h
 LayerType.h
-../Layer_lib/LayerType.h
+../Network_lib/Layers/LayerType.h
+string
+../Network_lib/Layers/string
+ActivationFunctionsProvider.h
+../Network_lib/Layers/ActivationFunctionsProvider.h
 string
 -
 utility
 -
 
-../Layer_lib/LayerLoader.h
-fstream
--
-DenseLayer.h
-../Layer_lib/DenseLayer.h
-
-../Layer_lib/LayerType.h
+../Network_lib/Layers/LayerType.h
 string
 -
+
+../Network_lib/Layers/OutputLayer.h
+Layer.h
+../Network_lib/Layers/Layer.h
+
+../Network_lib/ModelLoader.h
+string
+-
+Layers/Layer.h
+-
+Sequential.h
+../Network_lib/Sequential.h
+
+../Network_lib/Sequential.h
+utility
+-
+functional
+-
+vector
+-
+cmath
+-
+Tensor.h
+../Network_lib/Tensor.h
+Layers/Layer.h
+../Network_lib/Layers/Layer.h
+ModelLoader.h
+../Network_lib/ModelLoader.h
 
 ../Tensor_lib/Tensor.h
 TensorLoader.h
@@ -386,19 +408,17 @@ Tensor.h
 fstream
 -
 
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/DenseLayerTests.cpp
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/SequentialTests.cpp
 gtest/gtest.h
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/gtest/gtest.h
-Tensor.h
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/Tensor.h
-DenseLayer.h
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/DenseLayer.h
-
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/TensorTests.cpp
-gtest/gtest.h
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/gtest/gtest.h
-Tensor.h
-/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/Tensor.h
-functional
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/gtest/gtest.h
+Sequential.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/Sequential.h
+Layers/DenseLayer.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/Layers/DenseLayer.h
+Layers/OutputLayer.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/Layers/OutputLayer.h
+ModelLoader.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/ModelLoader.h
+filesystem
 -
 

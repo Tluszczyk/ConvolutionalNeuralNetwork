@@ -10,8 +10,8 @@ add_executable(Google_Tests_run
         TensorTests.cpp
         DenseLayerTests.cpp
         main.cpp
-        SequentialTest.cpp)
+        SequentialTests.cpp)
 
-target_link_libraries(Google_Tests_run Tensor_lib Network_lib)
+target_link_libraries(Google_Tests_run StringTools_lib Tensor_lib Network_lib)
 
 target_link_libraries(Google_Tests_run gtest gtest_main)

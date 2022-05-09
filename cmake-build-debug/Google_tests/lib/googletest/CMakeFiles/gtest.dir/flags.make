@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib -I/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib -I/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/include -I/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest 
+CXX_INCLUDES = -I"/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib" -I"/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib" -I"/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib" -I"/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include" -I"/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest" 
 

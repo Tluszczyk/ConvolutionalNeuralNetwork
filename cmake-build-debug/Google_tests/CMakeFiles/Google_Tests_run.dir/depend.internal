@@ -22,14 +22,13 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-port.h
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-string.h
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-type-util.h
- ../Layer_lib/ActivationFunctionsProvider.h
- ../Layer_lib/DenseLayer.h
- ../Layer_lib/Layer.h
- ../Layer_lib/LayerLoader.h
- ../Layer_lib/LayerType.h
+ ../Network_lib/ActivationFunctionsProvider.h
+ ../Network_lib/Layers/DenseLayer.h
+ ../Network_lib/Layers/Layer.h
+ ../Network_lib/Layers/LayerType.h
  ../Tensor_lib/Tensor.h
  ../Tensor_lib/TensorLoader.h
- /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/DenseLayerTests.cpp
+ /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/DenseLayerTests.cpp
 Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o
  ../Google_tests/lib/googletest/include/gtest/gtest-death-test.h
  ../Google_tests/lib/googletest/include/gtest/gtest-matchers.h
@@ -51,9 +50,16 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-port.h
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-string.h
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-type-util.h
+ ../Network_lib/ActivationFunctionsProvider.h
+ ../Network_lib/Layers/DenseLayer.h
+ ../Network_lib/Layers/Layer.h
+ ../Network_lib/Layers/LayerType.h
+ ../Network_lib/Layers/OutputLayer.h
+ ../Network_lib/ModelLoader.h
+ ../Network_lib/Sequential.h
  ../Tensor_lib/Tensor.h
  ../Tensor_lib/TensorLoader.h
- /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/SequentialTests.cpp
+ /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/SequentialTests.cpp
 Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o
  ../Google_tests/lib/googletest/include/gtest/gtest-death-test.h
  ../Google_tests/lib/googletest/include/gtest/gtest-matchers.h
@@ -75,9 +81,10 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-port.h
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-string.h
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-type-util.h
+ ../Network_lib/ActivationFunctionsProvider.h
  ../Tensor_lib/Tensor.h
  ../Tensor_lib/TensorLoader.h
- /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/TensorTests.cpp
+ /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/TensorTests.cpp
 Google_tests/CMakeFiles/Google_Tests_run.dir/main.cpp.o
  ../Google_tests/lib/googletest/include/gtest/gtest-death-test.h
  ../Google_tests/lib/googletest/include/gtest/gtest-matchers.h
@@ -99,4 +106,4 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/main.cpp.o
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-port.h
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-string.h
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-type-util.h
- /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/main.cpp
+ /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/main.cpp

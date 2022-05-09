@@ -5,47 +5,48 @@
 		<Option title="NeuralNet"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Google_tests\;CMake Files\Google_tests\lib\;CMake Files\Google_tests\lib\googlemock\;CMake Files\Google_tests\lib\googlemock\cmake\;CMake Files\Google_tests\lib\googletest\;CMake Files\Google_tests\lib\googletest\cmake\;CMake Files\Layer_lib\;CMake Files\Tensor_lib\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Google_tests\;CMake Files\Google_tests\lib\;CMake Files\Google_tests\lib\googlemock\;CMake Files\Google_tests\lib\googlemock\cmake\;CMake Files\Google_tests\lib\googletest\;CMake Files\Google_tests\lib\googletest\cmake\;CMake Files\Network_lib\;CMake Files\StringTools_lib\;CMake Files\Tensor_lib\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NeuralNet">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/NeuralNet" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/NeuralNet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -54,21 +55,22 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 NeuralNet"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 NeuralNet"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NeuralNet/fast">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/NeuralNet" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/NeuralNet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -77,60 +79,105 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 NeuralNet/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 NeuralNet/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="StringTools_lib">
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/libStringTools_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/Makefile&quot;  VERBOSE=1 StringTools_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="StringTools_lib/fast">
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/libStringTools_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/Makefile&quot;  VERBOSE=1 StringTools_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Tensor_lib">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/libTensor_lib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/libTensor_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -139,20 +186,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 Tensor_lib"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 Tensor_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Tensor_lib/fast">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/libTensor_lib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/libTensor_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -161,21 +209,22 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 Tensor_lib/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 Tensor_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Layer_lib">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/libLayer_lib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib"/>
+			<Target title="Network_lib">
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/libNetwork_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -184,21 +233,22 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/Makefile&quot;  VERBOSE=1 Layer_lib"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/Makefile&quot;  VERBOSE=1 Network_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Layer_lib/fast">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/libLayer_lib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib"/>
+			<Target title="Network_lib/fast">
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/libNetwork_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -207,23 +257,24 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/Makefile&quot;  VERBOSE=1 Layer_lib/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/Makefile&quot;  VERBOSE=1 Network_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Google_Tests_run">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/Google_Tests_run" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/Google_Tests_run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -232,23 +283,24 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 Google_Tests_run"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 Google_Tests_run"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Google_Tests_run/fast">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/Google_Tests_run" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/Google_Tests_run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -257,25 +309,26 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 Google_Tests_run/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 Google_Tests_run/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -284,25 +337,26 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock/fast">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -311,25 +365,26 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -338,25 +393,26 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main/fast">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -365,23 +421,24 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -390,23 +447,24 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main/fast">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -415,23 +473,24 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -440,23 +499,24 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest/fast">
-				<Option output="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest"/>
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
-					<Add directory="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
@@ -465,131 +525,146 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/DenseLayerTests.cpp">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/DenseLayerTests.cpp">
 			<Option target="Google_Tests_run"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/SequentialTests.cpp">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/SequentialTests.cpp">
 			<Option target="Google_Tests_run"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/TensorTests.cpp">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/TensorTests.cpp">
 			<Option target="Google_Tests_run"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock/src/gmock-all.cc">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/src/gmock-all.cc">
 			<Option target="gmock"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock/src/gmock_main.cc">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/src/gmock_main.cc">
 			<Option target="gmock_main"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/src/gtest-all.cc">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/src/gtest-all.cc">
 			<Option target="gtest"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/src/gtest_main.cc">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/main.cpp">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/main.cpp">
 			<Option target="Google_Tests_run"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/ActivationFunctionsProvider.cpp">
-			<Option target="Layer_lib"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/ActivationFunctionsProvider.cpp">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/ActivationFunctionsProvider.h">
-			<Option target="Layer_lib"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/ActivationFunctionsProvider.h">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.cpp">
-			<Option target="Layer_lib"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/DenseLayer.cpp">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.h">
-			<Option target="Layer_lib"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/DenseLayer.h">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/Layer.h">
-			<Option target="Layer_lib"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/Layer.h">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/LayerLoader.cpp">
-			<Option target="Layer_lib"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/LayerLoader.cpp">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/LayerLoader.h">
-			<Option target="Layer_lib"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/LayerLoader.h">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/LayerType.h">
-			<Option target="Layer_lib"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/LayerType.h">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/LossFunctionsProvider.cpp">
-			<Option target="NeuralNet"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/OutputLayer.cpp">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/LossFunctionsProvider.h">
-			<Option target="NeuralNet"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/OutputLayer.h">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/ModelLoader.cpp">
-			<Option target="NeuralNet"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/LossFunctionsProvider.cpp">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/ModelLoader.h">
-			<Option target="NeuralNet"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/LossFunctionsProvider.h">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Sequential.cpp">
-			<Option target="NeuralNet"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/ModelLoader.cpp">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Sequential.h">
-			<Option target="NeuralNet"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/ModelLoader.h">
+			<Option target="Network_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/Tensor.cpp">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Sequential.cpp">
+			<Option target="Network_lib"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Sequential.h">
+			<Option target="Network_lib"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib/StringTools.cpp">
+			<Option target="StringTools_lib"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib/StringTools.h">
+			<Option target="StringTools_lib"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/Tensor.cpp">
 			<Option target="Tensor_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/Tensor.h">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/Tensor.h">
 			<Option target="Tensor_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/TensorLoader.cpp">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/TensorLoader.cpp">
 			<Option target="Tensor_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/TensorLoader.h">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/TensorLoader.h">
 			<Option target="Tensor_lib"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/main.cpp">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/main.cpp">
 			<Option target="NeuralNet"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/CMakeLists.txt">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/CMakeLists.txt">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Google_tests\"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/CMakeLists.txt">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Google_tests\lib\"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock/CMakeLists.txt">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Google_tests\lib\googlemock\"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock/cmake/gmock.pc.in">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/cmake/gmock.pc.in">
 			<Option virtualFolder="CMake Files\Google_tests\lib\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock/cmake/gmock_main.pc.in">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/cmake/gmock_main.pc.in">
 			<Option virtualFolder="CMake Files\Google_tests\lib\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/CMakeLists.txt">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Google_tests\lib\googletest\"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/cmake/Config.cmake.in">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/cmake/Config.cmake.in">
 			<Option virtualFolder="CMake Files\Google_tests\lib\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/cmake/gtest.pc.in">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/cmake/gtest.pc.in">
 			<Option virtualFolder="CMake Files\Google_tests\lib\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/cmake/gtest_main.pc.in">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/cmake/gtest_main.pc.in">
 			<Option virtualFolder="CMake Files\Google_tests\lib\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\Google_tests\lib\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Layer_lib\"/>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Network_lib\"/>
 		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/CMakeLists.txt">
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\StringTools_lib\"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Tensor_lib\"/>
 		</Unit>
 	</Project>

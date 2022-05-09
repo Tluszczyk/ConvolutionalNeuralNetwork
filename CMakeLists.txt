@@ -8,12 +8,15 @@ set(SOURCE_FILES
 
 add_executable(NeuralNet ${SOURCE_FILES})
 
+include_directories(StringTools_lib)
+add_subdirectory(StringTools_lib)
+
 include_directories(Tensor_lib)
 add_subdirectory(Tensor_lib)
 
 include_directories(Network_lib)
 add_subdirectory(Network_lib)
 
-target_link_libraries(NeuralNet Tensor_lib Network_lib)
+target_link_libraries(NeuralNet StringTools_lib Tensor_lib Network_lib)
 
 add_subdirectory(Google_tests)

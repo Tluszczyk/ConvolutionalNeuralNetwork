@@ -35,12 +35,22 @@ DenseLayer.h
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.h
 Tensor.h
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/Tensor.h
+iostream
+-
 
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.h
 Layer.h
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/Layer.h
 utility
 -
+
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/InputLayer.cpp
+InputLayer.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/InputLayer.h
+
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/InputLayer.h
+Layer.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/Layer.h
 
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/Layer.h
 Tensor.h
@@ -69,4 +79,12 @@ DenseLayer.h
 /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/LayerType.h
 string
 -
+
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/OutputLayer.cpp
+OutputLayer.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/OutputLayer.h
+
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/OutputLayer.h
+Layer.h
+/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/Layer.h
 

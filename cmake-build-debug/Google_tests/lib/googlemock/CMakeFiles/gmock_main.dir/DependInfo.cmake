@@ -4,14 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests/lib/googlemock/src/gmock_main.cc" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/src/gmock_main.cc" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../StringTools_lib"
   "../Tensor_lib"
-  "../Layer_lib"
+  "../Network_lib"
   "../Google_tests/lib/googlemock/include"
   "../Google_tests/lib/googlemock"
   "../Google_tests/lib/googletest/include"
@@ -20,8 +21,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

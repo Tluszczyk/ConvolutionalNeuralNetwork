@@ -1,4 +1,4 @@
-# Install script for directory: /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Google_tests
+# Install script for directory: /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/cmake_install.cmake")
+  include("/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/cmake_install.cmake")
 endif()
 

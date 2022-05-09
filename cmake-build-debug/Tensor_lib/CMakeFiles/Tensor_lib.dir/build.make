@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet
+CMAKE_SOURCE_DIR = "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include Tensor_lib/CMakeFiles/Tensor_lib.dir/depend.make
@@ -59,29 +59,29 @@ include Tensor_lib/CMakeFiles/Tensor_lib.dir/flags.make
 
 Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.o: Tensor_lib/CMakeFiles/Tensor_lib.dir/flags.make
 Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.o: ../Tensor_lib/Tensor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.o"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tensor_lib.dir/Tensor.cpp.o -c /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/Tensor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.o"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tensor_lib.dir/Tensor.cpp.o -c "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/Tensor.cpp"
 
 Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tensor_lib.dir/Tensor.cpp.i"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/Tensor.cpp > CMakeFiles/Tensor_lib.dir/Tensor.cpp.i
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/Tensor.cpp" > CMakeFiles/Tensor_lib.dir/Tensor.cpp.i
 
 Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tensor_lib.dir/Tensor.cpp.s"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/Tensor.cpp -o CMakeFiles/Tensor_lib.dir/Tensor.cpp.s
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/Tensor.cpp" -o CMakeFiles/Tensor_lib.dir/Tensor.cpp.s
 
 Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.o: Tensor_lib/CMakeFiles/Tensor_lib.dir/flags.make
 Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.o: ../Tensor_lib/TensorLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.o"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.o -c /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/TensorLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.o"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.o -c "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/TensorLoader.cpp"
 
 Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.i"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/TensorLoader.cpp > CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.i
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/TensorLoader.cpp" > CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.i
 
 Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.s"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib/TensorLoader.cpp -o CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.s
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/TensorLoader.cpp" -o CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.s
 
 # Object files for target Tensor_lib
 Tensor_lib_OBJECTS = \
@@ -95,9 +95,9 @@ Tensor_lib/libTensor_lib.a: Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.o
 Tensor_lib/libTensor_lib.a: Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.o
 Tensor_lib/libTensor_lib.a: Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make
 Tensor_lib/libTensor_lib.a: Tensor_lib/CMakeFiles/Tensor_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libTensor_lib.a"
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib && $(CMAKE_COMMAND) -P CMakeFiles/Tensor_lib.dir/cmake_clean_target.cmake
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Tensor_lib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libTensor_lib.a"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib" && $(CMAKE_COMMAND) -P CMakeFiles/Tensor_lib.dir/cmake_clean_target.cmake
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Tensor_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Tensor_lib/CMakeFiles/Tensor_lib.dir/build: Tensor_lib/libTensor_lib.a
@@ -105,10 +105,10 @@ Tensor_lib/CMakeFiles/Tensor_lib.dir/build: Tensor_lib/libTensor_lib.a
 .PHONY : Tensor_lib/CMakeFiles/Tensor_lib.dir/build
 
 Tensor_lib/CMakeFiles/Tensor_lib.dir/clean:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib && $(CMAKE_COMMAND) -P CMakeFiles/Tensor_lib.dir/cmake_clean.cmake
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib" && $(CMAKE_COMMAND) -P CMakeFiles/Tensor_lib.dir/cmake_clean.cmake
 .PHONY : Tensor_lib/CMakeFiles/Tensor_lib.dir/clean
 
 Tensor_lib/CMakeFiles/Tensor_lib.dir/depend:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Tensor_lib /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/Tensor_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/Tensor_lib.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : Tensor_lib/CMakeFiles/Tensor_lib.dir/depend
 

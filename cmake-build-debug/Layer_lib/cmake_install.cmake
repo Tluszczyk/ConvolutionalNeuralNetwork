@@ -1,4 +1,4 @@
-# Install script for directory: /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib
+# Install script for directory: /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

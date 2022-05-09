@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o"
   "CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o"
+  "CMakeFiles/Layer_lib.dir/InputLayer.cpp.o"
   "CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o"
+  "CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o"
   "libLayer_lib.a"
   "libLayer_lib.pdb"
 )

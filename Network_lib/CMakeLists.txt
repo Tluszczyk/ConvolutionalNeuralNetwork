@@ -9,7 +9,8 @@ set(HEADER_FILES
         Layers/DenseLayer.h
         Layers/LayerLoader.h
         Layers/LayerType.h
-        Layers/OutputLayer.h)
+        Layers/OutputLayer.h
+        )
 
 set(SOURCE_FILES
         ActivationFunctionsProvider.cpp
@@ -18,6 +19,7 @@ set(SOURCE_FILES
         ModelLoader.cpp
         Layers/DenseLayer.cpp
         Layers/LayerLoader.cpp
-        Layers/OutputLayer.cpp)
+        Layers/OutputLayer.cpp
+        )
 
 add_library(Network_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})

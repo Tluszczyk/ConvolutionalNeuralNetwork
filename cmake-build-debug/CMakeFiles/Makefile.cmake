@@ -57,7 +57,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../Google_tests/lib/googletest/cmake/gtest.pc.in"
   "../Google_tests/lib/googletest/cmake/gtest_main.pc.in"
   "../Google_tests/lib/googletest/cmake/internal_utils.cmake"
-  "../Layer_lib/CMakeLists.txt"
+  "../Network_lib/CMakeLists.txt"
+  "../StringTools_lib/CMakeLists.txt"
   "../Tensor_lib/CMakeLists.txt"
   "CMakeFiles/3.15.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.15.3/CMakeCXXCompiler.cmake"
@@ -73,8 +74,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "StringTools_lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Tensor_lib/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Layer_lib/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Network_lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Google_tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Google_tests/lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Google_tests/lib/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -84,8 +86,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/NeuralNet.dir/DependInfo.cmake"
+  "StringTools_lib/CMakeFiles/StringTools_lib.dir/DependInfo.cmake"
   "Tensor_lib/CMakeFiles/Tensor_lib.dir/DependInfo.cmake"
-  "Layer_lib/CMakeFiles/Layer_lib.dir/DependInfo.cmake"
+  "Network_lib/CMakeFiles/Network_lib.dir/DependInfo.cmake"
   "Google_tests/CMakeFiles/Google_Tests_run.dir/DependInfo.cmake"
   "Google_tests/lib/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"

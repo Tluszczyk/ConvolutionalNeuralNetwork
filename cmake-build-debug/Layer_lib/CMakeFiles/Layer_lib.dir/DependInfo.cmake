@@ -4,9 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/ActivationFunctionsProvider.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o"
-  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/DenseLayer.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o"
-  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Layer_lib/LayerLoader.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/ActivationFunctionsProvider.cpp" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/Layer_lib.dir/ActivationFunctionsProvider.cpp.o"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/DenseLayer.cpp" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/InputLayer.cpp" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.o"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/LayerLoader.cpp" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layer_lib/OutputLayer.cpp" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

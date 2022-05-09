@@ -6,6 +6,8 @@
 #define NEURALNET_MODELLOADER_H
 
 #include <string>
+#include <Layers/Layer.h>
+
 
 #include "Sequential.h"
 
@@ -16,7 +18,7 @@ class Sequential;
 class ModelLoader {
 public:
     static void saveToFile(const Sequential& model, const string& filename);
-    static Sequential loadFromFile(const string& filename);
+    static Sequential* loadFromFile(const string& filename);
 };
 
 

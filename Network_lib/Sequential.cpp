@@ -65,3 +65,7 @@ void Sequential::analyzeBatch(vector<Tensor> batch, vector<Tensor> expectedResul
 
     applyChanges();
 }
+
+void Sequential::addLayer(Layer *layer) {
+    this->layers.push_back(layer);
+}

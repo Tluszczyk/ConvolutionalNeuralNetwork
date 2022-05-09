@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet
+CMAKE_SOURCE_DIR = "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/progress.marks
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Tensor_lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles 0
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/progress.marks"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Tensor_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Tensor_lib/clean
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Tensor_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Tensor_lib/preinstall
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Tensor_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Tensor_lib/preinstall
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Tensor_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Tensor_lib/CMakeFiles/Tensor_lib.dir/rule:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Tensor_lib/CMakeFiles/Tensor_lib.dir/rule
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 Tensor_lib/CMakeFiles/Tensor_lib.dir/rule
 .PHONY : Tensor_lib/CMakeFiles/Tensor_lib.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ Tensor_lib: Tensor_lib/CMakeFiles/Tensor_lib.dir/rule
 
 # fast build rule for target.
 Tensor_lib/fast:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/build
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/build
 .PHONY : Tensor_lib/fast
 
 Tensor.o: Tensor.cpp.o
@@ -177,7 +177,7 @@ Tensor.o: Tensor.cpp.o
 
 # target to build an object file
 Tensor.cpp.o:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.o
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.o
 .PHONY : Tensor.cpp.o
 
 Tensor.i: Tensor.cpp.i
@@ -186,7 +186,7 @@ Tensor.i: Tensor.cpp.i
 
 # target to preprocess a source file
 Tensor.cpp.i:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.i
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.i
 .PHONY : Tensor.cpp.i
 
 Tensor.s: Tensor.cpp.s
@@ -195,7 +195,7 @@ Tensor.s: Tensor.cpp.s
 
 # target to generate assembly for a file
 Tensor.cpp.s:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.s
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/Tensor.cpp.s
 .PHONY : Tensor.cpp.s
 
 TensorLoader.o: TensorLoader.cpp.o
@@ -204,7 +204,7 @@ TensorLoader.o: TensorLoader.cpp.o
 
 # target to build an object file
 TensorLoader.cpp.o:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.o
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.o
 .PHONY : TensorLoader.cpp.o
 
 TensorLoader.i: TensorLoader.cpp.i
@@ -213,7 +213,7 @@ TensorLoader.i: TensorLoader.cpp.i
 
 # target to preprocess a source file
 TensorLoader.cpp.i:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.i
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.i
 .PHONY : TensorLoader.cpp.i
 
 TensorLoader.s: TensorLoader.cpp.s
@@ -222,7 +222,7 @@ TensorLoader.s: TensorLoader.cpp.s
 
 # target to generate assembly for a file
 TensorLoader.cpp.s:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.s
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Tensor_lib/CMakeFiles/Tensor_lib.dir/build.make Tensor_lib/CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.s
 .PHONY : TensorLoader.cpp.s
 
 # Help Target
@@ -255,6 +255,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

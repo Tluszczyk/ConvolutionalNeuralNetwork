@@ -8,15 +8,18 @@
 #include "Layers/DenseLayer.h"
 #include "Layers/OutputLayer.h"
 
+#include "ModelLoader.h"
+
+#include <filesystem>
 
 
 TEST(LearningSuite, XOR){
     auto *model2 = new Sequential({
-                                          new DenseLayer({2}, "sig", "Dense input"),
-                                          new DenseLayer({4}, "sig", "Idk"),
-                                          new DenseLayer({4}, "sig", "Idk"),
-                                          new OutputLayer({2}, "id", "Dense output"),
-                                  });
+        new DenseLayer({2}, "sig", "Dense input"),
+        new DenseLayer({4}, "sig", "Idk"),
+        new DenseLayer({4}, "sig", "Idk"),
+        new OutputLayer({2}, "id", "Dense output"),
+    });
 
     model2->compile(0.8);
 
@@ -65,14 +68,13 @@ TEST(LearningSuite, XOR){
     delete model2;
 }
 
-
 TEST(LearningSuite, AND_OR){
     auto *model2 = new Sequential({
-                                          new DenseLayer({2}, "sig", "Dense input"),
-                                          new DenseLayer({4}, "sig", "Idk"),
-                                          //new DenseLayer({4}, "sig", "Idk"),
-                                          new OutputLayer({2}, "id", "Dense output"),
-                                  });
+        new DenseLayer({2}, "sig", "Dense input"),
+        new DenseLayer({4}, "sig", "Idk"),
+        //new DenseLayer({4}, "sig", "Idk"),
+        new OutputLayer({2}, "id", "Dense output"),
+    });
 
     model2->compile(0.8);
 
@@ -121,3 +123,32 @@ TEST(LearningSuite, AND_OR){
     delete model2;
 }
 
+TEST(ModelFileSuite, Loading){
+    Sequential* xor_model = ModelLoader::loadFromFile("../../Google_tests/xor_model.mdl");
+
+    Tensor result = xor_model->feed(Tensor({2}, {0,1}));
+    double res1 = result[{0, 0}];
+    double res2 = result[{1, 0}];
+    ASSERT_LE(res1, 0.1);
+    ASSERT_GE(res2, 0.9);
+
+    result = xor_model->feed(Tensor({2}, {1,0}));
+    res1 = result[{0, 0}];
+    res2 = result[{1, 0}];
+    ASSERT_LE(res1, 0.1);
+    ASSERT_GE(res2, 0.9);
+
+    result = xor_model->feed(Tensor({2}, {1,1}));
+    res1 = result[{0, 0}];
+    res2 = result[{1, 0}];
+    ASSERT_GE(res1, 0.9);
+    ASSERT_LE(res2, 0.1);
+
+    Tensor result2 = xor_model->feed(Tensor({2}, {0,0}));
+    res1 = result[{0, 0}];
+    res2 = result[{1, 0}];
+    ASSERT_GE(res1, 0.9);
+    ASSERT_LE(res2, 0.1);
+
+    delete xor_model;
+}

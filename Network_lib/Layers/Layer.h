@@ -24,6 +24,8 @@ class Layer {
 protected:
     vector<int> shape, nextLayerShape{};
 
+    const string activationFunctionName;
+
     function<double(double)> activationFunction;
     function<double(double)> activationFunctionPrime;
 
@@ -32,8 +34,12 @@ protected:
     [[nodiscard]] virtual LayerType GET_LAYER_TYPE() const = 0;
     string layerName;
 
-    explicit Layer(vector<int> shape, const string& activationFunctionName="id", string layerName="Layer")
-        : shape(std::move(shape)), layerName(std::move(layerName)), activationFunction(ActivationFunctionsProvider::fromName[activationFunctionName]), activationFunctionPrime(ActivationFunctionsProvider::derivativeFromName[activationFunctionName]) {};
+    explicit Layer(vector<int> shape, const string& activationFunctionName="id", string layerName="Layer") :
+        shape(std::move(shape)),
+        layerName(std::move(layerName)),
+        activationFunctionName(activationFunctionName),
+        activationFunction(ActivationFunctionsProvider::fromName[activationFunctionName]),
+        activationFunctionPrime(ActivationFunctionsProvider::derivativeFromName[activationFunctionName]) {};
 
 public:
     [[nodiscard]] vector<int> getShape() const { return this->shape; }
@@ -42,9 +48,12 @@ public:
 
     virtual void compile(double learningRate, const vector<int>& nextLayerSize) {}
 
-    virtual ~Layer() = default;
+    const string &getActivationFunctionName() const { return activationFunctionName; };
+    const string &getName() const { return layerName; }
 
     virtual Tensor backpropagate(const Tensor& gradient) {return gradient;};
+
+    virtual ~Layer() = default;
 };
 
 #endif //NEURALNET_LAYER_H

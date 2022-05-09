@@ -4,23 +4,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/LossFunctionsProvider.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/NeuralNet.dir/LossFunctionsProvider.cpp.o"
-  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/ModelLoader.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/NeuralNet.dir/ModelLoader.cpp.o"
-  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/Sequential.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/NeuralNet.dir/Sequential.cpp.o"
-  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/main.cpp" "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/NeuralNet.dir/main.cpp.o"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/main.cpp" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles/NeuralNet.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../StringTools_lib"
   "../Tensor_lib"
-  "../Layer_lib"
+  "../Network_lib"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/Tensor_lib.dir/DependInfo.cmake"
-  "/Users/tluszczyk/dev/AGH/semVI/ZSC/NeuralNet/cmake-build-debug/Layer_lib/CMakeFiles/Layer_lib.dir/DependInfo.cmake"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/CMakeFiles/StringTools_lib.dir/DependInfo.cmake"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/Tensor_lib.dir/DependInfo.cmake"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/CMakeFiles/Network_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

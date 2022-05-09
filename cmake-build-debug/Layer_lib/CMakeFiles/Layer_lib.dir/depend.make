@@ -12,6 +12,14 @@ Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o: ../Layer_lib/DenseLayer.h
 Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o: ../Layer_lib/Layer.h
 Layer_lib/CMakeFiles/Layer_lib.dir/DenseLayer.cpp.o: ../Layer_lib/LayerType.h
 
+Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.o: ../Tensor_lib/Tensor.h
+Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.o: ../Tensor_lib/TensorLoader.h
+Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.o: ../Layer_lib/ActivationFunctionsProvider.h
+Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.o: ../Layer_lib/InputLayer.cpp
+Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.o: ../Layer_lib/InputLayer.h
+Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.o: ../Layer_lib/Layer.h
+Layer_lib/CMakeFiles/Layer_lib.dir/InputLayer.cpp.o: ../Layer_lib/LayerType.h
+
 Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o: ../Tensor_lib/Tensor.h
 Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o: ../Tensor_lib/TensorLoader.h
 Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o: ../Layer_lib/ActivationFunctionsProvider.h
@@ -20,4 +28,12 @@ Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o: ../Layer_lib/Layer.h
 Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o: ../Layer_lib/LayerLoader.cpp
 Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o: ../Layer_lib/LayerLoader.h
 Layer_lib/CMakeFiles/Layer_lib.dir/LayerLoader.cpp.o: ../Layer_lib/LayerType.h
+
+Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o: ../Tensor_lib/Tensor.h
+Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o: ../Tensor_lib/TensorLoader.h
+Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o: ../Layer_lib/ActivationFunctionsProvider.h
+Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o: ../Layer_lib/Layer.h
+Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o: ../Layer_lib/LayerType.h
+Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o: ../Layer_lib/OutputLayer.cpp
+Layer_lib/CMakeFiles/Layer_lib.dir/OutputLayer.cpp.o: ../Layer_lib/OutputLayer.h
 
