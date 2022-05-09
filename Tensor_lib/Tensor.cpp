@@ -138,11 +138,11 @@ bool Tensor::operator==(const Tensor &that) const {
 }
 
 double &Tensor::operator[](vector<int> coords) const {
-    if( coords.size() != shape.size() ) throw range_error("coords don't match tensor's shape, shape size is "
+    if( coords.size() > shape.size() ) throw range_error("coords don't match tensor's shape, shape size is "
     + std::to_string(shape.size()) + " coors size is " + std::to_string(coords.size()));
     int index = 0, currSize = 1;
 
-    for(int i=0; i<shape.size(); i++) {
+    for(int i=0; i<coords.size(); i++) {
         if( coords[i] >= shape[i] ) throw range_error("tensor index out of range");
         index += coords[i] * currSize;
         currSize *= shape[i];

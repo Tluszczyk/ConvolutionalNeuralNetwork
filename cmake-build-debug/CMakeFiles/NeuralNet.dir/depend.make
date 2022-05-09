@@ -10,5 +10,7 @@ CMakeFiles/NeuralNet.dir/main.cpp.o: ../Network_lib/ModelLoader.h
 CMakeFiles/NeuralNet.dir/main.cpp.o: ../Network_lib/Sequential.h
 CMakeFiles/NeuralNet.dir/main.cpp.o: ../Tensor_lib/Tensor.h
 CMakeFiles/NeuralNet.dir/main.cpp.o: ../Tensor_lib/TensorLoader.h
+CMakeFiles/NeuralNet.dir/main.cpp.o: ../DataManager_lib/DataPrep.h
+CMakeFiles/NeuralNet.dir/main.cpp.o: ../DataManager_lib/DataProvider.h
 CMakeFiles/NeuralNet.dir/main.cpp.o: ../main.cpp
 

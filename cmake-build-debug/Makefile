@@ -196,6 +196,19 @@ Tensor_lib/fast:
 .PHONY : Tensor_lib/fast
 
 #=============================================================================
+# Target rules for targets named DataManager_lib
+
+# Build rule for target.
+DataManager_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DataManager_lib
+.PHONY : DataManager_lib
+
+# fast build rule for target.
+DataManager_lib/fast:
+	$(MAKE) -f DataManager_lib/CMakeFiles/DataManager_lib.dir/build.make DataManager_lib/CMakeFiles/DataManager_lib.dir/build
+.PHONY : DataManager_lib/fast
+
+#=============================================================================
 # Target rules for targets named Network_lib
 
 # Build rule for target.
@@ -315,6 +328,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... StringTools_lib"
 	@echo "... Tensor_lib"
+	@echo "... DataManager_lib"
 	@echo "... Network_lib"
 	@echo "... Google_Tests_run"
 	@echo "... gmock"

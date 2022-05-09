@@ -12,6 +12,7 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../StringTools_lib"
   "../Tensor_lib"
+  "../DataManager_lib"
   "../Network_lib"
   )
 
@@ -19,6 +20,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/CMakeFiles/StringTools_lib.dir/DependInfo.cmake"
   "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/Tensor_lib.dir/DependInfo.cmake"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/CMakeFiles/DataManager_lib.dir/DependInfo.cmake"
   "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/CMakeFiles/Network_lib.dir/DependInfo.cmake"
   )
 

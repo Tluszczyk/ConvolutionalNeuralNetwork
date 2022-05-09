@@ -18,6 +18,7 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../StringTools_lib"
   "../Tensor_lib"
+  "../DataManager_lib"
   "../Network_lib"
   )
 

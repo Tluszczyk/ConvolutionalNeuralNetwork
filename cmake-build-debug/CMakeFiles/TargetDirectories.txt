@@ -19,6 +19,13 @@
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/install.dir
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/list_install_components.dir
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/Tensor_lib.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/CMakeFiles/install/local.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/CMakeFiles/install/strip.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/CMakeFiles/install.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/CMakeFiles/list_install_components.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/CMakeFiles/rebuild_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/CMakeFiles/edit_cache.dir
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/CMakeFiles/DataManager_lib.dir
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/CMakeFiles/install/local.dir
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/CMakeFiles/rebuild_cache.dir
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/CMakeFiles/edit_cache.dir

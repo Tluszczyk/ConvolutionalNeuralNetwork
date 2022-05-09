@@ -82,6 +82,14 @@ Tensor.h
 fstream
 -
 
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/DataPrep.h
+
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/DataProvider.h
+vector
+-
+Tensor.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/Tensor.h
+
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/main.cpp
 iostream
 -
@@ -95,4 +103,8 @@ ModelLoader.h
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/ModelLoader.h
 Layers/OutputLayer.h
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Layers/OutputLayer.h
+DataManager_lib/DataPrep.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/DataPrep.h
+DataManager_lib/DataProvider.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/DataProvider.h
 

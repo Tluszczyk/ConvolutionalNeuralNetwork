@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/DataProviderTests.cpp" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.o"
   "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/DenseLayerTests.cpp" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o"
   "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/SequentialTests.cpp" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o"
   "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/TensorTests.cpp" "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o"
@@ -15,6 +16,7 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../StringTools_lib"
   "../Tensor_lib"
+  "../DataManager_lib"
   "../Network_lib"
   "../Google_tests/lib/googletest/include"
   "../Google_tests/lib/googletest"
@@ -24,6 +26,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib/CMakeFiles/StringTools_lib.dir/DependInfo.cmake"
   "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/CMakeFiles/Tensor_lib.dir/DependInfo.cmake"
+  "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/CMakeFiles/DataManager_lib.dir/DependInfo.cmake"
   "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/CMakeFiles/Network_lib.dir/DependInfo.cmake"
   "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"

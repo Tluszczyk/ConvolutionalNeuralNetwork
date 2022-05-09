@@ -6,25 +6,22 @@
 #include "ModelLoader.h"
 #include "Layers/OutputLayer.h"
 
+#include "DataManager_lib/DataPrep.h"
+#include "DataManager_lib/DataProvider.h"
+
 using namespace std;
 
-int main(int argc, char* argv[]) {
+int main() {
+    auto [X, y] = DataProvider::getXorData();
 
-    Sequential* xor_model = ModelLoader::loadFromFile("/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/xor_model.mdl");
+    for(int i=0; i<X.size(); i++) {
+        double a = X[i][{0}];
+        double b = X[i][{1}];
+        double res0 = y[i][{0}];
+        double res1 = y[i][{1}];
 
-    Tensor result = xor_model->feed(Tensor({2}, {0,1}));
-    cout << result << endl;
-
-    result = xor_model->feed(Tensor({2}, {1,0}));
-    cout << result << endl;
-
-    result = xor_model->feed(Tensor({2}, {1,1}));
-    cout << result << endl;
-
-    result = xor_model->feed(Tensor({2}, {0,0}));
-    cout << result << endl;
-
-    delete xor_model;
+        cout << "a=" << a << ", b=" << b << ", a!^b=" << res0 << ", a^b=" << res1 << endl;
+    }
 
     return 0;
 }

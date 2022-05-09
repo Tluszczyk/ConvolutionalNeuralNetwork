@@ -44,6 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/cmake_install.cmake")
 endif()
 

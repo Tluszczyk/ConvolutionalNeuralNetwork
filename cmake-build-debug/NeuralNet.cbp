@@ -5,7 +5,7 @@
 		<Option title="NeuralNet"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Google_tests\;CMake Files\Google_tests\lib\;CMake Files\Google_tests\lib\googlemock\;CMake Files\Google_tests\lib\googlemock\cmake\;CMake Files\Google_tests\lib\googletest\;CMake Files\Google_tests\lib\googletest\cmake\;CMake Files\Network_lib\;CMake Files\StringTools_lib\;CMake Files\Tensor_lib\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\DataManager_lib\;CMake Files\Google_tests\;CMake Files\Google_tests\lib\;CMake Files\Google_tests\lib\googlemock\;CMake Files\Google_tests\lib\googlemock\cmake\;CMake Files\Google_tests\lib\googletest\;CMake Files\Google_tests\lib\googletest\cmake\;CMake Files\Network_lib\;CMake Files\StringTools_lib\;CMake Files\Tensor_lib\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug"/>
@@ -46,6 +46,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
@@ -70,6 +71,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
@@ -215,6 +217,54 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/Tensor_lib/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="DataManager_lib">
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/libDataManager_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/Makefile&quot;  VERBOSE=1 DataManager_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DataManager_lib/fast">
+				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/libDataManager_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/Makefile&quot;  VERBOSE=1 DataManager_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/tluszczyk/dev/AGH/VI\ sem/ZSC/NeuralNet/cmake-build-debug/DataManager_lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="Network_lib">
 				<Option output="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib/libNetwork_lib.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Network_lib"/>
@@ -224,6 +274,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
@@ -248,6 +299,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
@@ -272,6 +324,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
@@ -298,6 +351,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
@@ -324,6 +378,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/include"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock"/>
@@ -352,6 +407,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/include"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock"/>
@@ -380,6 +436,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/include"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock"/>
@@ -408,6 +465,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock/include"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googlemock"/>
@@ -436,6 +494,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
@@ -462,6 +521,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
@@ -488,6 +548,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
@@ -514,6 +575,7 @@
 				<Compiler>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib"/>
+					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest/include"/>
 					<Add directory="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/lib/googletest"/>
@@ -532,6 +594,21 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/DataPrep.cpp">
+			<Option target="DataManager_lib"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/DataPrep.h">
+			<Option target="DataManager_lib"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/DataProvider.cpp">
+			<Option target="DataManager_lib"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/DataProvider.h">
+			<Option target="DataManager_lib"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/DataProviderTests.cpp">
+			<Option target="Google_Tests_run"/>
+		</Unit>
 		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/DenseLayerTests.cpp">
 			<Option target="Google_Tests_run"/>
 		</Unit>
@@ -627,6 +704,9 @@
 		</Unit>
 		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\DataManager_lib\"/>
 		</Unit>
 		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Google_tests\"/>

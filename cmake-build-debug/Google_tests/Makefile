@@ -171,6 +171,33 @@ Google_Tests_run/fast:
 	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/build
 .PHONY : Google_Tests_run/fast
 
+DataProviderTests.o: DataProviderTests.cpp.o
+
+.PHONY : DataProviderTests.o
+
+# target to build an object file
+DataProviderTests.cpp.o:
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.o
+.PHONY : DataProviderTests.cpp.o
+
+DataProviderTests.i: DataProviderTests.cpp.i
+
+.PHONY : DataProviderTests.i
+
+# target to preprocess a source file
+DataProviderTests.cpp.i:
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.i
+.PHONY : DataProviderTests.cpp.i
+
+DataProviderTests.s: DataProviderTests.cpp.s
+
+.PHONY : DataProviderTests.s
+
+# target to generate assembly for a file
+DataProviderTests.cpp.s:
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug" && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.s
+.PHONY : DataProviderTests.cpp.s
+
 DenseLayerTests.o: DenseLayerTests.cpp.o
 
 .PHONY : DenseLayerTests.o
@@ -292,6 +319,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Google_Tests_run"
+	@echo "... DataProviderTests.o"
+	@echo "... DataProviderTests.i"
+	@echo "... DataProviderTests.s"
 	@echo "... DenseLayerTests.o"
 	@echo "... DenseLayerTests.i"
 	@echo "... DenseLayerTests.s"

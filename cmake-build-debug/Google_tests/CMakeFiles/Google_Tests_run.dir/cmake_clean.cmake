@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.o"
   "CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o"
   "CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o"
   "CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o"

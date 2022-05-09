@@ -11,4 +11,6 @@ CMakeFiles/NeuralNet.dir/main.cpp.o
  ../Network_lib/Sequential.h
  ../Tensor_lib/Tensor.h
  ../Tensor_lib/TensorLoader.h
+ /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/DataPrep.h
+ /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/DataProvider.h
  /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/main.cpp

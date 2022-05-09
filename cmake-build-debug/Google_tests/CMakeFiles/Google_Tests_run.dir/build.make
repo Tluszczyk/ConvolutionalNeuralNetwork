@@ -109,12 +109,26 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.s"
 	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/SequentialTests.cpp" -o CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.s
 
+Google_tests/CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.o: Google_tests/CMakeFiles/Google_Tests_run.dir/flags.make
+Google_tests/CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.o: ../Google_tests/DataProviderTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Google_tests/CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.o"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.o -c "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/DataProviderTests.cpp"
+
+Google_tests/CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.i"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/DataProviderTests.cpp" > CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.i
+
+Google_tests/CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.s"
+	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Google_tests/DataProviderTests.cpp" -o CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.s
+
 # Object files for target Google_Tests_run
 Google_Tests_run_OBJECTS = \
 "CMakeFiles/Google_Tests_run.dir/TensorTests.cpp.o" \
 "CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o" \
 "CMakeFiles/Google_Tests_run.dir/main.cpp.o" \
-"CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o"
+"CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o" \
+"CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.o"
 
 # External object files for target Google_Tests_run
 Google_Tests_run_EXTERNAL_OBJECTS =
@@ -123,15 +137,17 @@ Google_tests/Google_Tests_run: Google_tests/CMakeFiles/Google_Tests_run.dir/Tens
 Google_tests/Google_Tests_run: Google_tests/CMakeFiles/Google_Tests_run.dir/DenseLayerTests.cpp.o
 Google_tests/Google_Tests_run: Google_tests/CMakeFiles/Google_Tests_run.dir/main.cpp.o
 Google_tests/Google_Tests_run: Google_tests/CMakeFiles/Google_Tests_run.dir/SequentialTests.cpp.o
+Google_tests/Google_Tests_run: Google_tests/CMakeFiles/Google_Tests_run.dir/DataProviderTests.cpp.o
 Google_tests/Google_Tests_run: Google_tests/CMakeFiles/Google_Tests_run.dir/build.make
 Google_tests/Google_Tests_run: StringTools_lib/libStringTools_lib.a
 Google_tests/Google_Tests_run: Tensor_lib/libTensor_lib.a
+Google_tests/Google_Tests_run: DataManager_lib/libDataManager_lib.a
 Google_tests/Google_Tests_run: Network_lib/libNetwork_lib.a
 Google_tests/Google_Tests_run: lib/libgtestd.a
 Google_tests/Google_Tests_run: lib/libgtest_maind.a
 Google_tests/Google_Tests_run: lib/libgtestd.a
 Google_tests/Google_Tests_run: Google_tests/CMakeFiles/Google_Tests_run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Google_Tests_run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Google_Tests_run"
 	cd "/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Google_Tests_run.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

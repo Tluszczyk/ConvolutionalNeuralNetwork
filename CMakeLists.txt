@@ -14,9 +14,12 @@ add_subdirectory(StringTools_lib)
 include_directories(Tensor_lib)
 add_subdirectory(Tensor_lib)
 
+include_directories(DataManager_lib)
+add_subdirectory(DataManager_lib)
+
 include_directories(Network_lib)
 add_subdirectory(Network_lib)
 
-target_link_libraries(NeuralNet StringTools_lib Tensor_lib Network_lib)
+target_link_libraries(NeuralNet StringTools_lib Tensor_lib DataManager_lib Network_lib)
 
 add_subdirectory(Google_tests)
