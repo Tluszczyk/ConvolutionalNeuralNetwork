@@ -38,6 +38,10 @@ protected:
 public:
     [[nodiscard]] vector<int> getShape() const { return this->shape; }
 
+    [[nodiscard]] Tensor getActivations() { return this->activations; }
+
+    virtual Tensor getWeights() = 0;
+
     virtual Tensor feed(Tensor inputTensor) = 0;
 
     virtual void compile(double learningRate, const vector<int>& nextLayerSize) {}

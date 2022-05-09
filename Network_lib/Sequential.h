@@ -28,10 +28,6 @@ private:
     function<double(double, double)> lossFunctionPrime;
 
 
-
-    void applyChanges();
-    void backpropagate(const Tensor& gradient);
-
 public:
     std::vector<Layer*> layers;
     explicit Sequential(vector<Layer*> layers, string MODEL_NAME="Simple model") : layers(std::move(layers)), MODEL_NAME(std::move(MODEL_NAME)) {};
@@ -39,6 +35,9 @@ public:
     void compile(double learningRate=.7, const string& lossFunctionName="MSE");
 
     Tensor calculateLoss(const Tensor& expected);
+
+    void applyChanges();
+    void backpropagate(const Tensor& gradient);
 
     Tensor feed(Tensor inputTensor);
     void analyzeBatch(vector<Tensor> batch, vector<Tensor> expectedResults);

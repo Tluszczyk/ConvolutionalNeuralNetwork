@@ -40,6 +40,10 @@ public:
         this->biasTensor = std::move(newBiases);
     }
 
+    Tensor getWeights(){
+        return weightsTensor;
+    }
+
     ~DenseLayer() override = default;
 };
 

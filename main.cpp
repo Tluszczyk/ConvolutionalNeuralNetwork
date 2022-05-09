@@ -6,10 +6,24 @@
 #include "ModelLoader.h"
 #include "Layers/OutputLayer.h"
 
+#include <SDL.h>
+#include <SDL_main.h>
+#include "Simulation.h"
+
 using namespace std;
 
-int main() {
 
+void runSimulationStep(){
+
+}
+
+int main(int argv, char** args) {
+
+
+    Simulation sim;
+
+    sim.initi();
+    sim.runi();
 
     return 0;
 }

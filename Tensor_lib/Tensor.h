@@ -11,6 +11,8 @@
 #include <ostream>
 #include <functional>
 
+#include <algorithm>
+
 using namespace std;
 
 class Tensor {

@@ -1,5 +1,10 @@
 project(Layer)
 
+target_include_directories(NeuralNet PUBLIC "SDL2/x86_64-w64-mingw32/include/SDL2")
+target_link_directories(NeuralNet PUBLIC "SDL2/x86_64-w64-mingw32/lib")
+
+
+
 set(HEADER_FILES
         ActivationFunctionsProvider.h
         LossFunctionsProvider.h
