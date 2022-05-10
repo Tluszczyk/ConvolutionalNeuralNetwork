@@ -77,5 +77,7 @@ int main() {
     ModelLoader::saveToFile(*model, "mnist_hrd_model.mdl");
     delete model;
 
+    ModelLoader::loadFromFile("C:/Users/kubkm/CLionProjects/ConvolutionalNeuralNetwork/xor_model.mdl");
+
     return 0;
 }
