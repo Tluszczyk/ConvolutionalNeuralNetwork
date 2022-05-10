@@ -138,7 +138,8 @@ bool Tensor::operator==(const Tensor &that) const {
 }
 
 double &Tensor::operator[](vector<int> coords) const {
-    if( coords.size() != shape.size() ) throw range_error("coords don't match tensor's shape");
+    if( coords.size() != shape.size() ) throw range_error("coords don't match tensor's shape, shape size is "
+    + std::to_string(shape.size()) + " coors size is " + std::to_string(coords.size()));
     int index = 0, currSize = 1;
 
     for(int i=0; i<shape.size(); i++) {
@@ -206,7 +207,8 @@ Tensor Tensor::reshape(vector<int> newShape) const {
     int oldShapeSize = 1;
     for(int oldShapeDim : shape) oldShapeSize *= oldShapeDim;
 
-    if( newShapeSize != oldShapeSize ) throw range_error("invalid shape");
+    if( newShapeSize != oldShapeSize ) throw range_error("Invalid shape, expected shape size " + std::to_string(oldShapeSize)
+    + " got shape size " + std::to_string(newShapeSize));
 
     if (newShape.size() < 2){
         newShape.push_back(1);

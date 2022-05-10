@@ -20,13 +20,6 @@ public:
     static double relu(double x);
     static double softplus(double x);
 
-    static double idDerivative(double x);
-    static double binDerivative(double x);
-    static double sigDerivative(double x);
-    static double tanhDerivative(double x);
-    static double reluDerivative(double x);
-    static double softplusDerivative(double x);
-
     static double idPrime(double x);
     static double binPrime(double x);
     static double sigPrime(double x);

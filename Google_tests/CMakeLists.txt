@@ -9,10 +9,9 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 add_executable(Google_Tests_run
         TensorTests.cpp
         DenseLayerTests.cpp
-        SequentialTests.cpp
         main.cpp
-        )
+        SequentialTest.cpp)
 
-target_link_libraries(Google_Tests_run Tensor_lib Layer_lib)
+target_link_libraries(Google_Tests_run Tensor_lib Network_lib)
 
 target_link_libraries(Google_Tests_run gtest gtest_main)

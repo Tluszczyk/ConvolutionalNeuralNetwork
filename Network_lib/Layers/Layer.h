@@ -7,6 +7,7 @@
 
 #include "Tensor.h"
 #include "LayerType.h"
+#include "string"
 #include "ActivationFunctionsProvider.h"
 
 #include <string>
@@ -26,20 +27,28 @@ protected:
     function<double(double)> activationFunction;
     function<double(double)> activationFunctionPrime;
 
+    Tensor activations;
+
     [[nodiscard]] virtual LayerType GET_LAYER_TYPE() const = 0;
     string layerName;
 
     explicit Layer(vector<int> shape, const string& activationFunctionName="id", string layerName="Layer")
-        : shape(std::move(shape)), layerName(std::move(layerName)), activationFunction(ActivationFunctionsProvider::fromName[activationFunctionName]), activationFunctionPrime(ActivationFunctionsProvider::fromName[activationFunctionName+"Prime"]) {};
+        : shape(std::move(shape)), layerName(std::move(layerName)), activationFunction(ActivationFunctionsProvider::fromName[activationFunctionName]), activationFunctionPrime(ActivationFunctionsProvider::derivativeFromName[activationFunctionName]) {};
 
 public:
     [[nodiscard]] vector<int> getShape() const { return this->shape; }
+
+    [[nodiscard]] Tensor getActivations() { return this->activations; }
+
+    virtual Tensor getWeights() = 0;
 
     virtual Tensor feed(Tensor inputTensor) = 0;
 
     virtual void compile(double learningRate, const vector<int>& nextLayerSize) {}
 
     virtual ~Layer() = default;
+
+    virtual Tensor backpropagate(const Tensor& gradient) {return gradient;};
 };
 
 #endif //NEURALNET_LAYER_H
