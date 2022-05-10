@@ -8,6 +8,7 @@
 #include <utility>
 #include <functional>
 #include <vector>
+#include <cmath>
 
 #include "Tensor.h"
 #include "Layer.h"
@@ -28,15 +29,18 @@ private:
 
     std::vector<Layer*> layers;
 
+    void applyChanges();
+    void backpropagate(const Tensor& gradient);
+
 public:
     explicit Sequential(vector<Layer*> layers, string MODEL_NAME="Simple model") : layers(std::move(layers)), MODEL_NAME(std::move(MODEL_NAME)) {};
-
-    Tensor feed(Tensor inputTensor);
-    void backpropagate(Tensor gradient);
 
     void compile(double learningRate=.7, const string& lossFunctionName="MSE");
 
     Tensor calculateLoss(const Tensor& expected);
+
+    Tensor feed(Tensor inputTensor);
+    void analyzeBatch(vector<Tensor> batch, vector<Tensor> expectedResults);
 
     ~Sequential() {
         for (auto &layer : layers) delete layer;
