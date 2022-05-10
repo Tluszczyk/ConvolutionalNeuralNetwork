@@ -9,7 +9,7 @@
 
 using namespace std;
 
-enum LayerType { Dense, Output };
+enum LayerType { Dense, Output, None };
 
 inline string LayerTypeToString(const LayerType &layerType) {
     switch(layerType) {
@@ -17,6 +17,12 @@ inline string LayerTypeToString(const LayerType &layerType) {
         case Output: return "OUTPUT_LAYER_TYPE";
         default:    return "";
     }
+}
+
+inline LayerType StringToLayerType(const string &layerType) {
+    if( layerType == "DENSE_LAYER_TYPE" ) return Dense;
+    if( layerType == "OUTPUT_LAYER_TYPE" ) return Output;
+    return None;
 }
 
 #endif //NEURALNET_LAYERTYPE_H

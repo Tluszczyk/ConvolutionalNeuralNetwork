@@ -33,6 +33,8 @@ void Simulation::init() {
 
     network->compile(0.8);
 
+    //ModelLoader::loadFromFile("C:/Users/kubkm/CLionProjects/ConvolutionalNeuralNetwork/xor_model.mdl");
+
     vector<Tensor> X1 = {Tensor({2}, {0,1})};
     vector<Tensor> X2 = {Tensor({2}, {1,0})};
     vector<Tensor> X3 = {Tensor({2}, {1,1})};

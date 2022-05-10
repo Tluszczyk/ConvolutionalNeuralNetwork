@@ -32,6 +32,8 @@ public:
     std::vector<Layer*> layers;
     explicit Sequential(vector<Layer*> layers, string MODEL_NAME="Simple model") : layers(std::move(layers)), MODEL_NAME(std::move(MODEL_NAME)) {};
 
+    void addLayer(Layer* layer);
+
     void compile(double learningRate=.7, const string& lossFunctionName="MSE");
 
     Tensor calculateLoss(const Tensor& expected);
@@ -40,7 +42,7 @@ public:
     void backpropagate(const Tensor& gradient);
 
     Tensor feed(Tensor inputTensor);
-    void analyzeBatch(vector<Tensor> batch, vector<Tensor> expectedResults);
+    void analyzeBatch(vector<Tensor>& batch, vector<Tensor>& expectedResults);
 
     ~Sequential() {
         for (auto &layer : layers) delete layer;

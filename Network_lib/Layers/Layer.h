@@ -24,6 +24,8 @@ class Layer {
 protected:
     vector<int> shape, nextLayerShape{};
 
+    const string activationFunctionName;
+
     function<double(double)> activationFunction;
     function<double(double)> activationFunctionPrime;
 
@@ -33,7 +35,9 @@ protected:
     string layerName;
 
     explicit Layer(vector<int> shape, const string& activationFunctionName="id", string layerName="Layer")
-        : shape(std::move(shape)), layerName(std::move(layerName)), activationFunction(ActivationFunctionsProvider::fromName[activationFunctionName]), activationFunctionPrime(ActivationFunctionsProvider::derivativeFromName[activationFunctionName]) {};
+        : shape(std::move(shape)), layerName(std::move(layerName)), activationFunctionName(activationFunctionName),
+        activationFunction(ActivationFunctionsProvider::fromName[activationFunctionName]),
+        activationFunctionPrime(ActivationFunctionsProvider::derivativeFromName[activationFunctionName]) {};
 
 public:
     [[nodiscard]] vector<int> getShape() const { return this->shape; }
@@ -45,6 +49,9 @@ public:
     virtual Tensor feed(Tensor inputTensor) = 0;
 
     virtual void compile(double learningRate, const vector<int>& nextLayerSize) {}
+
+    const string &getActivationFunctionName() const { return activationFunctionName; };
+    const string &getName() const { return layerName; }
 
     virtual ~Layer() = default;
 

@@ -29,7 +29,7 @@ if (WIN32)
     target_include_directories(NeuralNet PUBLIC "SDL2/x86_64-w64-mingw32/include/SDL2")
     target_link_directories(NeuralNet PUBLIC "SDL2/x86_64-w64-mingw32/lib")
 
-    target_link_libraries(NeuralNet mingw32 SDL2main SDL2 DataManager_lib StringTools_lib Tensor_lib Network_lib)
+    target_link_libraries(NeuralNet mingw32 SDL2main SDL2 StringTools_lib Tensor_lib DataManager_lib Network_lib )
 endif (WIN32)
 
 add_subdirectory(Google_tests)
