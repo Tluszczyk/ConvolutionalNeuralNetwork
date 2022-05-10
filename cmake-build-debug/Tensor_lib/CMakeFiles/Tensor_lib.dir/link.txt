@@ -1,2 +1,0 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libTensor_lib.a  CMakeFiles/Tensor_lib.dir/Tensor.cpp.o CMakeFiles/Tensor_lib.dir/TensorLoader.cpp.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libTensor_lib.a
