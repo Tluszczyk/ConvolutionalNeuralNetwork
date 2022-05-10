@@ -313,6 +313,9 @@ ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 // libraries be found
 Python_EXECUTABLE:FILEPATH=/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7
 
+//The directory containing a CMake configuration file for SDL2.
+SDL2_DIR:PATH=/usr/local/lib/cmake/SDL2
+
 //Value Computed by CMake
 StringTools_BINARY_DIR:STATIC=/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/StringTools_lib
 

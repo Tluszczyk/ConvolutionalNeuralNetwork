@@ -32,6 +32,12 @@ utility
 string
 -
 
+../StringTools_lib/StringTools.h
+string
+-
+vector
+-
+
 ../Tensor_lib/Tensor.h
 TensorLoader.h
 ../Tensor_lib/TensorLoader.h
@@ -40,6 +46,8 @@ vector
 ostream
 -
 functional
+-
+algorithm
 -
 
 ../Tensor_lib/TensorLoader.h
@@ -68,6 +76,14 @@ string
 utility
 -
 
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/LayerLoader.cpp
+LayerLoader.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/LayerLoader.h
+TensorLoader.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/TensorLoader.h
+../StringTools_lib/StringTools.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/StringTools_lib/StringTools.h
+
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/LayerLoader.h
 fstream
 -
@@ -80,17 +96,13 @@ OutputLayer.h
 string
 -
 
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/OutputLayer.cpp
+OutputLayer.h
+/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/OutputLayer.h
+
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/OutputLayer.h
 Layer.h
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/Layer.h
-
-/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/LossFunctionsProvider.h
-map
--
-string
--
-functional
--
 
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/ModelLoader.cpp
 ModelLoader.h
@@ -113,14 +125,6 @@ Layers/Layer.h
 -
 Sequential.h
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Sequential.h
-
-/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Sequential.cpp
-Sequential.h
-/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Sequential.h
-LossFunctionsProvider.h
-/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/LossFunctionsProvider.h
-Layers/DenseLayer.h
-/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Layers/DenseLayer.h
 
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/Sequential.h
 utility
