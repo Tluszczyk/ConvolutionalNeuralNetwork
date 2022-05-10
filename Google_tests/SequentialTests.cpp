@@ -127,8 +127,9 @@ TEST(ModelFileSuite, Loading){
     Sequential* xor_model = ModelLoader::loadFromFile("../../Google_tests/xor_model.mdl");
 
     Tensor result = xor_model->feed(Tensor({2}, {0,1}));
-    double res1 = result[{0, 0}];
-    double res2 = result[{1, 0}];
+    double res1 = result[{0}];
+    double res2 = result[{1}];
+    std::cout << result << endl;
     ASSERT_LE(res1, 0.1);
     ASSERT_GE(res2, 0.9);
 

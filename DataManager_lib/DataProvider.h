@@ -9,9 +9,13 @@
 
 #include "Tensor.h"
 
+typedef std::pair<std::vector<Tensor>, std::vector<Tensor>> dataset;
+typedef std::pair<std::vector<Tensor>, std::vector<std::string>> labeled_dataset;
+
 class DataProvider {
 public:
-    static std::pair<std::vector<Tensor>, std::vector<Tensor>> getXorData();
+    static dataset getXorData();
+    static dataset getMnistHRDData(const string& mnistPath);
 };
 
 

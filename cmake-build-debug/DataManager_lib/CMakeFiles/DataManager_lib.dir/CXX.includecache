@@ -27,6 +27,8 @@ DataProvider.h
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/DataProvider.h
 random
 -
+fstream
+-
 
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/DataManager_lib/DataProvider.h
 vector

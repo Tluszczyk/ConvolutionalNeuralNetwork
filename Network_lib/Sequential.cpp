@@ -56,7 +56,7 @@ Tensor getLossDerivative(const Tensor& expected, const Tensor& actual){
     return (actual - expected) * 2;
 }
 
-void Sequential::analyzeBatch(vector<Tensor> batch, vector<Tensor> expectedResults) {
+void Sequential::analyzeBatch(vector<Tensor>& batch, vector<Tensor>& expectedResults) {
     for (int i = 0; i < batch.size(); i++){
         Tensor result = feed(batch[i]);
         Tensor costDerivative = getLossDerivative(expectedResults[i], result);
