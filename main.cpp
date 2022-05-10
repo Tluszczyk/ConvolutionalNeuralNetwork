@@ -22,8 +22,8 @@ int main(int argv, char** args) {
 
     Simulation sim;
 
-    sim.initi();
-    sim.runi();
+    sim.init();
+    sim.run();
 
     return 0;
 }

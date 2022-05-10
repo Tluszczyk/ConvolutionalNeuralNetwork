@@ -21,13 +21,13 @@ using namespace std;
 
 class Simulation {
 public:
-    void runi();
-    void initi();
-    void endi();
+    void run();
+    void init();
+    void end();
 
 private:
-    void updatei();
-    void drawi();
+    void update();
+    void draw();
 
     void drawNetwork(Sequential * network);
 

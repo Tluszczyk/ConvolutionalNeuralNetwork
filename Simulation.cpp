@@ -4,14 +4,14 @@
 
 #include "Simulation.h"
 
-void Simulation::initi() {
+void Simulation::init() {
     if( SDL_Init( SDL_INIT_VIDEO ) < 0 )
     {
         printf( "SDL could not initialize! SDL_Error: %s\n", SDL_GetError() );
         exit(-1);
     }
 
-    window = SDL_CreateWindow( "SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
+    window = SDL_CreateWindow( "Neural Network", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
     if( window == nullptr )
     {
         printf( "Window could not be created! SDL_Error: %s\n", SDL_GetError() );
@@ -25,6 +25,8 @@ void Simulation::initi() {
     network = new Sequential({
                                           new DenseLayer({2}, "sig", "Dense input"),
                                           new DenseLayer({4}, "sig", "Idk"),
+                                          new DenseLayer({8}, "sig", "Idk"),
+                                          //new DenseLayer({8}, "sig", "Idk"),
                                           new DenseLayer({4}, "sig", "Idk"),
                                           new OutputLayer({2}, "id", "Dense output"),
                                   });
@@ -91,16 +93,16 @@ void Simulation::drawLayerConnections(int posX, Layer * layer, int nextLayerSize
     }
 }
 
-void Simulation::runi() {
+void Simulation::run() {
     while (running){
-        updatei();
-        drawi();
+        update();
+        draw();
         SDL_Delay( delay );
     }
-    endi();
+    end();
 }
 
-void Simulation::updatei() {
+void Simulation::update() {
 
 
     while( SDL_PollEvent( &e ) != 0 )
@@ -112,7 +114,7 @@ void Simulation::updatei() {
         }
     }
 
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 100; i++) {
         int tmp = rand() % 4;
         network->analyzeBatch(Xs[tmp], Ys[tmp]);
     }
@@ -120,14 +122,14 @@ void Simulation::updatei() {
 
 }
 
-void Simulation::drawi() {
+void Simulation::draw() {
     SDL_SetRenderDrawColor(grenderer, 255, 255, 255, 255 );
     SDL_RenderClear(grenderer );
     drawNetwork(network);
     SDL_RenderPresent(grenderer);
 }
 
-void Simulation::endi() {
+void Simulation::end() {
     SDL_DestroyWindow( window );
     SDL_DestroyRenderer(grenderer );
     window = nullptr;
