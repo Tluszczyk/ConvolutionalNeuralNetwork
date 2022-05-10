@@ -19,6 +19,8 @@ void ModelLoader::saveToFile(const Sequential& model, const string& filename) {
     modelFile << model.layers.size() << endl;
 
     for(Layer* layer : model.layers) {
+        modelFile << LayerTypeToString(layer->GET_LAYER_TYPE()) << endl;
+        modelFile << layer->layerName << endl;
 
         switch ( layer->GET_LAYER_TYPE() ) {
             case Dense:
