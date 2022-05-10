@@ -25,4 +25,10 @@ set(SOURCE_FILES
         Layers/LayerLoader.cpp
         Layers/OutputLayer.cpp)
 
+
+
+
 add_library(Network_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})
+
+target_link_libraries( Network_lib
+        Tensor_lib StringTools_lib )

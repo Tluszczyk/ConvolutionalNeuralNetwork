@@ -25,7 +25,7 @@ int main(int argv, char** args) {
     sim.init();
     sim.run();
 
-    //ModelLoader::loadFromFile("C:/Users/kubkm/CLionProjects/ConvolutionalNeuralNetwork/xor_model.mdl");
+    ModelLoader::loadFromFile("C:/Users/kubkm/CLionProjects/ConvolutionalNeuralNetwork/xor_model.mdl");
 
     return 0;
 }
