@@ -5,7 +5,7 @@
 		<Option title="gmock"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="clang"/>
-		<Option virtualFolders="CMake Files\;CMake Files\DataManager_lib\;CMake Files\Google_tests\;CMake Files\Google_tests\lib\;CMake Files\Google_tests\lib\googlemock\;CMake Files\Google_tests\lib\googlemock\cmake\;CMake Files\Google_tests\lib\googletest\;CMake Files\Google_tests\lib\googletest\cmake\;CMake Files\Network_lib\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\SDL2\;CMake Files\StringTools_lib\;CMake Files\Tensor_lib\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\DataManager_lib\;CMake Files\Google_tests\;CMake Files\Google_tests\lib\;CMake Files\Google_tests\lib\googlemock\;CMake Files\Google_tests\lib\googlemock\cmake\;CMake Files\Google_tests\lib\googletest\;CMake Files\Google_tests\lib\googletest\cmake\;CMake Files\Network_lib\;CMake Files\StringTools_lib\;CMake Files\Tensor_lib\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/cmake-build-debug/Google_tests/lib/googlemock"/>
@@ -292,12 +292,6 @@
 		</Unit>
 		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Network_lib/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Network_lib\"/>
-		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/../../../../../../../usr/local/lib/cmake/SDL2/sdl2-config-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\SDL2\"/>
-		</Unit>
-		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/../../../../../../../usr/local/lib/cmake/SDL2/sdl2-config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\SDL2\"/>
 		</Unit>
 		<Unit filename="/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\StringTools_lib\"/>

@@ -21,8 +21,6 @@ public:
 
     [[nodiscard]] LayerType GET_LAYER_TYPE() const override;
 
-    Tensor getWeights() override { return Tensor();}
-
 };
 
 

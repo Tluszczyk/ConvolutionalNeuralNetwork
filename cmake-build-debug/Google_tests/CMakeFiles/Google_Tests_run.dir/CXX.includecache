@@ -401,8 +401,6 @@ ostream
 -
 functional
 -
-algorithm
--
 
 ../Tensor_lib/TensorLoader.h
 Tensor.h

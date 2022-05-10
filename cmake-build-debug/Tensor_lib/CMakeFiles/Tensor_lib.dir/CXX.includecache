@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib/StringTools.h
-string
--
-vector
--
-
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/Tensor.cpp
 Tensor.h
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/Tensor.h
@@ -39,14 +33,6 @@ ostream
 -
 functional
 -
-algorithm
--
-
-/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/TensorLoader.cpp
-TensorLoader.h
-/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/TensorLoader.h
-../StringTools_lib/StringTools.h
-/Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/StringTools_lib/StringTools.h
 
 /Users/tluszczyk/dev/AGH/VI sem/ZSC/NeuralNet/Tensor_lib/TensorLoader.h
 Tensor.h
