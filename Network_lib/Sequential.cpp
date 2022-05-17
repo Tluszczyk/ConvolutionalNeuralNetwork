@@ -2,6 +2,7 @@
 // Created by Filip Tłuszcz on 25.03.2022.
 //
 
+#include <iostream>
 #include "Sequential.h"
 #include "LossFunctionsProvider.h"
 #include "Layers/DenseLayer.h"
@@ -23,7 +24,7 @@ void Sequential::backpropagate(const Tensor& costDerivative) {
     /* adjust all the adjustable parameters
      * */
     Tensor changes = costDerivative.copy();
-    for(auto layerIt = layers.end() - 2; layerIt + 1 != layers.begin(); layerIt--)
+    for(auto layerIt = layers.end() - 2; layerIt != layers.begin() - 1; layerIt--)
         changes = ((DenseLayer*)(*layerIt))->backpropagate(changes);
 }
 
@@ -56,14 +57,24 @@ Tensor getLossDerivative(const Tensor& expected, const Tensor& actual){
     return (actual - expected) * 2;
 }
 
-void Sequential::analyzeBatch(vector<Tensor>& batch, vector<Tensor>& expectedResults) {
+double Sequential::analyzeBatch(vector<Tensor>& batch, vector<Tensor>& expectedResults) {
+    double loss = 0;
     for (int i = 0; i < batch.size(); i++){
         Tensor result = feed(batch[i]);
         Tensor costDerivative = getLossDerivative(expectedResults[i], result);
+        std::cout << "result: " << result << endl;
+//        std::cout << "weight1: " << ((DenseLayer*)(this->layers[0]))->weightsTensor[{100, 0}] << endl;
+//        std::cout << "weight2: " << ((DenseLayer*)(this->layers[0]))->weightsTensor[{200, 0}] << endl;
+//        std::cout << "weight3: " << ((DenseLayer*)(this->layers[0]))->weightsTensor[{300, 0}] << endl;
+//        std::cout << "weight4: " << ((DenseLayer*)(this->layers[0]))->weightsTensor[{400, 0}] << endl;
+//        std::cout << "weight5: " << ((DenseLayer*)(this->layers[0]))->weightsTensor[{500, 0}] << endl;
+
+        for (double e : costDerivative.getData()) loss += abs(e);
         backpropagate(costDerivative);
     }
 
     applyChanges();
+    return loss;
 }
 
 void Sequential::addLayer(Layer *layer) {

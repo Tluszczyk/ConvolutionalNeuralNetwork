@@ -40,7 +40,7 @@ public:
     Tensor calculateLoss(const Tensor& expected);
 
     Tensor feed(Tensor inputTensor);
-    void analyzeBatch(vector<Tensor> &batch, vector<Tensor> &expectedResults);
+    double analyzeBatch(vector<Tensor> &batch, vector<Tensor> &expectedResults);
 
     ~Sequential() {
         for (auto &layer : layers) delete layer;
