@@ -50,6 +50,8 @@ double scalarMultiplyWithOffset(const Tensor& first, const Tensor& second, int o
     int firstImageSize = firstShape[1] * firstShape[0];
     int secondImageSize = secondShape[1] * secondShape[0];
 
+    // TODO secondShape moze miec 2 wymiary
+
     for (int n = 0; n < secondShape[2]; n++) {
         for (int i = 0; i < secondShape[1]; i++) {
             for (int k = 0; k < secondShape[0]; k++) {
