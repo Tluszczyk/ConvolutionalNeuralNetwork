@@ -35,12 +35,15 @@ public:
 
     Tensor convolve(const Tensor& filter);
 
+
     double &operator[](std::vector<int> coords) const;
 
     bool operator==(const Tensor& that) const;
 
     static Tensor createRandom(const std::vector<int>& shape, double variance);
     static Tensor ZERO() { return Tensor{{1},{0}}; };
+
+    static Tensor joinTensors(std::vector<Tensor> tensors);
 
     Tensor map(const std::function<double(double)> &op);
 

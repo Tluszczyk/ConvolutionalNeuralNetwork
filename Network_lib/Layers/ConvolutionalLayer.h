@@ -17,6 +17,8 @@ private:
     int stride;
     int pad;
 
+    int noOfFilters;
+
 
     Tensor addPadding(const Tensor &input);
 };

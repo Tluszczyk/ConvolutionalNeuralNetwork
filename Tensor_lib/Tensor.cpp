@@ -317,3 +317,17 @@ double Tensor::max_abs() {
     }
     return result;
 }
+
+Tensor Tensor::joinTensors(std::vector<Tensor> tensors) {
+    if (tensors.empty()){
+        throw length_error("Can't join together an empty tensor list!");
+    }
+    vector<int> newShape = tensors[0].getShape();
+    newShape.push_back(tensors.size());
+    vector<double> newData;
+    newData.reserve(tensors[0].getData().size() * tensors.size());
+    for (auto & tensor : tensors){
+        newData.insert(newData.end(), tensor.getData().begin(), tensor.getData().end());
+    }
+    return Tensor(newShape, newData);
+}

@@ -6,7 +6,12 @@
 
 
 Tensor ConvolutionalLayer::feed(Tensor inputTensor) {
-
+    vector<Tensor> filteringResults;
+    filteringResults.reserve(noOfFilters);
+    for (int i = 0 ; i < noOfFilters; i++){
+        filteringResults.push_back(inputTensor.convolve(filters[i]));
+    }
+    return Tensor::joinTensors(filteringResults);
 }
 
 Tensor ConvolutionalLayer::addPadding(const Tensor& input) {
