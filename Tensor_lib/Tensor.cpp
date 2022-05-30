@@ -62,7 +62,7 @@ double scalarMultiplyWithOffset(const Tensor& first, const Tensor& second, int o
     return result;
 }
 
-Tensor Tensor::convolute(const Tensor& filter) {
+Tensor Tensor::convolve(const Tensor& filter) {
     vector<double> resultData;
     vector<int> filterShape = filter.getShape();
     vector<int> resultShape = {shape[0] - filterShape[0] + 1, shape[1] - filterShape[1] + 1};
