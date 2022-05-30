@@ -97,7 +97,7 @@ TEST(LogicalOperationsSuite, Reshaping) {
 }
 
 TEST(LogicalOperationsSuite, Random) {
-    Tensor a = Tensor::createRandom({3, 3, 3});
+    Tensor a = Tensor::createRandom({3, 3, 3}, 1);
 //    std::cout << a << std::endl;
 }
 

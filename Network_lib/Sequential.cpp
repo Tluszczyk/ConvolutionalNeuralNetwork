@@ -62,7 +62,7 @@ double Sequential::analyzeBatch(vector<Tensor>& batch, vector<Tensor>& expectedR
     for (int i = 0; i < batch.size(); i++){
         Tensor result = feed(batch[i]);
         Tensor costDerivative = getLossDerivative(expectedResults[i], result);
-        std::cout << "result: " << result << endl;
+        //std::cout << "result: " << result << endl;
 //        std::cout << "weight1: " << ((DenseLayer*)(this->layers[0]))->weightsTensor[{100, 0}] << endl;
 //        std::cout << "weight2: " << ((DenseLayer*)(this->layers[0]))->weightsTensor[{200, 0}] << endl;
 //        std::cout << "weight3: " << ((DenseLayer*)(this->layers[0]))->weightsTensor[{300, 0}] << endl;
@@ -74,7 +74,7 @@ double Sequential::analyzeBatch(vector<Tensor>& batch, vector<Tensor>& expectedR
     }
 
     applyChanges();
-    return loss;
+    return loss/batch.size();
 }
 
 void Sequential::addLayer(Layer *layer) {

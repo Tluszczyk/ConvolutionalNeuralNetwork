@@ -14,27 +14,24 @@
 #include <utility>
 
 
-using namespace std;
-
-
 class Layer {
     friend class ModelLoader;
     friend class LayerLoader;
 
 protected:
-    vector<int> shape, nextLayerShape{};
+    std::vector<int> shape, nextLayerShape{};
 
-    const string activationFunctionName;
+    const std::string activationFunctionName;
 
-    function<double(double)> activationFunction;
-    function<double(double)> activationFunctionPrime;
+    std::function<double(double)> activationFunction;
+    std::function<double(double)> activationFunctionPrime;
 
     Tensor activations;
 
     [[nodiscard]] virtual LayerType GET_LAYER_TYPE() const = 0;
-    string layerName;
+    std::string layerName;
 
-    explicit Layer(vector<int> shape, const string& activationFunctionName="id", string layerName="Layer") :
+    explicit Layer(std::vector<int> shape, const std::string& activationFunctionName="id", std::string layerName="Layer") :
         shape(std::move(shape)),
         layerName(std::move(layerName)),
         activationFunctionName(activationFunctionName),
@@ -42,14 +39,14 @@ protected:
         activationFunctionPrime(ActivationFunctionsProvider::derivativeFromName[activationFunctionName]) {};
 
 public:
-    [[nodiscard]] vector<int> getShape() const { return this->shape; }
+    [[nodiscard]] std::vector<int> getShape() const { return this->shape; }
 
     virtual Tensor feed(Tensor inputTensor) = 0;
 
-    virtual void compile(double learningRate, const vector<int>& nextLayerSize) {}
+    virtual void compile(double learningRate, const std::vector<int>& nextLayerSize) {}
 
-    const string &getActivationFunctionName() const { return activationFunctionName; };
-    const string &getName() const { return layerName; }
+    const std::string &getActivationFunctionName() const { return activationFunctionName; };
+    const std::string &getName() const { return layerName; }
 
     virtual Tensor backpropagate(const Tensor& gradient) {return gradient;};
 

@@ -253,10 +253,10 @@ string Tensor::to_string() const {
     return stringifyTensorWrapper(*this);
 }
 
-Tensor Tensor::createRandom(const vector<int> &shape) {
+Tensor Tensor::createRandom(const vector<int> &shape, double variance) {
     random_device randomDevice;
     default_random_engine defaultRandomEngine(randomDevice());
-    uniform_real_distribution<double> uniformRealDistribution(0,nextafter(1, DBL_MAX));
+    uniform_real_distribution<double> uniformRealDistribution(-variance,nextafter(variance, DBL_MAX));
 
     int dataSize = 1;
     for(int dim : shape) dataSize *= dim;
@@ -271,4 +271,14 @@ Tensor Tensor::map(const function<double(double)> &op) {
     vector<double> resultData;
     transform(this->data.begin(), this->data.end(), back_inserter(resultData), op);
     return Tensor(this->shape, resultData);
+}
+
+double Tensor::max_abs() {
+    double result = 0;
+    for(double & it : data){
+        if (abs(it) > result){
+            result = it;
+        }
+    }
+    return result;
 }

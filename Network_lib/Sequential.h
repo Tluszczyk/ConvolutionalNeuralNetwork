@@ -14,8 +14,6 @@
 #include "Layers/Layer.h"
 #include "ModelLoader.h"
 
-using namespace std;
-
 class Sequential {
     friend class ModelLoader;
 

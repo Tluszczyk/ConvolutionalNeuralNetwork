@@ -11,8 +11,6 @@
 
 #include "Sequential.h"
 
-using namespace std;
-
 class Sequential;
 
 class ModelLoader {
