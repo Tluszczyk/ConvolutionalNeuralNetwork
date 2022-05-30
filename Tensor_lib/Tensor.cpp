@@ -45,11 +45,17 @@ double scalarMultiplyWithOffset(const Tensor& first, const Tensor& second, int o
     double result = 0;
 
     vector<int> secondShape = second.getShape();
+    vector<int> firstShape = first.getShape();
 
-    for(int i=0; i < secondShape[1]; i++) {
-        for(int k=0; k < secondShape[0]; k++) {
-            result += first.getData()[(offsetY + i) * first.getShape()[0] + (offsetX + k)]
-                    * second.getData()[i * secondShape[0] + k];
+    int firstImageSize = firstShape[1] * firstShape[0];
+    int secondImageSize = secondShape[1] * secondShape[0];
+
+    for (int n = 0; n < secondShape[2]; n++) {
+        for (int i = 0; i < secondShape[1]; i++) {
+            for (int k = 0; k < secondShape[0]; k++) {
+                result += first.getData()[n * firstImageSize + (offsetY + i) * firstShape[0] + (offsetX + k)]
+                          * second.getData()[n * secondImageSize + i * secondShape[0] + k];
+            }
         }
     }
 
@@ -64,7 +70,7 @@ Tensor Tensor::convolute(Tensor other) {
 
     for(int i=0; i < resultShape[1]; i++) {
         for (int k = 0; k < resultShape[0]; k++) {
-            resultData.push_back(scalarMultiplyWithOffset())
+            resultData.push_back(scalarMultiplyWithOffset(*this, other, k, i));
         }
     }
 }
