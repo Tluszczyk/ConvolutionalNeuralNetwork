@@ -11,7 +11,7 @@ add_executable(Google_Tests_run
         DenseLayerTests.cpp
         main.cpp
         SequentialTests.cpp
-        DataProviderTests.cpp)
+        DataProviderTests.cpp ConvolutionalLayerTests.cpp)
 
 target_link_libraries(Google_Tests_run StringTools_lib Tensor_lib DataManager_lib Network_lib)
 

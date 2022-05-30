@@ -41,6 +41,34 @@ string vecToString(const vector<int>& vec) {
     return res + " }";
 }
 
+double scalarMultiplyWithOffset(const Tensor& first, const Tensor& second, int offsetX, int offsetY) {
+    double result = 0;
+
+    vector<int> secondShape = second.getShape();
+
+    for(int i=0; i < secondShape[1]; i++) {
+        for(int k=0; k < secondShape[0]; k++) {
+            result += first.getData()[(offsetY + i) * first.getShape()[0] + (offsetX + k)]
+                    * second.getData()[i * secondShape[0] + k];
+        }
+    }
+
+    return result;
+}
+
+Tensor Tensor::convolute(Tensor other) {
+    vector<double> resultData;
+    vector<int> otherShape = other.getShape();
+    vector<int> resultShape = {shape[0] - otherShape[0] + 1, shape[1] - otherShape[1] + 1};
+    resultData.reserve(resultShape[0] * resultShape[1]);
+
+    for(int i=0; i < resultShape[1]; i++) {
+        for (int k = 0; k < resultShape[0]; k++) {
+            resultData.push_back(scalarMultiplyWithOffset())
+        }
+    }
+}
+
 Tensor applySameSizeTensorOperator(const Tensor& a, const Tensor& b, const function<double(double, double)>& op) {
     if( a.getShape() != b.getShape() ) throw range_error("Tensors' shapes " + vecToString(a.getShape()) + ", " + vecToString(b.getShape()) + " don't match");
 
