@@ -9,12 +9,13 @@
 
 using namespace std;
 
-enum LayerType { Dense, Output, None };
+enum LayerType { Dense, Output, Convolutional, None };
 
 inline string LayerTypeToString(const LayerType &layerType) {
     switch(layerType) {
         case Dense: return "DENSE_LAYER_TYPE";
         case Output: return "OUTPUT_LAYER_TYPE";
+        case Convolutional: return "CONVOLUTIONAL_LAYER_TYPE";
         default:    return "";
     }
 }
@@ -22,6 +23,7 @@ inline string LayerTypeToString(const LayerType &layerType) {
 inline LayerType StringToLayerType(const string &layerType) {
     if( layerType == "DENSE_LAYER_TYPE" ) return Dense;
     if( layerType == "OUTPUT_LAYER_TYPE" ) return Output;
+    if( layerType == "CONVOLUTIONAL_LAYER_TYPE" ) return Convolutional;
     return None;
 }
 

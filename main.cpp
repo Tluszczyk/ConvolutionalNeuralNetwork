@@ -36,11 +36,11 @@ int main() {
         model = ModelLoader::loadFromFile("mnist_hrd_model_1.mdl");
     } else if (c == 'N'){
         model = new Sequential({
-                                                   new DenseLayer({784}, "id", "input layer"),
-                                                   new DenseLayer({400}, "relu", "first hidden"),
-                                                   new DenseLayer({100}, "relu", "second hidden"),
-                                                   new OutputLayer({10}, "softmax", "output output"),
-                                           }, "Mnist HRD Model");
+            new DenseLayer({784}, "id", "input layer"),
+            new DenseLayer({400}, "relu", "first hidden"),
+            new DenseLayer({100}, "relu", "second hidden"),
+            new OutputLayer({10}, "softmax", "output output"),
+        }, "Mnist HRD Model");
 
         model->compile(0.1);
     }
