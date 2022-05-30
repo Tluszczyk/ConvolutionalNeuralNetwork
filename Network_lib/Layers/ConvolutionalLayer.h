@@ -12,12 +12,13 @@ class ConvolutionalLayer : public Layer {
 public:
     Tensor feed(Tensor inputTensor) override;
 private:
-    Tensor filterWeights;
+    vector<Tensor> filters;
     Tensor biases;
     int stride;
     int pad;
 
 
+    Tensor addPadding(const Tensor &input);
 };
 
 

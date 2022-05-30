@@ -33,7 +33,7 @@ public:
     Tensor operator-(double that) const;
     Tensor operator*(double that) const;
 
-    Tensor convolute(Tensor other);
+    Tensor convolute(const Tensor& filter);
 
     double &operator[](std::vector<int> coords) const;
 

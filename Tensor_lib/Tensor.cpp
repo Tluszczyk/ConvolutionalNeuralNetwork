@@ -62,17 +62,18 @@ double scalarMultiplyWithOffset(const Tensor& first, const Tensor& second, int o
     return result;
 }
 
-Tensor Tensor::convolute(Tensor other) {
+Tensor Tensor::convolute(const Tensor& filter) {
     vector<double> resultData;
-    vector<int> otherShape = other.getShape();
-    vector<int> resultShape = {shape[0] - otherShape[0] + 1, shape[1] - otherShape[1] + 1};
+    vector<int> filterShape = filter.getShape();
+    vector<int> resultShape = {shape[0] - filterShape[0] + 1, shape[1] - filterShape[1] + 1};
     resultData.reserve(resultShape[0] * resultShape[1]);
 
     for(int i=0; i < resultShape[1]; i++) {
         for (int k = 0; k < resultShape[0]; k++) {
-            resultData.push_back(scalarMultiplyWithOffset(*this, other, k, i));
+            resultData.push_back(scalarMultiplyWithOffset(*this, filter, k, i));
         }
     }
+    return Tensor(resultShape, resultData);
 }
 
 Tensor applySameSizeTensorOperator(const Tensor& a, const Tensor& b, const function<double(double, double)>& op) {
