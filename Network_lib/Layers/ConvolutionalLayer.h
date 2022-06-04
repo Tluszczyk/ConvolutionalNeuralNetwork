@@ -11,13 +11,20 @@
 class ConvolutionalLayer : public Layer {
 public:
     Tensor feed(Tensor inputTensor) override;
+    Tensor backpropagate(const Tensor &gradient) override;
 private:
     vector<Tensor> filters;
-    Tensor biases;
+    vector<float> biases;
     int stride;
     int pad;
 
     int noOfFilters;
+
+    Tensor previousInput;
+
+    Tensor db;
+    Tensor dw;
+    Tensor dx;
 
 
     Tensor addPadding(const Tensor &input);

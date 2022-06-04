@@ -6,46 +6,33 @@
 
 
 Tensor ConvolutionalLayer::feed(Tensor inputTensor) {
+    previousInput = inputTensor;
     vector<Tensor> filteringResults;
     filteringResults.reserve(noOfFilters);
     for (int i = 0 ; i < noOfFilters; i++){
-        filteringResults.push_back(inputTensor.convolve(filters[i]));
+        filteringResults.push_back(inputTensor.convolve(filters[i]) + biases[i]);
     }
     return Tensor::joinTensors(filteringResults);
 }
 
-Tensor ConvolutionalLayer::addPadding(const Tensor& input) {
-    vector<int> oldShape = input.getShape();
-    if (oldShape.size() != 2){
-        throw range_error("addPadding: Expected 2 dimensional input, instead got " +
-        std::to_string(oldShape.size()) + " dimensional input");
+Tensor ConvolutionalLayer::backpropagate(const Tensor &gradient) {
+    //double
+    //float db = TODO make backprog for bias (super easy tbh)
+    vector<Tensor> gradientsF = Tensor::divideTensor(gradient);
+    vector<Tensor> dwF;
+    dwF.reserve(gradientsF.size());
+    for (auto & i : gradientsF){
+        dwF.push_back(previousInput.convolve(i));
     }
-    vector<int> newShape = {oldShape[0] + 2 * pad, oldShape[1] + 2 * pad};
-    vector<double> resultingData;
-    resultingData.reserve(newShape[0] * newShape[1]);
-    for (int i = 0; i < pad; i++) {
-        for (int k = 0; k < oldShape[0]; k++) {
-            resultingData.push_back(0);
+    dw = dw + Tensor::joinTensors(dwF);
+    Tensor gradientPadded = gradient; //TODO pad gradient
+    vector<Tensor> dxC = Tensor::divideTensor(dx);
+    for (int f = 0; f < gradientsF.size(); f++){
+        vector<Tensor> filtersC = Tensor::divideTensor(filters[f]);
+        for (int c = 0; c < filtersC.size(); c++){
+            dxC[c] = dxC[c] + gradientPadded.convolve(filtersC[c].reversed());
         }
     }
+    dx = Tensor::joinTensors(dxC);
 
-    for (int i = 0; i < oldShape[1]; i++){
-        for (int k = 0; k < pad; k++) {
-            resultingData.push_back(0);
-        }
-        for (int k = 0; k < oldShape[0]; k++){
-            resultingData.push_back(input.getData()[i * oldShape[1] + k]);
-        }
-        for (int k = 0; k < pad; k++) {
-            resultingData.push_back(0);
-        }
-    }
-
-    for (int i = 0; i < pad; i++) {
-        for (int k = 0; k < oldShape[0]; k++) {
-            resultingData.push_back(0);
-        }
-    }
-
-    return Tensor(newShape, resultingData);
 }

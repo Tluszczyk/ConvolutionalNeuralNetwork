@@ -34,7 +34,7 @@ public:
     Tensor operator*(double that) const;
 
     Tensor convolve(const Tensor& filter);
-
+    Tensor reversed();
 
     double &operator[](std::vector<int> coords) const;
 
@@ -44,6 +44,7 @@ public:
     static Tensor ZERO() { return Tensor{{1},{0}}; };
 
     static Tensor joinTensors(std::vector<Tensor> tensors);
+    static std::vector<Tensor> divideTensor(Tensor tensor);
 
     Tensor map(const std::function<double(double)> &op);
 

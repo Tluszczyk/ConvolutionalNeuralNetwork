@@ -7,7 +7,7 @@
 #include <functional>
 #include <cfloat>
 #include <string>
-#include <map>
+
 #include <random>
 #include <numeric>
 #include <utility>
@@ -50,7 +50,15 @@ double scalarMultiplyWithOffset(const Tensor& first, const Tensor& second, int o
     int firstImageSize = firstShape[1] * firstShape[0];
     int secondImageSize = secondShape[1] * secondShape[0];
 
-    // TODO secondShape moze miec 2 wymiary
+    if (secondShape.size() < 3){
+        for (int i = 0; i < secondShape[1]; i++) {
+            for (int k = 0; k < secondShape[0]; k++) {
+                result += first.getData()[(offsetY + i) * firstShape[0] + (offsetX + k)]
+                          * second.getData()[i * secondShape[0] + k];
+            }
+        }
+        return result;
+    }
 
     for (int n = 0; n < secondShape[2]; n++) {
         for (int i = 0; i < secondShape[1]; i++) {
@@ -187,6 +195,19 @@ double &Tensor::operator[](vector<int> coords) const {
 
     return (double&) data[index];
 }
+
+//Tensor Tensor::subTensor(vector<int> coords){
+//    if( coords.size() > shape.size() ) throw range_error("coords don't match tensor's shape, shape size is "
+//                                                         + std::to_string(shape.size()) + " coors size is "
+//                                                         + std::to_string(coords.size()));
+//    int index = 0, currSize = 1;
+//
+//    for(int i=0; i<coords.size(); i++) {
+//        if( coords[i] >= shape[i] ) throw range_error("tensor index out of range");
+//        index += coords[i] * currSize;
+//        currSize *= shape[i];
+//    }
+//}
 
 void iterateAndTransposeThroughTensor( const Tensor& a, const Tensor& b, const vector<int>& transposition, int dimIt=0, vector<int> *coord=nullptr){
 
@@ -325,6 +346,9 @@ Tensor Tensor::joinTensors(std::vector<Tensor> tensors) {
         throw length_error("Can't join together an empty tensor list!");
     }
     vector<int> newShape = tensors[0].getShape();
+    if (newShape.back() == 1){
+        newShape.pop_back();
+    }
     newShape.push_back(tensors.size());
     vector<double> newData;
     newData.reserve(tensors[0].getData().size() * tensors.size());
@@ -332,4 +356,32 @@ Tensor Tensor::joinTensors(std::vector<Tensor> tensors) {
         newData.insert(newData.end(), tensor.getData().begin(), tensor.getData().end());
     }
     return Tensor(newShape, newData);
+}
+
+std::vector<Tensor> Tensor::divideTensor(Tensor tensor){
+    vector<Tensor> result;
+    int lastDimSize = tensor.getShape()[tensor.getShape().size() - 1];
+    vector<int> newShape = tensor.getShape();
+    newShape.pop_back();
+
+    int dataSize = 1;
+    for (int i : newShape){
+        dataSize *= i;
+    }
+
+    vector<double> current;
+    for (int k = 0; k < dataSize * lastDimSize; k++){
+        current.push_back(tensor.getData()[k]);
+        if (k % dataSize == dataSize - 1){
+            result.emplace_back(newShape, current);
+            current.clear();
+        }
+    }
+    return result;
+}
+
+Tensor Tensor::reversed() {
+    vector<double> newData = data;
+    std::reverse(newData.begin(), newData.end());
+    return Tensor(shape, newData);
 }
