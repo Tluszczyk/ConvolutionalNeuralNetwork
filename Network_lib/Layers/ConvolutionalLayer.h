@@ -16,13 +16,16 @@ public:
             string layerName,
             int filterCount,
             int filterSize,
-            int paddingSize=-1);
+            int paddingSize=-1,
+            int stride=-1);
 
     Tensor feed(Tensor inputTensor) override;
 
     Tensor TEST_addPadding(const Tensor &input);
 
+protected:
     [[nodiscard]] LayerType GET_LAYER_TYPE() const override;
+
 private:
     int filterCount;
     int filterSize;

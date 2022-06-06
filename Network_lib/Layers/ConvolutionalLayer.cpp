@@ -10,12 +10,14 @@ ConvolutionalLayer::ConvolutionalLayer(
         string layerName,
         int filterCount,
         int filterSize,
-        int paddingSize
+        int paddingSize,
+        int stride
         ) : Layer(std::move(shape), activationFunctionName, std::move(layerName))
 {
     this->filterCount = filterCount;
     this->filterSize = filterSize;
     this->pad = paddingSize == -1 ? filterSize/2 : paddingSize;
+    this->stride = stride;
 }
 
 Tensor ConvolutionalLayer::feed(Tensor inputTensor) {
