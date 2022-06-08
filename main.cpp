@@ -33,7 +33,7 @@ int main() {
     Sequential *model;
 
     if (c == 'F'){
-        model = ModelLoader::loadFromFile("mnist_hrd_model_1.mdl");
+        model = ModelLoader::loadFromFile("mnist_hrd_model_3.mdl");
     } else if (c == 'N'){
         model = new Sequential({
             new DenseLayer({784}, "id", "input layer"),
@@ -115,11 +115,11 @@ int main() {
 
     quitter_thread.join();
 
-    ModelLoader::saveToFile(*model, "mnist_hrd_model_2.mdl");
+    ModelLoader::saveToFile(*model, "mnist_hrd_model_3.mdl");
     cout << "Saved model to file." << endl;
     delete model;
 
-    ModelLoader::loadFromFile("C:/Users/kubkm/CLionProjects/ConvolutionalNeuralNetwork/xor_model.mdl");
+    //ModelLoader::loadFromFile("C:/Users/kubkm/CLionProjects/ConvolutionalNeuralNetwork/xor_model.mdl");
 
     return 0;
 }

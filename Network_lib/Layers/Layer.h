@@ -51,8 +51,6 @@ public:
     virtual ~Layer() = default;
 
     virtual Tensor backpropagate(const Tensor& gradient) {return gradient;};
-
-    virtual ~Layer() = default;
 };
 
 #endif //NEURALNET_LAYER_H

@@ -5,36 +5,37 @@
 #include "ConvolutionalLayer.h"
 
 ConvolutionalLayer::ConvolutionalLayer(
-        vector<int> shape,
+        const vector<int> &shape,
         const string &activationFunctionName,
-        string layerName,
+        const string &layerName,
         int filterCount,
-        int filterSize,
+        const vector<int> &filterShape,
         int paddingSize,
         int stride
-        ) : Layer(std::move(shape), activationFunctionName, std::move(layerName))
-{
-    this->filterCount = filterCount;
-    this->filterSize = filterSize;
-    this->pad = paddingSize == -1 ? filterSize/2 : paddingSize;
-    this->stride = stride;
+        ) : Layer(shape, activationFunctionName, layerName),
+                filterCount(filterCount),
+                filterShape(filterShape),
+                pad(paddingSize),
+                stride(stride){
+    backPropagationsCarriedOut = 0;
 }
 
-ConvolutionalLayer::ConvolutionalLayer(const vector<int> &shape, const string &activationFunctionName,
-                                       const string &layerName, int noOfFilters,
-                                       const vector<int> &filterShape) : Layer(shape, activationFunctionName, layerName),
-                                                                         noOfFilters(noOfFilters),
-                                                                         filerShape(filterShape) {
-    backPropagationsCarriedOut = 0;
-    pad = filterShape[0]/2;
-}
+ConvolutionalLayer::ConvolutionalLayer(
+        const vector<int> &shape,
+        const string &activationFunctionName,
+        const string &layerName,
+        int noOfFilters,
+        const vector<int> &filterShape
+        ) : ConvolutionalLayer(shape, activationFunctionName, layerName,
+                              noOfFilters, filterShape,
+                              filterShape[0]/2, 1) {}
 
 
 Tensor ConvolutionalLayer::feed(Tensor inputTensor) {
     previousInput = inputTensor;
     vector<Tensor> filteringResults;
-    filteringResults.reserve(noOfFilters);
-    for (int i = 0 ; i < noOfFilters; i++){
+    filteringResults.reserve(filterCount);
+    for (int i = 0 ; i < filterCount; i++){
         filteringResults.push_back(inputTensor.convolve(filters[i]) + biases[i]);
     }
     return Tensor::joinTensors(filteringResults);
@@ -67,13 +68,13 @@ void ConvolutionalLayer::compile(double learningRate1, const vector<int>& nextLa
 
     this->filters = vector<Tensor>();
     this->dw = vector<Tensor>();
-    for (int i = 0; i < noOfFilters; i++) {
-        filters.push_back(Tensor::createRandom(filerShape, 1.0 / noOfFilters));
-        dw.emplace_back(filerShape);
+    for (int i = 0; i < filterCount; i++) {
+        filters.push_back(Tensor::createRandom(filterShape, 1.0 / filterCount));
+        dw.emplace_back(filterShape);
         biases.push_back(0);
     }
 }
-Tensor ConvolutionalLayer::addPadding(const Tensor& input) {
+Tensor ConvolutionalLayer::addPadding(const Tensor& input) const {
 
     vector<int> oldShape = input.getShape();
     if (oldShape.size() < 2 or oldShape.size() > 3){
@@ -126,8 +127,8 @@ void ConvolutionalLayer::applyChanges() {
     if (backPropagationsCarriedOut == 0){
         return;
     }
-    for (int f = 0; f < noOfFilters; f++){
-        filters[f] = filters[f] - dw[f];
+    for (int f = 0; f < filterCount; f++){
+        filters[f] = filters[f] - dw[f] * learningRate;
         dw[f] = Tensor(dw[f].getShape());
         //biases[f] -= db[f]; TODO: biases
     }

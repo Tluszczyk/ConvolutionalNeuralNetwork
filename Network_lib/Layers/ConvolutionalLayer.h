@@ -11,17 +11,11 @@
 class ConvolutionalLayer : public Layer {
 public:
 
-    ConvolutionalLayer(
-            vector<int> shape,
-            const string &activationFunctionName,
-            string layerName,
-            int filterCount,
-            int filterSize,
-            int paddingSize=-1,
-            int stride=-1);
-
     ConvolutionalLayer(const vector<int> &shape, const string &activationFunctionName, const string &layerName,
                        int noOfFilters, const vector<int> &filterShape);
+
+    ConvolutionalLayer(const vector<int> &shape, const string &activationFunctionName, const string &layerName,
+                       int noOfFilters, const vector<int> &filterShape, int paddingSize, int stride);
 
     void compile(double learningRate1, const vector<int>& nextLayerShape) override;
     [[nodiscard]] LayerType GET_LAYER_TYPE() const override;
@@ -48,7 +42,7 @@ private:
     int backPropagationsCarriedOut;
     double learningRate{};
 
-    Tensor addPadding(const Tensor &input);
+    Tensor addPadding(const Tensor &input) const;
 };
 
 

@@ -33,8 +33,6 @@ public:
     explicit Sequential(vector<Layer*> layers, string MODEL_NAME="Simple model") : layers(std::move(layers)), MODEL_NAME(std::move(MODEL_NAME)) {};
     void addLayer(Layer* layer);
 
-    void addLayer(Layer* layer);
-
     void compile(double learningRate=.7, const string& lossFunctionName="MSE");
 
     Tensor calculateLoss(const Tensor& expected);
