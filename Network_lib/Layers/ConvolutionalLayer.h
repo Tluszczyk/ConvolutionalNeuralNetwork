@@ -10,6 +10,16 @@
 
 class ConvolutionalLayer : public Layer {
 public:
+
+    ConvolutionalLayer(
+            vector<int> shape,
+            const string &activationFunctionName,
+            string layerName,
+            int filterCount,
+            int filterSize,
+            int paddingSize=-1,
+            int stride=-1);
+
     ConvolutionalLayer(const vector<int> &shape, const string &activationFunctionName, const string &layerName,
                        int noOfFilters, const vector<int> &filterShape);
 
@@ -23,24 +33,20 @@ public:
 
     Tensor TEST_addPadding(const Tensor &input) { return this->addPadding(input); }
 private:
+    int filterCount;
+    vector<int> filterShape;
     vector<Tensor> filters;
     vector<double> biases;
     int stride;
     int pad;
 
-    int noOfFilters;
-
     Tensor previousInput;
-
     Tensor db;
     vector<Tensor> dw;
     Tensor dx;
 
     int backPropagationsCarriedOut;
     double learningRate{};
-
-    vector<int> filerShape;
-
 
     Tensor addPadding(const Tensor &input);
 };

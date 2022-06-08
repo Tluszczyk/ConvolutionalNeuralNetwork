@@ -4,6 +4,21 @@
 
 #include "ConvolutionalLayer.h"
 
+ConvolutionalLayer::ConvolutionalLayer(
+        vector<int> shape,
+        const string &activationFunctionName,
+        string layerName,
+        int filterCount,
+        int filterSize,
+        int paddingSize,
+        int stride
+        ) : Layer(std::move(shape), activationFunctionName, std::move(layerName))
+{
+    this->filterCount = filterCount;
+    this->filterSize = filterSize;
+    this->pad = paddingSize == -1 ? filterSize/2 : paddingSize;
+    this->stride = stride;
+}
 
 ConvolutionalLayer::ConvolutionalLayer(const vector<int> &shape, const string &activationFunctionName,
                                        const string &layerName, int noOfFilters,
@@ -122,5 +137,4 @@ void ConvolutionalLayer::applyChanges() {
 LayerType ConvolutionalLayer::GET_LAYER_TYPE() const {
     return Convolutional;
 }
-
 
