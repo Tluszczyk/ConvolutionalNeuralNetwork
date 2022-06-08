@@ -119,5 +119,7 @@ int main() {
     cout << "Saved model to file." << endl;
     delete model;
 
+    ModelLoader::loadFromFile("C:/Users/kubkm/CLionProjects/ConvolutionalNeuralNetwork/xor_model.mdl");
+
     return 0;
 }

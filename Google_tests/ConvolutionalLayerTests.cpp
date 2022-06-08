@@ -5,10 +5,11 @@
 #include "Tensor.h"
 #include "Layers/ConvolutionalLayer.h"
 
+
 TEST(UtilityOpertionsSuite, Pad2D) {
     Tensor input({3, 2}, {1, 1, 1, 2, 2, 2});
 
-    auto* conv = new ConvolutionalLayer({3, 2}, "sig", "Conv2Test", 1, 3);
+    auto* conv = new ConvolutionalLayer({3, 2}, "sig", "Conv2Test", 1, {3,3});
 
     Tensor padded = conv->TEST_addPadding(input);
 
@@ -37,7 +38,7 @@ TEST(UtilityOpertionsSuite, Pad3D) {
         3, 3, 3,
     });
 
-    auto* conv = new ConvolutionalLayer({3, 3, 3}, "sig", "Conv3Test", 1, 3);
+    auto* conv = new ConvolutionalLayer({3, 3, 3}, "sig", "Conv3Test", 1, {3,3});
 
     Tensor padded = conv->TEST_addPadding(input);
 

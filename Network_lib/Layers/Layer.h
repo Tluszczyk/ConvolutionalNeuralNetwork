@@ -48,6 +48,8 @@ public:
     const std::string &getActivationFunctionName() const { return activationFunctionName; };
     const std::string &getName() const { return layerName; }
 
+    virtual ~Layer() = default;
+
     virtual Tensor backpropagate(const Tensor& gradient) {return gradient;};
 
     virtual ~Layer() = default;

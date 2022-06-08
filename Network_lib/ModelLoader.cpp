@@ -19,8 +19,6 @@ void ModelLoader::saveToFile(const Sequential& model, const string& filename) {
     modelFile << model.layers.size() << endl;
 
     for(Layer* layer : model.layers) {
-        //modelFile << LayerTypeToString(layer->GET_LAYER_TYPE()) << endl;
-        //modelFile << layer->layerName << endl;
 
         switch ( layer->GET_LAYER_TYPE() ) {
             case Dense:
@@ -42,7 +40,7 @@ void ModelLoader::saveToFile(const Sequential& model, const string& filename) {
 Sequential* ModelLoader::loadFromFile(const string& filename) {
     ifstream modelFile("../" + filename);
 
-    if(!modelFile.is_open()) throw std::runtime_error("Could not open the file");
+    if (!modelFile.is_open()) throw std::runtime_error("Could not open the file");
 
     string modelName, layerCountS;
 
@@ -53,11 +51,11 @@ Sequential* ModelLoader::loadFromFile(const string& filename) {
 
     auto *model = new Sequential({}, modelName);
 
-    for(int layerIt=0; layerIt<layerCount; layerIt++) {
+    for (int layerIt = 0; layerIt < layerCount; layerIt++) {
         string layerType;
         getline(modelFile, layerType);
 
-        switch ( StringToLayerType(layerType) ) {
+        switch (StringToLayerType(layerType)) {
             case Dense:
                 model->addLayer(LayerLoader::loadDenseLayer(modelFile));
                 break;

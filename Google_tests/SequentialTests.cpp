@@ -1,3 +1,5 @@
+
+
 //
 // Created by kubkm on 12.04.2022.
 //
@@ -153,3 +155,4 @@ TEST(ModelFileSuite, Loading){
 
     delete xor_model;
 }
+
