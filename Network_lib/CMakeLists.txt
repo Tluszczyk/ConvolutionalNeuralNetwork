@@ -20,7 +20,7 @@ set(SOURCE_FILES
         Layers/DenseLayer.cpp
         Layers/LayerLoader.cpp
         Layers/OutputLayer.cpp
-        Layers/ConvolutionalLayer.cpp Layers/ConvolutionalLayer.h)
+        Layers/ConvolutionalLayer.cpp Layers/ConvolutionalLayer.h Layers/PoolingLayer.cpp Layers/PoolingLayer.h Layers/PoolingFunctionProvider.cpp Layers/PoolingFunctionProvider.h)
 
 add_library(Network_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})
 
