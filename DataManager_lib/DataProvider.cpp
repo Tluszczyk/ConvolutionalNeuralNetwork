@@ -6,6 +6,7 @@
 
 #include <random>
 #include <fstream>
+#include <iostream>
 
 dataset DataProvider::getXorData() {
     std::vector<Tensor> inputs, outputs;
@@ -81,6 +82,7 @@ std::vector<Tensor> loadMnistHRDLabels(const string& labelPath) {
     std::vector<Tensor> labels;
 
     ifstream mnistFile(labelPath, ios::binary);
+    std::cout<<labelPath<<endl;
     if(mnistFile.is_open()) {
         int magic_number=0;
         int number_of_labels=0;

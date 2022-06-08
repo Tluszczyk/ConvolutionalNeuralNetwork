@@ -96,8 +96,36 @@ TEST(LogicalOperationsSuite, Reshaping) {
 
 }
 
+TEST(LogicalOperationsSuite, JoiningTensors){
+    Tensor a({4}, {1,1,1,1});
+    Tensor b({4}, {2,2,2,2});
+    Tensor c({4}, {3,3,3,3});
+    vector<Tensor> gf;
+    gf.push_back(a);
+    gf.push_back(b);
+    gf.push_back(c);
+    Tensor d = Tensor::joinTensors(gf);
+    Tensor h({4,3}, {1,1,1,1,2,2,2,2,3,3,3,3});
+    cout<<d<<endl;
+    cout<<h<<endl;
+    ASSERT_EQ(d, h);
+}
+
+TEST(LogicalOperationsSuite, DividingTensors){
+    Tensor a({4}, {1,1,1,1});
+    Tensor b({4}, {2,2,2,2});
+    Tensor c({4}, {3,3,3,3});
+    vector<Tensor> gf;
+    gf.push_back(a);
+    gf.push_back(b);
+    gf.push_back(c);
+    Tensor h({4,3}, {1,1,1,1,2,2,2,2,3,3,3,3});
+    vector<Tensor> gh = Tensor::divideTensor(h);
+    ASSERT_EQ(gf, gh);
+}
+
 TEST(LogicalOperationsSuite, Random) {
-    Tensor a = Tensor::createRandom({3, 3, 3});
+    Tensor a = Tensor::createRandom({3, 3, 3}, 1);
 //    std::cout << a << std::endl;
 }
 

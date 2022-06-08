@@ -20,6 +20,7 @@ Tensor DenseLayer::feed(Tensor inputTensor) {
 Tensor DenseLayer::backpropagate(const Tensor& nextActivationChanges) {
     Tensor firstPart = (nextActivationChanges * this->futureActivationsBeforeFunction.map(this->activationFunctionPrime));
     weightChanges = weightChanges + (firstPart.transpose({1,0}) ^ this->activations);
+    //cout<<weightChanges.max_abs()<<" this is greatest change "<<endl;
     biasChanges = biasChanges + firstPart;
     backPropagationsCarriedOut ++;
     Tensor activationChanges = (firstPart ^ this->weightsTensor).reshape(this->shape);
@@ -35,8 +36,10 @@ void DenseLayer::compile(double learningRate1, const vector<int>& nextLayerShape
     copy(this->shape.begin(), this->shape.end(), back_inserter(weightShape));
     copy(this->nextLayerShape.begin(), this->nextLayerShape.end(), back_inserter(weightShape));
 
-    this->weightsTensor = Tensor::createRandom(weightShape);
-    this->biasTensor = Tensor::createRandom(nextLayerShape);
+    this->weightsTensor = Tensor::createRandom(weightShape, 10./shape[{0}]);
+    this->biasTensor = Tensor::createRandom(nextLayerShape, 5./nextLayerShape[{0}]);
+
+    cout << weightsTensor.max_abs() << endl;
 
     this->weightChanges = Tensor(weightShape);
     this->biasChanges = Tensor(nextLayerShape);

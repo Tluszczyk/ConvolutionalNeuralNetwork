@@ -13,7 +13,7 @@
 using namespace std;
 
 void ModelLoader::saveToFile(const Sequential& model, const string& filename) {
-    ofstream modelFile("../" + filename);
+    ofstream modelFile("../" + filename, std::ofstream::out | std::ofstream::trunc);
 
     modelFile << model.MODEL_NAME << endl;
     modelFile << model.layers.size() << endl;
@@ -38,7 +38,7 @@ void ModelLoader::saveToFile(const Sequential& model, const string& filename) {
 }
 
 Sequential* ModelLoader::loadFromFile(const string& filename) {
-    ifstream modelFile(filename);
+    ifstream modelFile("../" + filename);
 
     if (!modelFile.is_open()) throw std::runtime_error("Could not open the file");
 
